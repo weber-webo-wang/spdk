@@ -94,21 +94,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4c8cb5fb5d0f458260ddb4af7fc27a15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#a4c8cb5fb5d0f458260ddb4af7fc27a15">nvme_ns_cmd_read</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, void *payload, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a4c8cb5fb5d0f458260ddb4af7fc27a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="#a4c8cb5fb5d0f458260ddb4af7fc27a15">More...</a><br /></td></tr>
-<tr class="separator:a4c8cb5fb5d0f458260ddb4af7fc27a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08200c74a175adaa68fdebd46a72df04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#a08200c74a175adaa68fdebd46a72df04">nvme_ns_cmd_write</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, void *payload, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a08200c74a175adaa68fdebd46a72df04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a write I/O to the specified NVMe namespace.  <a href="#a08200c74a175adaa68fdebd46a72df04">More...</a><br /></td></tr>
-<tr class="separator:a08200c74a175adaa68fdebd46a72df04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b034aeffc0386a9060e5f277723a2fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#a6b034aeffc0386a9060e5f277723a2fe">nvme_ns_cmd_deallocate</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, void *payload, uint8_t num_ranges, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a6b034aeffc0386a9060e5f277723a2fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a deallocation request to the specified NVMe namespace.  <a href="#a6b034aeffc0386a9060e5f277723a2fe">More...</a><br /></td></tr>
-<tr class="separator:a6b034aeffc0386a9060e5f277723a2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab636166a7a89be4331810b88a06be7e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#ab636166a7a89be4331810b88a06be7e3">nvme_ns_cmd_read</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, void *buffer, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
+<tr class="memdesc:ab636166a7a89be4331810b88a06be7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="#ab636166a7a89be4331810b88a06be7e3">More...</a><br /></td></tr>
+<tr class="separator:ab636166a7a89be4331810b88a06be7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b5fee0f3f4f95d4c0e4a06f76bb6abd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#a3b5fee0f3f4f95d4c0e4a06f76bb6abd">nvme_ns_cmd_readv</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#ae3cee80409f98155b0149a018232dc9b">nvme_req_reset_sgl_fn_t</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#ae2c2fe6d0b8190b49cf8535ec70eb307">nvme_req_next_sge_fn_t</a> next_sge_fn)</td></tr>
+<tr class="memdesc:a3b5fee0f3f4f95d4c0e4a06f76bb6abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="#a3b5fee0f3f4f95d4c0e4a06f76bb6abd">More...</a><br /></td></tr>
+<tr class="separator:a3b5fee0f3f4f95d4c0e4a06f76bb6abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca13218fc384e4fcea118096b965f8eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#aca13218fc384e4fcea118096b965f8eb">nvme_ns_cmd_write</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, void *buffer, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
+<tr class="memdesc:aca13218fc384e4fcea118096b965f8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a write I/O to the specified NVMe namespace.  <a href="#aca13218fc384e4fcea118096b965f8eb">More...</a><br /></td></tr>
+<tr class="separator:aca13218fc384e4fcea118096b965f8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6402abc46cc62e0aab24d744814caf7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#ad6402abc46cc62e0aab24d744814caf7">nvme_ns_cmd_writev</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#ae3cee80409f98155b0149a018232dc9b">nvme_req_reset_sgl_fn_t</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#ae2c2fe6d0b8190b49cf8535ec70eb307">nvme_req_next_sge_fn_t</a> next_sge_fn)</td></tr>
+<tr class="memdesc:ad6402abc46cc62e0aab24d744814caf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a write I/O to the specified NVMe namespace.  <a href="#ad6402abc46cc62e0aab24d744814caf7">More...</a><br /></td></tr>
+<tr class="separator:ad6402abc46cc62e0aab24d744814caf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6c5d66e67cbcb73c77c5102b7c011f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#acd6c5d66e67cbcb73c77c5102b7c011f">nvme_ns_cmd_deallocate</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, void *payload, uint16_t num_ranges, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:acd6c5d66e67cbcb73c77c5102b7c011f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a deallocation request to the specified NVMe namespace.  <a href="#acd6c5d66e67cbcb73c77c5102b7c011f">More...</a><br /></td></tr>
+<tr class="separator:acd6c5d66e67cbcb73c77c5102b7c011f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a756985b14e8cfddbdc61ed0d063f4619"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#a756985b14e8cfddbdc61ed0d063f4619">nvme_ns_cmd_flush</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a756985b14e8cfddbdc61ed0d063f4619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a flush request to the specified NVMe namespace.  <a href="#a756985b14e8cfddbdc61ed0d063f4619">More...</a><br /></td></tr>
 <tr class="separator:a756985b14e8cfddbdc61ed0d063f4619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5854d5cdf6157eeb67cf6d97219bad9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#ad5854d5cdf6157eeb67cf6d97219bad9">nvme_ns_cmd_reservation_register</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, struct <a class="el" href="structnvme__reservation__register__data.html">nvme_reservation_register_data</a> *payload, bool ignore_key, enum <a class="el" href="nvme__spec_8h.html#a13bce4f0708acf4f70632f5ea840c3fd">nvme_reservation_register_action</a> action, enum <a class="el" href="nvme__spec_8h.html#a6a9b93d6faf40f138a29acd09a3bb77f">nvme_reservation_register_cptpl</a> cptpl, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad5854d5cdf6157eeb67cf6d97219bad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a reservation register to the specified NVMe namespace.  <a href="#ad5854d5cdf6157eeb67cf6d97219bad9">More...</a><br /></td></tr>
+<tr class="separator:ad5854d5cdf6157eeb67cf6d97219bad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcebbdb07e1aa4aa59d9e433ce96c657"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#abcebbdb07e1aa4aa59d9e433ce96c657">nvme_ns_cmd_reservation_release</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, struct <a class="el" href="structnvme__reservation__key__data.html">nvme_reservation_key_data</a> *payload, bool ignore_key, enum <a class="el" href="nvme__spec_8h.html#aa7df7934d57db3c903c292bc09b530fa">nvme_reservation_release_action</a> action, enum <a class="el" href="nvme__spec_8h.html#a16ec5216a77527d7dedfa858541fb8c7">nvme_reservation_type</a> type, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:abcebbdb07e1aa4aa59d9e433ce96c657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a reservation release to the specified NVMe namespace.  <a href="#abcebbdb07e1aa4aa59d9e433ce96c657">More...</a><br /></td></tr>
+<tr class="separator:abcebbdb07e1aa4aa59d9e433ce96c657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25b247032a04c93ed24cbc71648d484"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#ad25b247032a04c93ed24cbc71648d484">nvme_ns_cmd_reservation_acquire</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, struct <a class="el" href="structnvme__reservation__acquire__data.html">nvme_reservation_acquire_data</a> *payload, bool ignore_key, enum <a class="el" href="nvme__spec_8h.html#a847d14cf205f4874e7495d0216102d84">nvme_reservation_acquire_action</a> action, enum <a class="el" href="nvme__spec_8h.html#a16ec5216a77527d7dedfa858541fb8c7">nvme_reservation_type</a> type, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad25b247032a04c93ed24cbc71648d484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a reservation acquire to the specified NVMe namespace.  <a href="#ad25b247032a04c93ed24cbc71648d484">More...</a><br /></td></tr>
+<tr class="separator:ad25b247032a04c93ed24cbc71648d484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c24347f6d4e426d5e232207c36e30c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html#a00c24347f6d4e426d5e232207c36e30c">nvme_ns_cmd_reservation_report</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, void *payload, uint32_t len, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a00c24347f6d4e426d5e232207c36e30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a reservation report to the specified NVMe namespace.  <a href="#a00c24347f6d4e426d5e232207c36e30c">More...</a><br /></td></tr>
+<tr class="separator:a00c24347f6d4e426d5e232207c36e30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a6b034aeffc0386a9060e5f277723a2fe"></a>
+<a class="anchor" id="acd6c5d66e67cbcb73c77c5102b7c011f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -127,7 +145,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>num_ranges</em>, </td>
         </tr>
         <tr>
@@ -155,7 +173,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ns</td><td>NVMe namespace to submit the deallocation request </td></tr>
     <tr><td class="paramname">payload</td><td>virtual address pointer to the list of LBA ranges to deallocate </td></tr>
-    <tr><td class="paramname">num_ranges</td><td>number of ranges in the list pointed to by payload </td></tr>
+    <tr><td class="paramname">num_ranges</td><td>number of ranges in the list pointed to by payload; must be between 1 and <a class="el" href="nvme__spec_8h.html#ac1381760013913d00a08098e02a23f53">NVME_DATASET_MANAGEMENT_MAX_RANGES</a>, inclusive. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function</td></tr>
   </table>
@@ -210,7 +228,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4c8cb5fb5d0f458260ddb4af7fc27a15"></a>
+<a class="anchor" id="ab636166a7a89be4331810b88a06be7e3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -248,7 +266,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>cb_arg</em>&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -266,6 +290,158 @@ Functions</h2></td></tr>
     <tr><td class="paramname">lba</td><td>starting LBA to read the data </td></tr>
     <tr><td class="paramname">lba_count</td><td>length (in sectors) for the read operation </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html">nvme_spec.h</a>, for this I/O</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an <a class="el" href="structnvme__request.html">nvme_request</a> structure cannot be allocated for the I/O request</dd></dl>
+<p>This function is thread safe and can be called at any point after nvme_register_io_thread(). </p>
+
+</div>
+</div>
+<a class="anchor" id="a3b5fee0f3f4f95d4c0e4a06f76bb6abd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvme_ns_cmd_readv </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ae3cee80409f98155b0149a018232dc9b">nvme_req_reset_sgl_fn_t</a>&#160;</td>
+          <td class="paramname"><em>reset_sgl_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ae2c2fe6d0b8190b49cf8535ec70eb307">nvme_req_next_sge_fn_t</a>&#160;</td>
+          <td class="paramname"><em>next_sge_fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a read I/O to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the read I/O </td></tr>
+    <tr><td class="paramname">lba</td><td>starting LBA to read the data </td></tr>
+    <tr><td class="paramname">lba_count</td><td>length (in sectors) for the read operation </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html">nvme_spec.h</a>, for this I/O </td></tr>
+    <tr><td class="paramname">reset_sgl_fn</td><td>callback function to reset scattered payload </td></tr>
+    <tr><td class="paramname">next_sge_fn</td><td>callback function to iterate each scattered payload memory segment</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an <a class="el" href="structnvme__request.html">nvme_request</a> structure cannot be allocated for the I/O request</dd></dl>
+<p>This function is thread safe and can be called at any point after nvme_register_io_thread(). </p>
+
+</div>
+</div>
+<a class="anchor" id="ad25b247032a04c93ed24cbc71648d484"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvme_ns_cmd_reservation_acquire </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structnvme__reservation__acquire__data.html">nvme_reservation_acquire_data</a> *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvme__spec_8h.html#a847d14cf205f4874e7495d0216102d84">nvme_reservation_acquire_action</a>&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvme__spec_8h.html#a16ec5216a77527d7dedfa858541fb8c7">nvme_reservation_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a reservation acquire to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the reservation acquire request </td></tr>
+    <tr><td class="paramname">payload</td><td>virtual address pointer to reservation acquire data </td></tr>
+    <tr><td class="paramname">ignore_key</td><td>'1' the current reservation key check is disabled </td></tr>
+    <tr><td class="paramname">action</td><td>specifies the reservation acquire action </td></tr>
+    <tr><td class="paramname">type</td><td>reservation type for the namespace </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function</td></tr>
   </table>
   </dd>
@@ -275,7 +451,209 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a08200c74a175adaa68fdebd46a72df04"></a>
+<a class="anchor" id="ad5854d5cdf6157eeb67cf6d97219bad9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvme_ns_cmd_reservation_register </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structnvme__reservation__register__data.html">nvme_reservation_register_data</a> *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvme__spec_8h.html#a13bce4f0708acf4f70632f5ea840c3fd">nvme_reservation_register_action</a>&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvme__spec_8h.html#a6a9b93d6faf40f138a29acd09a3bb77f">nvme_reservation_register_cptpl</a>&#160;</td>
+          <td class="paramname"><em>cptpl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a reservation register to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the reservation register request </td></tr>
+    <tr><td class="paramname">payload</td><td>virtual address pointer to the reservation register data </td></tr>
+    <tr><td class="paramname">ignore_key</td><td>'1' the current reservation key check is disabled </td></tr>
+    <tr><td class="paramname">action</td><td>specifies the registration action </td></tr>
+    <tr><td class="paramname">cptpl</td><td>change the Persist Through Power Loss state </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an <a class="el" href="structnvme__request.html">nvme_request</a> structure cannot be allocated for the I/O request</dd></dl>
+<p>This function is thread safe and can be called at any point after nvme_register_io_thread(). </p>
+
+</div>
+</div>
+<a class="anchor" id="abcebbdb07e1aa4aa59d9e433ce96c657"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvme_ns_cmd_reservation_release </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structnvme__reservation__key__data.html">nvme_reservation_key_data</a> *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvme__spec_8h.html#aa7df7934d57db3c903c292bc09b530fa">nvme_reservation_release_action</a>&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvme__spec_8h.html#a16ec5216a77527d7dedfa858541fb8c7">nvme_reservation_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a reservation release to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the reservation release request </td></tr>
+    <tr><td class="paramname">payload</td><td>virtual address pointer to current reservation key </td></tr>
+    <tr><td class="paramname">ignore_key</td><td>'1' the current reservation key check is disabled </td></tr>
+    <tr><td class="paramname">action</td><td>specifies the reservation release action </td></tr>
+    <tr><td class="paramname">type</td><td>reservation type for the namespace </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an <a class="el" href="structnvme__request.html">nvme_request</a> structure cannot be allocated for the I/O request</dd></dl>
+<p>This function is thread safe and can be called at any point after nvme_register_io_thread(). </p>
+
+</div>
+</div>
+<a class="anchor" id="a00c24347f6d4e426d5e232207c36e30c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvme_ns_cmd_reservation_report </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a reservation report to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the reservation report request </td></tr>
+    <tr><td class="paramname">payload</td><td>virtual address pointer for reservation status data </td></tr>
+    <tr><td class="paramname">len</td><td>length bytes for reservation status data structure </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an <a class="el" href="structnvme__request.html">nvme_request</a> structure cannot be allocated for the I/O request</dd></dl>
+<p>This function is thread safe and can be called at any point after nvme_register_io_thread(). </p>
+
+</div>
+</div>
+<a class="anchor" id="aca13218fc384e4fcea118096b965f8eb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -313,7 +691,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>cb_arg</em>&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -331,7 +715,87 @@ Functions</h2></td></tr>
     <tr><td class="paramname">lba</td><td>starting LBA to write the data </td></tr>
     <tr><td class="paramname">lba_count</td><td>length (in sectors) for the write operation </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function</td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined by the NVME_IO_FLAGS_* entries in <a class="el" href="nvme__spec_8h.html">spdk/nvme_spec.h</a>, for this I/O.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an <a class="el" href="structnvme__request.html">nvme_request</a> structure cannot be allocated for the I/O request</dd></dl>
+<p>This function is thread safe and can be called at any point after nvme_register_io_thread(). </p>
+
+</div>
+</div>
+<a class="anchor" id="ad6402abc46cc62e0aab24d744814caf7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvme_ns_cmd_writev </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ae3cee80409f98155b0149a018232dc9b">nvme_req_reset_sgl_fn_t</a>&#160;</td>
+          <td class="paramname"><em>reset_sgl_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ae2c2fe6d0b8190b49cf8535ec70eb307">nvme_req_next_sge_fn_t</a>&#160;</td>
+          <td class="paramname"><em>next_sge_fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a write I/O to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the write I/O </td></tr>
+    <tr><td class="paramname">lba</td><td>starting LBA to write the data </td></tr>
+    <tr><td class="paramname">lba_count</td><td>length (in sectors) for the write operation </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html">nvme_spec.h</a>, for this I/O </td></tr>
+    <tr><td class="paramname">reset_sgl_fn</td><td>callback function to reset scattered payload </td></tr>
+    <tr><td class="paramname">next_sge_fn</td><td>callback function to iterate each scattered payload memory segment</td></tr>
   </table>
   </dd>
 </dl>

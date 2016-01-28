@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['lbads',['lbads',['../structnvme__namespace__data.html#a082c29dc6677700e3b3e46e1f9335847',1,'nvme_namespace_data']]],
-  ['lbaf',['lbaf',['../structnvme__namespace__data.html#a0f691c39fafd6baff9f2a096b880da79',1,'nvme_namespace_data']]]
+  ['hmmin',['hmmin',['../structnvme__controller__data.html#a98e121836566e5879cffd3ce3ecd7582',1,'nvme_controller_data']]],
+  ['hmpre',['hmpre',['../structnvme__controller__data.html#ac0a49d067e020a3d688d260e6134f519',1,'nvme_controller_data']]],
+  ['host_5fid',['host_id',['../structnvme__reservation__controller__data.html#a39ddbe617840e23ec1095ad644e277af',1,'nvme_reservation_controller_data']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['thin_5fprov',['thin_prov',['../structnvme__namespace__data.html#af4b882a4e77150c3937e7aa47b80aa97',1,'nvme_namespace_data']]],
-  ['to',['to',['../unionnvme__cap__lo__register.html#a055acb30b2bd2f9d67f433d922ec975f',1,'nvme_cap_lo_register']]]
+  ['oacs',['oacs',['../structnvme__controller__data.html#afef3763e1ef1497dabf9d7918b9ad301',1,'nvme_controller_data']]],
+  ['oaes',['oaes',['../structnvme__controller__data.html#a63ed67859586d798749a14758bce7455',1,'nvme_controller_data']]],
+  ['oncs',['oncs',['../structnvme__controller__data.html#a0aa1ac3c1107c6de2e5ca1c0c77f58e0',1,'nvme_controller_data']]]
 ];

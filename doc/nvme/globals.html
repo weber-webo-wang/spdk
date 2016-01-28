@@ -70,12 +70,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="#index__"><span>_</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
       <li class="current"><a href="#index_n"><span>n</span></a></li>
     </ul>
   </div>
@@ -98,8 +101,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all documented functions, variables, defines, enums, and typedefs with links to the documentation:</div>
 
 <h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
-<li>__attribute__()
-: <a class="el" href="nvme__spec_8h.html#aa45f442e60b3d4874ed329b899f77f0f">nvme_spec.h</a>
+<li>_nvme_qpair_build_contig_request()
+: <a class="el" href="nvme__qpair_8c.html#a13b5fab568fe1a4b02364b8d8b650b54">nvme_qpair.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>ioat_attach()
+: <a class="el" href="ioat_8h.html#a37076ad31ecaff19590d3b0827bf8362">ioat.h</a>
+</li>
+<li>ioat_callback_t
+: <a class="el" href="ioat_8h.html#aa5511fed8fbf4ff1a84dedb19bb49355">ioat.h</a>
+</li>
+<li>ioat_detach()
+: <a class="el" href="ioat_8h.html#a647a7646ba6e69fc8fac80feec023412">ioat.h</a>
+</li>
+<li>ioat_pci_device_match_id()
+: <a class="el" href="ioat_8h.html#a53284d2895d6d3d5b8414285b83fd1e2">ioat.h</a>
+</li>
+<li>ioat_process_events()
+: <a class="el" href="ioat_8h.html#ad92b88980870f4388ccc39998224147d">ioat.h</a>
+</li>
+<li>ioat_register_thread()
+: <a class="el" href="ioat_8h.html#afbaccd8b452e139b3e57bbf71e4d039e">ioat.h</a>
+</li>
+<li>ioat_submit_copy()
+: <a class="el" href="ioat_8h.html#abf7b61017cb920b5dd1972cfa93fb0cb">ioat.h</a>
+</li>
+<li>ioat_unregister_thread()
+: <a class="el" href="ioat_8h.html#ac16d652ebb5f36c4bd59cd2879742b08">ioat.h</a>
 </li>
 </ul>
 
@@ -130,8 +161,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>nvme_ctrlr_cmd_admin_raw()
 : <a class="el" href="nvme_8h.html#a891f3978b0fb8ca326354fcf064506c1">nvme.h</a>
 </li>
+<li>nvme_ctrlr_cmd_get_feature()
+: <a class="el" href="nvme_8h.html#a8d503aca2d46e5716f43a1e568fe6386">nvme.h</a>
+</li>
+<li>nvme_ctrlr_cmd_get_log_page()
+: <a class="el" href="nvme_8h.html#ad24a4db2deb18586da7a78fc0bda75a8">nvme.h</a>
+</li>
 <li>nvme_ctrlr_cmd_io_raw()
 : <a class="el" href="nvme_8h.html#ad7d94a0303a848bfb16e98da40005b41">nvme.h</a>
+</li>
+<li>nvme_ctrlr_cmd_set_feature()
+: <a class="el" href="nvme_8h.html#ad88175be84005ad5999745601287c516">nvme.h</a>
 </li>
 <li>nvme_ctrlr_get_data()
 : <a class="el" href="nvme__ctrlr_8c.html#acad42017dc59ad363a9223a2723a416f">nvme_ctrlr.c</a>
@@ -145,17 +185,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="nvme__ctrlr_8c.html#a172b32383099b2c0138246bb45f550b7">nvme_ctrlr.c</a>
 , <a class="el" href="nvme_8h.html#a172b32383099b2c0138246bb45f550b7">nvme.h</a>
 </li>
+<li>nvme_ctrlr_is_feature_supported()
+: <a class="el" href="nvme__ctrlr_8c.html#af5435d8c4d8dea3cfe08635a14938d3e">nvme_ctrlr.c</a>
+, <a class="el" href="nvme_8h.html#af5435d8c4d8dea3cfe08635a14938d3e">nvme.h</a>
+</li>
+<li>nvme_ctrlr_is_log_page_supported()
+: <a class="el" href="nvme__ctrlr_8c.html#a820ecf0dafc568286a375bc94803d07a">nvme_ctrlr.c</a>
+, <a class="el" href="nvme_8h.html#a820ecf0dafc568286a375bc94803d07a">nvme.h</a>
+</li>
 <li>nvme_ctrlr_process_admin_completions()
-: <a class="el" href="nvme__ctrlr_8c.html#a57700ebbae0b8d95744634f7d2c8f358">nvme_ctrlr.c</a>
-, <a class="el" href="nvme_8h.html#a57700ebbae0b8d95744634f7d2c8f358">nvme.h</a>
+: <a class="el" href="nvme__ctrlr_8c.html#a961c74513db555e0bdc6a69a53005500">nvme_ctrlr.c</a>
+, <a class="el" href="nvme_8h.html#a961c74513db555e0bdc6a69a53005500">nvme.h</a>
 </li>
 <li>nvme_ctrlr_process_io_completions()
-: <a class="el" href="nvme__ctrlr_8c.html#aca9d8365c566c18a9579d42e33c90d5e">nvme_ctrlr.c</a>
-, <a class="el" href="nvme_8h.html#aca9d8365c566c18a9579d42e33c90d5e">nvme.h</a>
+: <a class="el" href="nvme__ctrlr_8c.html#a4d4260b4b642f14f6fb62ba487b06b86">nvme_ctrlr.c</a>
+, <a class="el" href="nvme_8h.html#a4d4260b4b642f14f6fb62ba487b06b86">nvme.h</a>
 </li>
 <li>nvme_ctrlr_reset()
 : <a class="el" href="nvme__ctrlr_8c.html#a309c138b59516f6037e6e4c8a743edac">nvme_ctrlr.c</a>
 , <a class="el" href="nvme_8h.html#a309c138b59516f6037e6e4c8a743edac">nvme.h</a>
+</li>
+<li>NVME_DATASET_MANAGEMENT_MAX_RANGES
+: <a class="el" href="nvme__spec_8h.html#ac1381760013913d00a08098e02a23f53">nvme_spec.h</a>
 </li>
 <li>nvme_dealloc_request
 : <a class="el" href="nvme__impl_8h.html#a964075ffde5231b255d681c975f716b7">nvme_impl.h</a>
@@ -170,24 +221,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>NVME_GLOBAL_NAMESPACE_TAG
 : <a class="el" href="nvme__spec_8h.html#a8964b1094479376d2dfeef106a212f47">nvme_spec.h</a>
 </li>
+<li>NVME_LOG_CHANGED_NS_LIST
+: <a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277a2a8aa977dcee0dbbe8d1d08a69b33202">nvme_spec.h</a>
+</li>
+<li>NVME_LOG_COMMAND_EFFECTS_LOG
+: <a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277ad6cdcb66281f020dcba73efe290b7c97">nvme_spec.h</a>
+</li>
+<li>NVME_LOG_ERROR
+: <a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277a8afc559b2c118ddad476387590da0a96">nvme_spec.h</a>
+</li>
+<li>NVME_LOG_FIRMWARE_SLOT
+: <a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277ab2dfb00172b45ea6fdd8726bb085eb16">nvme_spec.h</a>
+</li>
+<li>NVME_LOG_HEALTH_INFORMATION
+: <a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277a2d551193a2cc18fb020bc2b2fc2f0d8c">nvme_spec.h</a>
+</li>
+<li>nvme_log_page
+: <a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277">nvme_spec.h</a>
+</li>
+<li>NVME_LOG_RESERVATION_NOTIFICATION
+: <a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277ab6f8fa17b9c8c89c037221635ec75bf1">nvme_spec.h</a>
+</li>
 <li>nvme_malloc()
 : <a class="el" href="nvme__impl_8h.html#a6c242cd22416a947cbf420309c3421df">nvme_impl.h</a>
 </li>
+<li>nvme_namespace_flags
+: <a class="el" href="nvme_8h.html#a7336689bd0528124f28ef59337010216">nvme.h</a>
+</li>
 <li>nvme_ns_cmd_deallocate()
-: <a class="el" href="nvme__ns__cmd_8c.html#a6b034aeffc0386a9060e5f277723a2fe">nvme_ns_cmd.c</a>
-, <a class="el" href="nvme_8h.html#a6b034aeffc0386a9060e5f277723a2fe">nvme.h</a>
+: <a class="el" href="nvme__ns__cmd_8c.html#acd6c5d66e67cbcb73c77c5102b7c011f">nvme_ns_cmd.c</a>
+, <a class="el" href="nvme_8h.html#acd6c5d66e67cbcb73c77c5102b7c011f">nvme.h</a>
 </li>
 <li>nvme_ns_cmd_flush()
 : <a class="el" href="nvme__ns__cmd_8c.html#a756985b14e8cfddbdc61ed0d063f4619">nvme_ns_cmd.c</a>
 , <a class="el" href="nvme_8h.html#a756985b14e8cfddbdc61ed0d063f4619">nvme.h</a>
 </li>
 <li>nvme_ns_cmd_read()
-: <a class="el" href="nvme__ns__cmd_8c.html#a4c8cb5fb5d0f458260ddb4af7fc27a15">nvme_ns_cmd.c</a>
-, <a class="el" href="nvme_8h.html#a4c8cb5fb5d0f458260ddb4af7fc27a15">nvme.h</a>
+: <a class="el" href="nvme__ns__cmd_8c.html#ab636166a7a89be4331810b88a06be7e3">nvme_ns_cmd.c</a>
+, <a class="el" href="nvme_8h.html#a5d7a4bf12eab6a0104ec1a21203b5a49">nvme.h</a>
+</li>
+<li>nvme_ns_cmd_readv()
+: <a class="el" href="nvme__ns__cmd_8c.html#a3b5fee0f3f4f95d4c0e4a06f76bb6abd">nvme_ns_cmd.c</a>
+, <a class="el" href="nvme_8h.html#a3b5fee0f3f4f95d4c0e4a06f76bb6abd">nvme.h</a>
+</li>
+<li>nvme_ns_cmd_reservation_acquire()
+: <a class="el" href="nvme__ns__cmd_8c.html#ad25b247032a04c93ed24cbc71648d484">nvme_ns_cmd.c</a>
+, <a class="el" href="nvme_8h.html#ad25b247032a04c93ed24cbc71648d484">nvme.h</a>
+</li>
+<li>nvme_ns_cmd_reservation_register()
+: <a class="el" href="nvme__ns__cmd_8c.html#ad5854d5cdf6157eeb67cf6d97219bad9">nvme_ns_cmd.c</a>
+, <a class="el" href="nvme_8h.html#ad5854d5cdf6157eeb67cf6d97219bad9">nvme.h</a>
+</li>
+<li>nvme_ns_cmd_reservation_release()
+: <a class="el" href="nvme__ns__cmd_8c.html#abcebbdb07e1aa4aa59d9e433ce96c657">nvme_ns_cmd.c</a>
+, <a class="el" href="nvme_8h.html#abcebbdb07e1aa4aa59d9e433ce96c657">nvme.h</a>
+</li>
+<li>nvme_ns_cmd_reservation_report()
+: <a class="el" href="nvme__ns__cmd_8c.html#a00c24347f6d4e426d5e232207c36e30c">nvme_ns_cmd.c</a>
+, <a class="el" href="nvme_8h.html#a00c24347f6d4e426d5e232207c36e30c">nvme.h</a>
 </li>
 <li>nvme_ns_cmd_write()
-: <a class="el" href="nvme__ns__cmd_8c.html#a08200c74a175adaa68fdebd46a72df04">nvme_ns_cmd.c</a>
-, <a class="el" href="nvme_8h.html#a08200c74a175adaa68fdebd46a72df04">nvme.h</a>
+: <a class="el" href="nvme_8h.html#a5c32d43291b8082960659999fa898a21">nvme.h</a>
+, <a class="el" href="nvme__ns__cmd_8c.html#aca13218fc384e4fcea118096b965f8eb">nvme_ns_cmd.c</a>
+</li>
+<li>nvme_ns_cmd_writev()
+: <a class="el" href="nvme_8h.html#ad6402abc46cc62e0aab24d744814caf7">nvme.h</a>
+, <a class="el" href="nvme__ns__cmd_8c.html#ad6402abc46cc62e0aab24d744814caf7">nvme_ns_cmd.c</a>
+</li>
+<li>NVME_NS_DEALLOCATE_SUPPORTED
+: <a class="el" href="nvme_8h.html#a7336689bd0528124f28ef59337010216aca1d3c746d3a46a63b98b2cabb1426cf">nvme.h</a>
+</li>
+<li>NVME_NS_FLUSH_SUPPORTED
+: <a class="el" href="nvme_8h.html#a7336689bd0528124f28ef59337010216a506288d08c2e2fae3a1d2520d7613ee5">nvme.h</a>
 </li>
 <li>nvme_ns_get_data()
 : <a class="el" href="nvme_8h.html#a0582b23ba2e0e92ff54830a53a235b5a">nvme.h</a>
@@ -210,15 +315,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>nvme_ns_get_size()
 : <a class="el" href="nvme_8h.html#ab17b0c9a87fb0f7254875bb8e7c5ae63">nvme.h</a>
 </li>
+<li>NVME_NS_RESERVATION_SUPPORTED
+: <a class="el" href="nvme_8h.html#a7336689bd0528124f28ef59337010216ab22470e0275cae8c9f4e3885cf62bb71">nvme.h</a>
+</li>
 <li>nvme_printf
 : <a class="el" href="nvme__impl_8h.html#a134486689372a4cf5da51b000e4be9ea">nvme_impl.h</a>
 </li>
 <li>nvme_qpair_process_completions()
-: <a class="el" href="nvme__qpair_8c.html#abd049757f6f28ffe016e15c71994209f">nvme_qpair.c</a>
+: <a class="el" href="nvme__qpair_8c.html#a30565ccd924fed6dcf514c6e96294104">nvme_qpair.c</a>
+</li>
+<li>nvme_req_next_sge_fn_t
+: <a class="el" href="nvme_8h.html#ae2c2fe6d0b8190b49cf8535ec70eb307">nvme.h</a>
+</li>
+<li>nvme_req_reset_sgl_fn_t
+: <a class="el" href="nvme_8h.html#ae3cee80409f98155b0149a018232dc9b">nvme.h</a>
 </li>
 <li>nvme_request_size()
 : <a class="el" href="nvme_8c.html#addaed5ffa0655110def0835899ca81a1">nvme.c</a>
 , <a class="el" href="nvme_8h.html#addaed5ffa0655110def0835899ca81a1">nvme.h</a>
+</li>
+<li>nvme_reservation_acquire_action
+: <a class="el" href="nvme__spec_8h.html#a847d14cf205f4874e7495d0216102d84">nvme_spec.h</a>
+</li>
+<li>nvme_reservation_register_action
+: <a class="el" href="nvme__spec_8h.html#a13bce4f0708acf4f70632f5ea840c3fd">nvme_spec.h</a>
+</li>
+<li>nvme_reservation_register_cptpl
+: <a class="el" href="nvme__spec_8h.html#a6a9b93d6faf40f138a29acd09a3bb77f">nvme_spec.h</a>
+</li>
+<li>nvme_reservation_release_action
+: <a class="el" href="nvme__spec_8h.html#aa7df7934d57db3c903c292bc09b530fa">nvme_spec.h</a>
+</li>
+<li>nvme_reservation_type
+: <a class="el" href="nvme__spec_8h.html#a16ec5216a77527d7dedfa858541fb8c7">nvme_spec.h</a>
 </li>
 <li>nvme_vtophys
 : <a class="el" href="nvme__impl_8h.html#a113be6337ce6831ae8bfc95d8dcd9901">nvme_impl.h</a>

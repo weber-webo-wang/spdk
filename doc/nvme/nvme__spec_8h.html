@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">nvme_spec.h File Reference</div>  </div>
 </div><!--header-->
@@ -114,6 +114,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionnvme__aqa__register.html">nvme_aqa_register</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__sgl__descriptor.html">nvme_sgl_descriptor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__command.html">nvme_command</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__status.html">nvme_status</a></td></tr>
@@ -124,11 +126,25 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__power__state.html">nvme_power_state</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__controller__data.html">nvme_controller_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__namespace__data.html">nvme_namespace_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__reservation__acquire__data.html">nvme_reservation_acquire_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__reservation__status__data.html">nvme_reservation_status_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__reservation__controller__data.html">nvme_reservation_controller_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__reservation__register__data.html">nvme_reservation_register_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__reservation__key__data.html">nvme_reservation_key_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__error__information__entry.html">nvme_error_information_entry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionnvme__critical__warning__state.html">nvme_critical_warning_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__health__information__page.html">nvme_health_information_page</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__firmware__page.html">nvme_firmware_page</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,11 +155,32 @@ Macros</h2></td></tr>
 <tr class="separator:a53a9e6d469e8652b394e05aeab972650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8964b1094479376d2dfeef106a212f47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a8964b1094479376d2dfeef106a212f47">NVME_GLOBAL_NAMESPACE_TAG</a>&#160;&#160;&#160;((uint32_t)0xFFFFFFFF)</td></tr>
 <tr class="separator:a8964b1094479376d2dfeef106a212f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1381760013913d00a08098e02a23f53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#ac1381760013913d00a08098e02a23f53">NVME_DATASET_MANAGEMENT_MAX_RANGES</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:ac1381760013913d00a08098e02a23f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aa45f442e60b3d4874ed329b899f77f0f"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#aa45f442e60b3d4874ed329b899f77f0f">__attribute__</a> ((packed)) nvme_sgl_descriptor</td></tr>
-<tr class="separator:aa45f442e60b3d4874ed329b899f77f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a16ec5216a77527d7dedfa858541fb8c7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a16ec5216a77527d7dedfa858541fb8c7">nvme_reservation_type</a> <tr class="separator:a16ec5216a77527d7dedfa858541fb8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a847d14cf205f4874e7495d0216102d84"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a847d14cf205f4874e7495d0216102d84">nvme_reservation_acquire_action</a> <tr class="separator:a847d14cf205f4874e7495d0216102d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a6a9b93d6faf40f138a29acd09a3bb77f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a6a9b93d6faf40f138a29acd09a3bb77f">nvme_reservation_register_cptpl</a> <tr class="separator:a6a9b93d6faf40f138a29acd09a3bb77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a13bce4f0708acf4f70632f5ea840c3fd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a13bce4f0708acf4f70632f5ea840c3fd">nvme_reservation_register_action</a> <tr class="separator:a13bce4f0708acf4f70632f5ea840c3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:aa7df7934d57db3c903c292bc09b530fa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#aa7df7934d57db3c903c292bc09b530fa">nvme_reservation_release_action</a> <tr class="separator:aa7df7934d57db3c903c292bc09b530fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a712c540ef19a51a06122edfb3b814277"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277">nvme_log_page</a> { <br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277a8afc559b2c118ddad476387590da0a96">NVME_LOG_ERROR</a> = 0x01, 
+<a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277a2d551193a2cc18fb020bc2b2fc2f0d8c">NVME_LOG_HEALTH_INFORMATION</a> = 0x02, 
+<a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277ab2dfb00172b45ea6fdd8726bb085eb16">NVME_LOG_FIRMWARE_SLOT</a> = 0x03, 
+<a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277a2a8aa977dcee0dbbe8d1d08a69b33202">NVME_LOG_CHANGED_NS_LIST</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277ad6cdcb66281f020dcba73efe290b7c97">NVME_LOG_COMMAND_EFFECTS_LOG</a> = 0x05, 
+<a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277ab6f8fa17b9c8c89c037221635ec75bf1">NVME_LOG_RESERVATION_NOTIFICATION</a> = 0x80
+<br />
+ }<tr class="separator:a712c540ef19a51a06122edfb3b814277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a53a9e6d469e8652b394e05aeab972650"></a>
@@ -160,6 +197,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac1381760013913d00a08098e02a23f53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVME_DATASET_MANAGEMENT_MAX_RANGES&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indicates the maximum number of range sets that may be specified in the dataset mangement command. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8964b1094479376d2dfeef106a212f47"></a>
 <div class="memitem">
 <div class="memproto">
@@ -173,66 +223,102 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="aa45f442e60b3d4874ed329b899f77f0f"></a>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a712c540ef19a51a06122edfb3b814277"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct __attribute__ </td>
-          <td>(</td>
-          <td class="paramtype">(packed)&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a712c540ef19a51a06122edfb3b814277">nvme_log_page</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>SGL descriptor type</p>
-<p>SGL descriptor type specific</p>
-<p>pci vendor id</p>
-<p>pci subsystem vendor id</p>
-<p>serial number</p>
-<p>model number</p>
-<p>firmware revision</p>
-<p>recommended arbitration burst</p>
-<p>ieee oui identifier</p>
-<p>multi-interface capabilities</p>
-<p>maximum data transfer size</p>
-<p>controller id</p>
-<p>version</p>
-<p>RTD3 resume latency</p>
-<p>RTD3 entry latency</p>
-<p>optional asynchronous events supported</p>
-<p>optional admin command support</p>
-<p>abort command limit</p>
-<p>asynchronous event request limit</p>
-<p>firmware updates</p>
-<p>log page attributes</p>
-<p>error log page entries</p>
-<p>number of power states supported</p>
-<p>admin vendor specific command configuration</p>
-<p>autonomous power state transition attributes</p>
-<p>controller supports autonomous power state transitions</p>
-<p>warning composite temperature threshold</p>
-<p>critical composite temperature threshold</p>
-<p>maximum time for firmware activation</p>
-<p>host memory buffer preferred size</p>
-<p>host memory buffer minimum size</p>
-<p>total NVM capacity</p>
-<p>unallocated NVM capacity</p>
-<p>replay protected memory block support</p>
-<p>submission queue entry size</p>
-<p>completion queue entry size</p>
-<p>number of namespaces</p>
-<p>optional nvm command support</p>
-<p>fused operation support</p>
-<p>format nvm attributes</p>
-<p>volatile write cache</p>
-<p>atomic write unit normal</p>
-<p>atomic write unit power fail</p>
-<p>NVM vendor specific command configuration</p>
-<p>atomic compare &amp; write unit</p>
-<p>SGL support </p>
+<p>Log page identifiers for NVME_OPC_GET_LOG_PAGE </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a712c540ef19a51a06122edfb3b814277a8afc559b2c118ddad476387590da0a96"></a>NVME_LOG_ERROR&#160;</td><td class="fielddoc">
+<p>Error information (mandatory) - <a class="el" href="structnvme__error__information__entry.html">nvme_error_information_entry</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a712c540ef19a51a06122edfb3b814277a2d551193a2cc18fb020bc2b2fc2f0d8c"></a>NVME_LOG_HEALTH_INFORMATION&#160;</td><td class="fielddoc">
+<p>SMART / health information (mandatory) - <a class="el" href="structnvme__health__information__page.html">nvme_health_information_page</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a712c540ef19a51a06122edfb3b814277ab2dfb00172b45ea6fdd8726bb085eb16"></a>NVME_LOG_FIRMWARE_SLOT&#160;</td><td class="fielddoc">
+<p>Firmware slot information (mandatory) - <a class="el" href="structnvme__firmware__page.html">nvme_firmware_page</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a712c540ef19a51a06122edfb3b814277a2a8aa977dcee0dbbe8d1d08a69b33202"></a>NVME_LOG_CHANGED_NS_LIST&#160;</td><td class="fielddoc">
+<p>Changed namespace list (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a712c540ef19a51a06122edfb3b814277ad6cdcb66281f020dcba73efe290b7c97"></a>NVME_LOG_COMMAND_EFFECTS_LOG&#160;</td><td class="fielddoc">
+<p>Command effects log (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a712c540ef19a51a06122edfb3b814277ab6f8fa17b9c8c89c037221635ec75bf1"></a>NVME_LOG_RESERVATION_NOTIFICATION&#160;</td><td class="fielddoc">
+<p>Reservation notification (optional) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a847d14cf205f4874e7495d0216102d84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a847d14cf205f4874e7495d0216102d84">nvme_reservation_acquire_action</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reservation Acquire action </p>
+
+</div>
+</div>
+<a class="anchor" id="a13bce4f0708acf4f70632f5ea840c3fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a13bce4f0708acf4f70632f5ea840c3fd">nvme_reservation_register_action</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Registration action for Reservation Register command </p>
+
+</div>
+</div>
+<a class="anchor" id="a6a9b93d6faf40f138a29acd09a3bb77f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a6a9b93d6faf40f138a29acd09a3bb77f">nvme_reservation_register_cptpl</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Change persist through power loss state for Reservation Register command </p>
+
+</div>
+</div>
+<a class="anchor" id="aa7df7934d57db3c903c292bc09b530fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#aa7df7934d57db3c903c292bc09b530fa">nvme_reservation_release_action</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reservation Release action </p>
+
+</div>
+</div>
+<a class="anchor" id="a16ec5216a77527d7dedfa858541fb8c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a16ec5216a77527d7dedfa858541fb8c7">nvme_reservation_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reservation Type Encoding </p>
 
 </div>
 </div>

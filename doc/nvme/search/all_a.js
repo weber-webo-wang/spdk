@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['parent',['parent',['../structnvme__request.html#a98f4a3a3237b35bf27e69b98773dca3a',1,'nvme_request']]],
-  ['parent_5fstatus',['parent_status',['../structnvme__request.html#a22d23b600d865004bd2d60a053e3f1f2',1,'nvme_request']]],
-  ['persist',['persist',['../structnvme__namespace__data.html#a42d13081a041324ec40159a2f42d7fb2',1,'nvme_namespace_data']]],
-  ['pit',['pit',['../structnvme__namespace__data.html#ae79bfef7afd6a7c106da91f3485bb49b',1,'nvme_namespace_data']]],
-  ['pit1',['pit1',['../structnvme__namespace__data.html#ae7e61bf8b3005db983fa1b31404e6169',1,'nvme_namespace_data']]],
-  ['pit2',['pit2',['../structnvme__namespace__data.html#ae4bb1b5c48b43b56f4101ce9a2a7b3d9',1,'nvme_namespace_data']]],
-  ['pit3',['pit3',['../structnvme__namespace__data.html#a60b71a8210dfcf060e1c0e296e022809',1,'nvme_namespace_data']]],
-  ['pointer',['pointer',['../structnvme__namespace__data.html#ad4b2aa688a687d1ab583b4529aeea7bb',1,'nvme_namespace_data']]]
+  ['lbads',['lbads',['../structnvme__namespace__data.html#a082c29dc6677700e3b3e46e1f9335847',1,'nvme_namespace_data']]],
+  ['lbaf',['lbaf',['../structnvme__namespace__data.html#a70cb57b54f327f5bf69845e538984908',1,'nvme_namespace_data']]],
+  ['log_5fpage_5fsupported',['log_page_supported',['../structnvme__controller.html#a5702dea83a1c34e5dffbacf3b8616410',1,'nvme_controller']]],
+  ['lpa',['lpa',['../structnvme__controller__data.html#a27974c2a88e295cdbc141dd5be941dfc',1,'nvme_controller_data']]]
 ];

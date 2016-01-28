@@ -97,13 +97,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a309c138b59516f6037e6e4c8a743edac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a309c138b59516f6037e6e4c8a743edac">nvme_ctrlr_reset</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
 <tr class="memdesc:a309c138b59516f6037e6e4c8a743edac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a full hardware reset of the NVMe controller.  <a href="#a309c138b59516f6037e6e4c8a743edac">More...</a><br /></td></tr>
 <tr class="separator:a309c138b59516f6037e6e4c8a743edac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca9d8365c566c18a9579d42e33c90d5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#aca9d8365c566c18a9579d42e33c90d5e">nvme_ctrlr_process_io_completions</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr, uint32_t max_completions)</td></tr>
-<tr class="memdesc:aca9d8365c566c18a9579d42e33c90d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for I/O submitted on the current thread.  <a href="#aca9d8365c566c18a9579d42e33c90d5e">More...</a><br /></td></tr>
-<tr class="separator:aca9d8365c566c18a9579d42e33c90d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57700ebbae0b8d95744634f7d2c8f358"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a57700ebbae0b8d95744634f7d2c8f358">nvme_ctrlr_process_admin_completions</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
-<tr class="memdesc:a57700ebbae0b8d95744634f7d2c8f358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for admin commands.  <a href="#a57700ebbae0b8d95744634f7d2c8f358">More...</a><br /></td></tr>
-<tr class="separator:a57700ebbae0b8d95744634f7d2c8f358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acad42017dc59ad363a9223a2723a416f"><td class="memItemLeft" align="right" valign="top">const struct nvme_controller_data *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#acad42017dc59ad363a9223a2723a416f">nvme_ctrlr_get_data</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
+<tr class="memitem:a4d4260b4b642f14f6fb62ba487b06b86"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a4d4260b4b642f14f6fb62ba487b06b86">nvme_ctrlr_process_io_completions</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr, uint32_t max_completions)</td></tr>
+<tr class="memdesc:a4d4260b4b642f14f6fb62ba487b06b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for I/O submitted on the current thread.  <a href="#a4d4260b4b642f14f6fb62ba487b06b86">More...</a><br /></td></tr>
+<tr class="separator:a4d4260b4b642f14f6fb62ba487b06b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a961c74513db555e0bdc6a69a53005500"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a961c74513db555e0bdc6a69a53005500">nvme_ctrlr_process_admin_completions</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
+<tr class="memdesc:a961c74513db555e0bdc6a69a53005500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for admin commands.  <a href="#a961c74513db555e0bdc6a69a53005500">More...</a><br /></td></tr>
+<tr class="separator:a961c74513db555e0bdc6a69a53005500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad42017dc59ad363a9223a2723a416f"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structnvme__controller__data.html">nvme_controller_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#acad42017dc59ad363a9223a2723a416f">nvme_ctrlr_get_data</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
 <tr class="memdesc:acad42017dc59ad363a9223a2723a416f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify controller data as defined by the NVMe specification.  <a href="#acad42017dc59ad363a9223a2723a416f">More...</a><br /></td></tr>
 <tr class="separator:acad42017dc59ad363a9223a2723a416f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a172b32383099b2c0138246bb45f550b7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a172b32383099b2c0138246bb45f550b7">nvme_ctrlr_get_num_ns</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
@@ -112,6 +112,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a2c232ba6e5094b94d217476fb39771e1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a2c232ba6e5094b94d217476fb39771e1">nvme_ctrlr_get_ns</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr, uint32_t ns_id)</td></tr>
 <tr class="memdesc:a2c232ba6e5094b94d217476fb39771e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a handle to a namespace for the given controller.  <a href="#a2c232ba6e5094b94d217476fb39771e1">More...</a><br /></td></tr>
 <tr class="separator:a2c232ba6e5094b94d217476fb39771e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820ecf0dafc568286a375bc94803d07a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a820ecf0dafc568286a375bc94803d07a">nvme_ctrlr_is_log_page_supported</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr, uint8_t log_page)</td></tr>
+<tr class="memdesc:a820ecf0dafc568286a375bc94803d07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a particular log page is supported by the given NVMe controller.  <a href="#a820ecf0dafc568286a375bc94803d07a">More...</a><br /></td></tr>
+<tr class="separator:a820ecf0dafc568286a375bc94803d07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5435d8c4d8dea3cfe08635a14938d3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#af5435d8c4d8dea3cfe08635a14938d3e">nvme_ctrlr_is_feature_supported</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr, uint8_t feature_code)</td></tr>
+<tr class="memdesc:af5435d8c4d8dea3cfe08635a14938d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a particular feature is supported by the given NVMe controller.  <a href="#af5435d8c4d8dea3cfe08635a14938d3e">More...</a><br /></td></tr>
+<tr class="separator:af5435d8c4d8dea3cfe08635a14938d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="acad42017dc59ad363a9223a2723a416f"></a>
@@ -119,7 +125,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const struct nvme_controller_data* nvme_ctrlr_get_data </td>
+          <td class="memname">const struct <a class="el" href="structnvme__controller__data.html">nvme_controller_data</a>* nvme_ctrlr_get_data </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em></td><td>)</td>
@@ -179,16 +185,76 @@ Functions</h2></td></tr>
 
 <p>Get the number of namespaces for the given NVMe controller. </p>
 <p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>.</p>
-<p>This is equivalent to calling <a class="el" href="nvme_8h.html#acad42017dc59ad363a9223a2723a416f" title="Get the identify controller data as defined by the NVMe specification. ">nvme_ctrlr_get_data()</a> to get the nvme_controller_data and then reading the nn field. </p>
+<p>This is equivalent to calling <a class="el" href="nvme_8h.html#acad42017dc59ad363a9223a2723a416f" title="Get the identify controller data as defined by the NVMe specification. ">nvme_ctrlr_get_data()</a> to get the <a class="el" href="structnvme__controller__data.html">nvme_controller_data</a> and then reading the nn field. </p>
 
 </div>
 </div>
-<a class="anchor" id="a57700ebbae0b8d95744634f7d2c8f358"></a>
+<a class="anchor" id="af5435d8c4d8dea3cfe08635a14938d3e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void nvme_ctrlr_process_admin_completions </td>
+          <td class="memname">bool nvme_ctrlr_is_feature_supported </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>feature_code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine if a particular feature is supported by the given NVMe controller. </p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a8d503aca2d46e5716f43a1e568fe6386" title="Get specific feature from given NVMe controller. ">nvme_ctrlr_cmd_get_feature()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a820ecf0dafc568286a375bc94803d07a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool nvme_ctrlr_is_log_page_supported </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>log_page</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine if a particular log page is supported by the given NVMe controller. </p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#ad24a4db2deb18586da7a78fc0bda75a8" title="Get a specific log page from the NVMe controller. ">nvme_ctrlr_cmd_get_log_page()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a961c74513db555e0bdc6a69a53005500"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t nvme_ctrlr_process_admin_completions </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em></td><td>)</td>
@@ -200,16 +266,17 @@ Functions</h2></td></tr>
 <p>Process any outstanding completions for admin commands. </p>
 <p>This will process completions for admin commands submitted on any thread.</p>
 <p>This call is non-blocking, i.e. it only processes completions that are ready at the time of this function call. It does not wait for outstanding commands to finish.</p>
+<dl class="section return"><dt>Returns</dt><dd>Number of completions processed (may be 0) or negative on error.</dd></dl>
 <p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
 
 </div>
 </div>
-<a class="anchor" id="aca9d8365c566c18a9579d42e33c90d5e"></a>
+<a class="anchor" id="a4d4260b4b642f14f6fb62ba487b06b86"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void nvme_ctrlr_process_io_completions </td>
+          <td class="memname">int32_t nvme_ctrlr_process_io_completions </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em>, </td>
@@ -236,6 +303,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of completions processed (may be 0) or negative on error.</dd></dl>
 <p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
 
 </div>

@@ -100,17 +100,60 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abd049757f6f28ffe016e15c71994209f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__qpair_8c.html#abd049757f6f28ffe016e15c71994209f">nvme_qpair_process_completions</a> (struct <a class="el" href="structnvme__qpair.html">nvme_qpair</a> *qpair, uint32_t max_completions)</td></tr>
-<tr class="memdesc:abd049757f6f28ffe016e15c71994209f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for and processes completions on the specified qpair.  <a href="#abd049757f6f28ffe016e15c71994209f">More...</a><br /></td></tr>
-<tr class="separator:abd049757f6f28ffe016e15c71994209f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30565ccd924fed6dcf514c6e96294104"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__qpair_8c.html#a30565ccd924fed6dcf514c6e96294104">nvme_qpair_process_completions</a> (struct <a class="el" href="structnvme__qpair.html">nvme_qpair</a> *qpair, uint32_t max_completions)</td></tr>
+<tr class="memdesc:a30565ccd924fed6dcf514c6e96294104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for and processes completions on the specified qpair.  <a href="#a30565ccd924fed6dcf514c6e96294104">More...</a><br /></td></tr>
+<tr class="separator:a30565ccd924fed6dcf514c6e96294104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b5fab568fe1a4b02364b8d8b650b54"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__qpair_8c.html#a13b5fab568fe1a4b02364b8d8b650b54">_nvme_qpair_build_contig_request</a> (struct <a class="el" href="structnvme__qpair.html">nvme_qpair</a> *qpair, struct <a class="el" href="structnvme__request.html">nvme_request</a> *req, struct <a class="el" href="structnvme__tracker.html">nvme_tracker</a> *tr)</td></tr>
+<tr class="separator:a13b5fab568fe1a4b02364b8d8b650b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="abd049757f6f28ffe016e15c71994209f"></a>
+<a class="anchor" id="a13b5fab568fe1a4b02364b8d8b650b54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int _nvme_qpair_build_contig_request </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structnvme__qpair.html">nvme_qpair</a> *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structnvme__request.html">nvme_request</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structnvme__tracker.html">nvme_tracker</a> *&#160;</td>
+          <td class="paramname"><em>tr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Build PRP list describing physically contiguous payload buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a30565ccd924fed6dcf514c6e96294104"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void nvme_qpair_process_completions </td>
+          <td class="memname">int32_t nvme_qpair_process_completions </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structnvme__qpair.html">nvme_qpair</a> *&#160;</td>
           <td class="paramname"><em>qpair</em>, </td>
