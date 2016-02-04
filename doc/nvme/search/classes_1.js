@@ -21,6 +21,7 @@ var searchData=
   ['nvme_5fintel_5fled_5fpattern_5ffeature',['nvme_intel_led_pattern_feature',['../unionnvme__intel__led__pattern__feature.html',1,'']]],
   ['nvme_5fintel_5flog_5fpage_5fdirectory',['nvme_intel_log_page_directory',['../structnvme__intel__log__page__directory.html',1,'']]],
   ['nvme_5fintel_5fpower_5fgovernor_5ffeature',['nvme_intel_power_governor_feature',['../unionnvme__intel__power__governor__feature.html',1,'']]],
+  ['nvme_5fintel_5fquirk',['nvme_intel_quirk',['../structnvme__intel__quirk.html',1,'']]],
   ['nvme_5fintel_5freset_5ftimed_5fworkload_5fcounters_5ffeature',['nvme_intel_reset_timed_workload_counters_feature',['../unionnvme__intel__reset__timed__workload__counters__feature.html',1,'']]],
   ['nvme_5fintel_5frw_5flatency_5fpage',['nvme_intel_rw_latency_page',['../structnvme__intel__rw__latency__page.html',1,'']]],
   ['nvme_5fintel_5fsmart_5fattribute',['nvme_intel_smart_attribute',['../structnvme__intel__smart__attribute.html',1,'']]],

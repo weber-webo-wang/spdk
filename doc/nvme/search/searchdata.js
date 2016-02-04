@@ -1,13 +1,13 @@
 var indexSectionsWithContent =
 {
   0: "_acdefghiklmnoprstuvw",
-  1: "in",
+  1: "inp",
   2: "in",
   3: "_int",
   4: "acdefghiklmnoprstuvw",
   5: "in",
-  6: "n",
-  7: "n",
+  6: "in",
+  7: "in",
   8: "n",
   9: "ns"
 };

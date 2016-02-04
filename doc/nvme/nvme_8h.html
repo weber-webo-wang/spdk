@@ -109,7 +109,8 @@ Typedefs</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:a7336689bd0528124f28ef59337010216"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7336689bd0528124f28ef59337010216">nvme_namespace_flags</a> { <a class="el" href="nvme_8h.html#a7336689bd0528124f28ef59337010216aca1d3c746d3a46a63b98b2cabb1426cf">NVME_NS_DEALLOCATE_SUPPORTED</a> = 0x1, 
 <a class="el" href="nvme_8h.html#a7336689bd0528124f28ef59337010216a506288d08c2e2fae3a1d2520d7613ee5">NVME_NS_FLUSH_SUPPORTED</a> = 0x2, 
-<a class="el" href="nvme_8h.html#a7336689bd0528124f28ef59337010216ab22470e0275cae8c9f4e3885cf62bb71">NVME_NS_RESERVATION_SUPPORTED</a> = 0x4
+<a class="el" href="nvme_8h.html#a7336689bd0528124f28ef59337010216ab22470e0275cae8c9f4e3885cf62bb71">NVME_NS_RESERVATION_SUPPORTED</a> = 0x4, 
+<a class="el" href="nvme_8h.html#a7336689bd0528124f28ef59337010216a2c30082ab57d40d10cf5c0ed152ab619">NVME_NS_WRITE_ZEROES_SUPPORTED</a> = 0x8
  }<tr class="memdesc:a7336689bd0528124f28ef59337010216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace command support flags.  <a href="nvme_8h.html#a7336689bd0528124f28ef59337010216">More...</a><br /></td></tr>
 <tr class="separator:a7336689bd0528124f28ef59337010216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -188,6 +189,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad6402abc46cc62e0aab24d744814caf7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad6402abc46cc62e0aab24d744814caf7">nvme_ns_cmd_writev</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#ae3cee80409f98155b0149a018232dc9b">nvme_req_reset_sgl_fn_t</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#ae2c2fe6d0b8190b49cf8535ec70eb307">nvme_req_next_sge_fn_t</a> next_sge_fn)</td></tr>
 <tr class="memdesc:ad6402abc46cc62e0aab24d744814caf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a write I/O to the specified NVMe namespace.  <a href="#ad6402abc46cc62e0aab24d744814caf7">More...</a><br /></td></tr>
 <tr class="separator:ad6402abc46cc62e0aab24d744814caf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110633a811d01219a116ff5c97c4f9a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a110633a811d01219a116ff5c97c4f9a1">nvme_ns_cmd_write_zeroes</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
+<tr class="memdesc:a110633a811d01219a116ff5c97c4f9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a write zeroes I/O to the specified NVMe namespace.  <a href="#a110633a811d01219a116ff5c97c4f9a1">More...</a><br /></td></tr>
+<tr class="separator:a110633a811d01219a116ff5c97c4f9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d7a4bf12eab6a0104ec1a21203b5a49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5d7a4bf12eab6a0104ec1a21203b5a49">nvme_ns_cmd_read</a> (struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *ns, void *payload, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:a5d7a4bf12eab6a0104ec1a21203b5a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="#a5d7a4bf12eab6a0104ec1a21203b5a49">More...</a><br /></td></tr>
 <tr class="separator:a5d7a4bf12eab6a0104ec1a21203b5a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,6 +298,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7336689bd0528124f28ef59337010216ab22470e0275cae8c9f4e3885cf62bb71"></a>NVME_NS_RESERVATION_SUPPORTED&#160;</td><td class="fielddoc">
 <p>The reservation command is supported </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7336689bd0528124f28ef59337010216a2c30082ab57d40d10cf5c0ed152ab619"></a>NVME_NS_WRITE_ZEROES_SUPPORTED&#160;</td><td class="fielddoc">
+<p>The write zeroes command is supported </p>
 </td></tr>
 </table>
 
@@ -1474,6 +1481,71 @@ Functions</h2></td></tr>
     <tr><td class="paramname">payload</td><td>virtual address pointer to the data payload </td></tr>
     <tr><td class="paramname">lba</td><td>starting LBA to write the data </td></tr>
     <tr><td class="paramname">lba_count</td><td>length (in sectors) for the write operation </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined by the NVME_IO_FLAGS_* entries in <a class="el" href="nvme__spec_8h.html">spdk/nvme_spec.h</a>, for this I/O.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an <a class="el" href="structnvme__request.html">nvme_request</a> structure cannot be allocated for the I/O request</dd></dl>
+<p>This function is thread safe and can be called at any point after nvme_register_io_thread(). </p>
+
+</div>
+</div>
+<a class="anchor" id="a110633a811d01219a116ff5c97c4f9a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvme_ns_cmd_write_zeroes </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a write zeroes I/O to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the write zeroes I/O </td></tr>
+    <tr><td class="paramname">lba</td><td>starting LBA for this command </td></tr>
+    <tr><td class="paramname">lba_count</td><td>length (in sectors) for the write zero operation </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
     <tr><td class="paramname">io_flags</td><td>set flags, defined by the NVME_IO_FLAGS_* entries in <a class="el" href="nvme__spec_8h.html">spdk/nvme_spec.h</a>, for this I/O.</td></tr>

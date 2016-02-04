@@ -4,6 +4,7 @@ var searchData=
   ['parent_5fstatus',['parent_status',['../structnvme__request.html#a22d23b600d865004bd2d60a053e3f1f2',1,'nvme_request']]],
   ['payload',['payload',['../structnvme__request.html#abf74f9813416b0c3c95bfbce85c141c8',1,'nvme_request']]],
   ['payload_5foffset',['payload_offset',['../structnvme__request.html#a2101c54bfd951cfaaca2592db61e3f41',1,'nvme_request']]],
+  ['pci_5fid',['pci_id',['../structpci__id.html',1,'']]],
   ['persist',['persist',['../structnvme__namespace__data.html#a42d13081a041324ec40159a2f42d7fb2',1,'nvme_namespace_data']]],
   ['pit',['pit',['../structnvme__namespace__data.html#ae79bfef7afd6a7c106da91f3485bb49b',1,'nvme_namespace_data']]],
   ['pit1',['pit1',['../structnvme__namespace__data.html#ae7e61bf8b3005db983fa1b31404e6169',1,'nvme_namespace_data']]],
