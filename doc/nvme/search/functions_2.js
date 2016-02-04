@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['nvme_5fattach',['nvme_attach',['../nvme_8c.html#a3f714b19bdf5c837d12afe4d365c5015',1,'nvme_attach(void *devhandle):&#160;nvme.c'],['../nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015',1,'nvme_attach(void *devhandle):&#160;nvme.c']]],
   ['nvme_5fctrlr_5fcmd_5fadmin_5fraw',['nvme_ctrlr_cmd_admin_raw',['../nvme_8h.html#a891f3978b0fb8ca326354fcf064506c1',1,'nvme_ctrlr_cmd.c']]],
   ['nvme_5fctrlr_5fcmd_5fget_5ffeature',['nvme_ctrlr_cmd_get_feature',['../nvme_8h.html#a8d503aca2d46e5716f43a1e568fe6386',1,'nvme_ctrlr_cmd.c']]],
   ['nvme_5fctrlr_5fcmd_5fget_5flog_5fpage',['nvme_ctrlr_cmd_get_log_page',['../nvme_8h.html#ad24a4db2deb18586da7a78fc0bda75a8',1,'nvme_ctrlr_cmd.c']]],
@@ -34,6 +33,7 @@ var searchData=
   ['nvme_5fns_5fget_5fnum_5fsectors',['nvme_ns_get_num_sectors',['../nvme_8h.html#a92e80bcb1828571728b6e68696f9ef48',1,'nvme_ns.c']]],
   ['nvme_5fns_5fget_5fsector_5fsize',['nvme_ns_get_sector_size',['../nvme_8h.html#aad02939eb52c0875af47077d84801022',1,'nvme_ns.c']]],
   ['nvme_5fns_5fget_5fsize',['nvme_ns_get_size',['../nvme_8h.html#ab17b0c9a87fb0f7254875bb8e7c5ae63',1,'nvme_ns.c']]],
+  ['nvme_5fprobe',['nvme_probe',['../nvme_8c.html#a95fbaedb524deefed73f9fbbb72880a5',1,'nvme_probe(void *cb_ctx, nvme_probe_cb probe_cb, nvme_attach_cb attach_cb):&#160;nvme.c'],['../nvme_8h.html#a95fbaedb524deefed73f9fbbb72880a5',1,'nvme_probe(void *cb_ctx, nvme_probe_cb probe_cb, nvme_attach_cb attach_cb):&#160;nvme.c']]],
   ['nvme_5fqpair_5fprocess_5fcompletions',['nvme_qpair_process_completions',['../nvme__qpair_8c.html#a30565ccd924fed6dcf514c6e96294104',1,'nvme_qpair.c']]],
   ['nvme_5frequest_5fsize',['nvme_request_size',['../nvme_8c.html#addaed5ffa0655110def0835899ca81a1',1,'nvme_request_size(void):&#160;nvme.c'],['../nvme_8h.html#addaed5ffa0655110def0835899ca81a1',1,'nvme_request_size(void):&#160;nvme.c']]]
 ];

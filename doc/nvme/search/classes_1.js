@@ -14,6 +14,7 @@ var searchData=
   ['nvme_5fcsts_5fregister',['nvme_csts_register',['../unionnvme__csts__register.html',1,'']]],
   ['nvme_5fdriver',['nvme_driver',['../structnvme__driver.html',1,'']]],
   ['nvme_5fdsm_5frange',['nvme_dsm_range',['../structnvme__dsm__range.html',1,'']]],
+  ['nvme_5fenum_5fctx',['nvme_enum_ctx',['../structnvme__enum__ctx.html',1,'']]],
   ['nvme_5ferror_5finformation_5fentry',['nvme_error_information_entry',['../structnvme__error__information__entry.html',1,'']]],
   ['nvme_5ffirmware_5fpage',['nvme_firmware_page',['../structnvme__firmware__page.html',1,'']]],
   ['nvme_5fhealth_5finformation_5fpage',['nvme_health_information_page',['../structnvme__health__information__page.html',1,'']]],

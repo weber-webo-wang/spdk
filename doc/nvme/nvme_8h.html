@@ -96,6 +96,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a31aa6bed9fa9f72b127814e82df4bc4d"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a31aa6bed9fa9f72b127814e82df4bc4d">nvme_probe_cb</a>) (void *cb_ctx, void *pci_dev)</td></tr>
+<tr class="separator:a31aa6bed9fa9f72b127814e82df4bc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d41b7e29d01d124da208457b31dd9b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a24d41b7e29d01d124da208457b31dd9b">nvme_attach_cb</a>) (void *cb_ctx, void *pci_dev, struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
+<tr class="separator:a24d41b7e29d01d124da208457b31dd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a366d9c540a80d70e43c41ecfa28e6795"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a>) (void *, const struct <a class="el" href="structnvme__completion.html">nvme_completion</a> *)</td></tr>
 <tr class="separator:a366d9c540a80d70e43c41ecfa28e6795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a372f243fd063dbf5b6ece0d3c7dfda8c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a372f243fd063dbf5b6ece0d3c7dfda8c">nvme_aer_cb_fn_t</a>) (void *aer_cb_arg, const struct <a class="el" href="structnvme__completion.html">nvme_completion</a> *)</td></tr>
@@ -117,11 +121,11 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3f714b19bdf5c837d12afe4d365c5015"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015">nvme_attach</a> (void *devhandle)</td></tr>
-<tr class="memdesc:a3f714b19bdf5c837d12afe4d365c5015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches specified device to the NVMe driver.  <a href="#a3f714b19bdf5c837d12afe4d365c5015">More...</a><br /></td></tr>
-<tr class="separator:a3f714b19bdf5c837d12afe4d365c5015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95fbaedb524deefed73f9fbbb72880a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a95fbaedb524deefed73f9fbbb72880a5">nvme_probe</a> (void *cb_ctx, <a class="el" href="nvme_8h.html#a31aa6bed9fa9f72b127814e82df4bc4d">nvme_probe_cb</a> probe_cb, <a class="el" href="nvme_8h.html#a24d41b7e29d01d124da208457b31dd9b">nvme_attach_cb</a> attach_cb)</td></tr>
+<tr class="memdesc:a95fbaedb524deefed73f9fbbb72880a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the NVMe devices attached to the system and attach the userspace NVMe driver to them if desired.  <a href="#a95fbaedb524deefed73f9fbbb72880a5">More...</a><br /></td></tr>
+<tr class="separator:a95fbaedb524deefed73f9fbbb72880a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e60c4fe9fb61c311faf4d402511c9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a52e60c4fe9fb61c311faf4d402511c9c">nvme_detach</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
-<tr class="memdesc:a52e60c4fe9fb61c311faf4d402511c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches specified device returned by <a class="el" href="nvme_8c.html#a3f714b19bdf5c837d12afe4d365c5015">nvme_attach()</a> from the NVMe driver.  <a href="#a52e60c4fe9fb61c311faf4d402511c9c">More...</a><br /></td></tr>
+<tr class="memdesc:a52e60c4fe9fb61c311faf4d402511c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches specified device returned by <a class="el" href="nvme_8c.html#a95fbaedb524deefed73f9fbbb72880a5">nvme_probe()</a>'s attach_cb from the NVMe driver.  <a href="#a52e60c4fe9fb61c311faf4d402511c9c">More...</a><br /></td></tr>
 <tr class="separator:a52e60c4fe9fb61c311faf4d402511c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a309c138b59516f6037e6e4c8a743edac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a309c138b59516f6037e6e4c8a743edac">nvme_ctrlr_reset</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
 <tr class="memdesc:a309c138b59516f6037e6e4c8a743edac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a full hardware reset of the NVMe controller.  <a href="#a309c138b59516f6037e6e4c8a743edac">More...</a><br /></td></tr>
@@ -235,6 +239,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a24d41b7e29d01d124da208457b31dd9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* nvme_attach_cb) (void *cb_ctx, void *pci_dev, struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Callback for <a class="el" href="nvme_8h.html#a95fbaedb524deefed73f9fbbb72880a5" title="Enumerate the NVMe devices attached to the system and attach the userspace NVMe driver to them if des...">nvme_probe()</a> to report a device that has been attached to the userspace NVMe driver. </p>
+
+</div>
+</div>
 <a class="anchor" id="a366d9c540a80d70e43c41ecfa28e6795"></a>
 <div class="memitem">
 <div class="memproto">
@@ -246,6 +263,20 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Signature for callback function invoked when a command is completed.</p>
 <p>The <a class="el" href="structnvme__completion.html">nvme_completion</a> parameter contains the completion status. </p>
+
+</div>
+</div>
+<a class="anchor" id="a31aa6bed9fa9f72b127814e82df4bc4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* nvme_probe_cb) (void *cb_ctx, void *pci_dev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Callback for <a class="el" href="nvme_8h.html#a95fbaedb524deefed73f9fbbb72880a5" title="Enumerate the NVMe devices attached to the system and attach the userspace NVMe driver to them if des...">nvme_probe()</a> enumeration.</p>
+<dl class="section return"><dt>Returns</dt><dd>true to attach to this device. </dd></dl>
 
 </div>
 </div>
@@ -307,27 +338,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a3f714b19bdf5c837d12afe4d365c5015"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structnvme__controller.html">nvme_controller</a>* nvme_attach </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>devhandle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Attaches specified device to the NVMe driver. </p>
-<p>On success, the <a class="el" href="structnvme__controller.html">nvme_controller</a> handle is valid for other nvme_ctrlr_* functions. On failure, the return value will be NULL.</p>
-<p>This function should be called from a single thread while no other threads or drivers are actively using the NVMe device.</p>
-<p>To stop using the the controller and release its associated resources, call <a class="el" href="nvme_8h.html#a52e60c4fe9fb61c311faf4d402511c9c">nvme_detach</a> with the <a class="el" href="structnvme__controller.html">nvme_controller</a> instance returned by this function. </p>
-
-</div>
-</div>
 <a class="anchor" id="a891f3978b0fb8ca326354fcf064506c1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -379,7 +389,7 @@ Functions</h2></td></tr>
 <p>Send the given admin command to the NVMe controller. </p>
 <p>This is a low level interface for submitting admin commands directly. Prefer the nvme_ctrlr_cmd_* functions instead. The validity of the command will not be checked!</p>
 <p>When constructing the <a class="el" href="structnvme__command.html">nvme_command</a> it is not necessary to fill out the PRP list/SGL or the CID. The driver will handle both of those for you.</p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8c.html#a3f714b19bdf5c837d12afe4d365c5015">nvme_attach()</a>.</p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <p>Call <a class="el" href="nvme__ctrlr_8c.html#a961c74513db555e0bdc6a69a53005500">nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function. </p>
 
 </div>
@@ -451,7 +461,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>.</p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <p>Call <a class="el" href="nvme__ctrlr_8c.html#a961c74513db555e0bdc6a69a53005500">nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a8d503aca2d46e5716f43a1e568fe6386" title="Get specific feature from given NVMe controller. ">nvme_ctrlr_cmd_get_feature()</a> </dd></dl>
 
@@ -524,7 +534,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>.</p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <p>Call <a class="el" href="nvme__ctrlr_8c.html#a961c74513db555e0bdc6a69a53005500">nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a820ecf0dafc568286a375bc94803d07a" title="Determine if a particular log page is supported by the given NVMe controller. ">nvme_ctrlr_is_log_page_supported()</a> </dd></dl>
 
@@ -659,7 +669,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>.</p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <p>Call <a class="el" href="nvme__ctrlr_8c.html#a961c74513db555e0bdc6a69a53005500">nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#ad88175be84005ad5999745601287c516" title="Set specific feature for the given NVMe controller. ">nvme_ctrlr_cmd_set_feature()</a> </dd></dl>
 
@@ -680,7 +690,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the identify controller data as defined by the NVMe specification. </p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
@@ -710,7 +720,7 @@ Functions</h2></td></tr>
 
 <p>Get a handle to a namespace for the given controller. </p>
 <p>Namespaces are numbered from 1 to the total number of namespaces. There will never be any gaps in the numbering. The number of namespaces is obtained by calling <a class="el" href="nvme_8h.html#a172b32383099b2c0138246bb45f550b7" title="Get the number of namespaces for the given NVMe controller. ">nvme_ctrlr_get_num_ns()</a>.</p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
@@ -729,7 +739,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the number of namespaces for the given NVMe controller. </p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>.</p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <p>This is equivalent to calling <a class="el" href="nvme_8h.html#acad42017dc59ad363a9223a2723a416f" title="Get the identify controller data as defined by the NVMe specification. ">nvme_ctrlr_get_data()</a> to get the <a class="el" href="structnvme__controller__data.html">nvme_controller_data</a> and then reading the nn field. </p>
 
 </div>
@@ -759,7 +769,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Determine if a particular feature is supported by the given NVMe controller. </p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>.</p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a8d503aca2d46e5716f43a1e568fe6386" title="Get specific feature from given NVMe controller. ">nvme_ctrlr_cmd_get_feature()</a> </dd></dl>
 
 </div>
@@ -789,7 +799,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Determine if a particular log page is supported by the given NVMe controller. </p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>.</p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#ad24a4db2deb18586da7a78fc0bda75a8" title="Get a specific log page from the NVMe controller. ">nvme_ctrlr_cmd_get_log_page()</a> </dd></dl>
 
 </div>
@@ -812,7 +822,7 @@ Functions</h2></td></tr>
 <p>This will process completions for admin commands submitted on any thread.</p>
 <p>This call is non-blocking, i.e. it only processes completions that are ready at the time of this function call. It does not wait for outstanding commands to finish.</p>
 <dl class="section return"><dt>Returns</dt><dd>Number of completions processed (may be 0) or negative on error.</dd></dl>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
@@ -849,7 +859,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of completions processed (may be 0) or negative on error.</dd></dl>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
@@ -887,7 +897,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Detaches specified device returned by <a class="el" href="nvme_8c.html#a3f714b19bdf5c837d12afe4d365c5015">nvme_attach()</a> from the NVMe driver. </p>
+<p>Detaches specified device returned by <a class="el" href="nvme_8c.html#a95fbaedb524deefed73f9fbbb72880a5">nvme_probe()</a>'s attach_cb from the NVMe driver. </p>
 <p>On success, the <a class="el" href="structnvme__controller.html">nvme_controller</a> handle is no longer valid.</p>
 <p>This function should be called from a single thread while no other threads are actively using the NVMe device. </p>
 
@@ -1651,7 +1661,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the identify namespace data as defined by the NVMe specification. </p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
@@ -1671,7 +1681,7 @@ Functions</h2></td></tr>
 
 <p>Get the flags for the given namespace. </p>
 <p>See nvme_namespace_flags for the possible flags returned.</p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
@@ -1690,7 +1700,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the namespace id (index number) from the given namespace handle. </p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
@@ -1709,7 +1719,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the maximum transfer size, in bytes, for an I/O sent to the given namespace. </p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
@@ -1728,7 +1738,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the number of sectors for the given namespace. </p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
@@ -1747,7 +1757,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the sector size, in bytes, of the given namespace. </p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
@@ -1766,7 +1776,50 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the size, in bytes, of the given namespace. </p>
-<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a3f714b19bdf5c837d12afe4d365c5015" title="Attaches specified device to the NVMe driver. ">nvme_attach()</a>. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
+<a class="anchor" id="a95fbaedb524deefed73f9fbbb72880a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvme_probe </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a31aa6bed9fa9f72b127814e82df4bc4d">nvme_probe_cb</a>&#160;</td>
+          <td class="paramname"><em>probe_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a24d41b7e29d01d124da208457b31dd9b">nvme_attach_cb</a>&#160;</td>
+          <td class="paramname"><em>attach_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumerate the NVMe devices attached to the system and attach the userspace NVMe driver to them if desired. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">probe_cb</td><td>will be called once per NVMe device found in the system. </td></tr>
+    <tr><td class="paramname">attach_cb</td><td>will be called for devices for which probe_cb returned true once that NVMe controller has been attached to the userspace driver.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If called more than once, only devices that are not already attached to the SPDK NVMe driver will be reported.</p>
+<p>To stop using the the controller and release its associated resources, call <a class="el" href="nvme_8h.html#a52e60c4fe9fb61c311faf4d402511c9c">nvme_detach</a> with the <a class="el" href="structnvme__controller.html">nvme_controller</a> instance returned by this function. </p>
 
 </div>
 </div>
