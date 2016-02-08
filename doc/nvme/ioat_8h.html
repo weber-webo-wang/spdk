@@ -98,6 +98,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Typedefs</h2></td></tr>
 <tr class="memitem:aa5511fed8fbf4ff1a84dedb19bb49355"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#aa5511fed8fbf4ff1a84dedb19bb49355">ioat_callback_t</a>) (void *arg)</td></tr>
 <tr class="separator:aa5511fed8fbf4ff1a84dedb19bb49355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da7fb756edb75141cccebb7f5a14f09"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a7da7fb756edb75141cccebb7f5a14f09">ioat_probe_cb</a>) (void *cb_ctx, struct spdk_pci_device *pci_dev)</td></tr>
+<tr class="separator:a7da7fb756edb75141cccebb7f5a14f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c4f97a526602699b173d9005154671"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a90c4f97a526602699b173d9005154671">ioat_attach_cb</a>) (void *cb_ctx, struct spdk_pci_device *pci_dev, struct ioat_channel *ioat)</td></tr>
+<tr class="separator:a90c4f97a526602699b173d9005154671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -108,10 +112,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a53284d2895d6d3d5b8414285b83fd1e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a53284d2895d6d3d5b8414285b83fd1e2">ioat_pci_device_match_id</a> (uint16_t vendor_id, uint16_t device_id)</td></tr>
-<tr class="separator:a53284d2895d6d3d5b8414285b83fd1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37076ad31ecaff19590d3b0827bf8362"><td class="memItemLeft" align="right" valign="top">struct ioat_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a37076ad31ecaff19590d3b0827bf8362">ioat_attach</a> (void *device)</td></tr>
-<tr class="separator:a37076ad31ecaff19590d3b0827bf8362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32017728f1294df3d553e61216d831c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a32017728f1294df3d553e61216d831c4">ioat_probe</a> (void *cb_ctx, <a class="el" href="ioat_8h.html#a7da7fb756edb75141cccebb7f5a14f09">ioat_probe_cb</a> probe_cb, <a class="el" href="ioat_8h.html#a90c4f97a526602699b173d9005154671">ioat_attach_cb</a> attach_cb)</td></tr>
+<tr class="memdesc:a32017728f1294df3d553e61216d831c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if desired.  <a href="#a32017728f1294df3d553e61216d831c4">More...</a><br /></td></tr>
+<tr class="separator:a32017728f1294df3d553e61216d831c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a647a7646ba6e69fc8fac80feec023412"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a647a7646ba6e69fc8fac80feec023412">ioat_detach</a> (struct ioat_channel *ioat)</td></tr>
 <tr class="separator:a647a7646ba6e69fc8fac80feec023412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbaccd8b452e139b3e57bbf71e4d039e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#afbaccd8b452e139b3e57bbf71e4d039e">ioat_register_thread</a> (void)</td></tr>
@@ -130,6 +133,19 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file defines the public interface to the I/OAT DMA engine driver. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a90c4f97a526602699b173d9005154671"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ioat_attach_cb) (void *cb_ctx, struct spdk_pci_device *pci_dev, struct ioat_channel *ioat)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Callback for <a class="el" href="ioat_8h.html#a32017728f1294df3d553e61216d831c4" title="Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if d...">ioat_probe()</a> to report a device that has been attached to the userspace I/OAT driver. </p>
+
+</div>
+</div>
 <a class="anchor" id="aa5511fed8fbf4ff1a84dedb19bb49355"></a>
 <div class="memitem">
 <div class="memproto">
@@ -140,6 +156,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Signature for callback function invoked when a request is completed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7da7fb756edb75141cccebb7f5a14f09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* ioat_probe_cb) (void *cb_ctx, struct spdk_pci_device *pci_dev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Callback for <a class="el" href="ioat_8h.html#a32017728f1294df3d553e61216d831c4" title="Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if d...">ioat_probe()</a> enumeration.</p>
+<dl class="section return"><dt>Returns</dt><dd>true to attach to this device. </dd></dl>
 
 </div>
 </div>
@@ -166,24 +196,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a37076ad31ecaff19590d3b0827bf8362"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct ioat_channel* ioat_attach </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Attach an I/OAT PCI device to the I/OAT userspace driver.</p>
-<p>To stop using the the device and release its associated resources, call <a class="el" href="ioat_8h.html#a647a7646ba6e69fc8fac80feec023412">ioat_detach</a> with the ioat_channel instance returned by this function. </p>
-
-</div>
-</div>
 <a class="anchor" id="a647a7646ba6e69fc8fac80feec023412"></a>
 <div class="memitem">
 <div class="memproto">
@@ -197,7 +209,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Detaches specified device returned by <a class="el" href="ioat_8h.html#a37076ad31ecaff19590d3b0827bf8362">ioat_attach()</a> from the I/OAT driver. </p>
+<p>Detaches specified device returned by <a class="el" href="ioat_8h.html#a32017728f1294df3d553e61216d831c4">ioat_probe()</a> from the I/OAT driver. </p>
 
 </div>
 </div>
@@ -219,21 +231,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a53284d2895d6d3d5b8414285b83fd1e2"></a>
+<a class="anchor" id="a32017728f1294df3d553e61216d831c4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool ioat_pci_device_match_id </td>
+          <td class="memname">int ioat_probe </td>
           <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>vendor_id</em>, </td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_ctx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>device_id</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="ioat_8h.html#a7da7fb756edb75141cccebb7f5a14f09">ioat_probe_cb</a>&#160;</td>
+          <td class="paramname"><em>probe_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ioat_8h.html#a90c4f97a526602699b173d9005154671">ioat_attach_cb</a>&#160;</td>
+          <td class="paramname"><em>attach_cb</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -242,7 +260,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if vendor_id and device_id match a known IOAT PCI device ID. </p>
+
+<p>Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if desired. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">probe_cb</td><td>will be called once per I/OAT device found in the system. </td></tr>
+    <tr><td class="paramname">attach_cb</td><td>will be called for devices for which probe_cb returned true once the I/OAT controller has been attached to the userspace driver.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If called more than once, only devices that are not already attached to the SPDK I/OAT driver will be reported.</p>
+<p>To stop using the the controller and release its associated resources, call <a class="el" href="ioat_8h.html#a647a7646ba6e69fc8fac80feec023412">ioat_detach</a> with the ioat_channel instance returned by this function. </p>
 
 </div>
 </div>

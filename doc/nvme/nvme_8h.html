@@ -96,10 +96,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a31aa6bed9fa9f72b127814e82df4bc4d"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a31aa6bed9fa9f72b127814e82df4bc4d">nvme_probe_cb</a>) (void *cb_ctx, void *pci_dev)</td></tr>
-<tr class="separator:a31aa6bed9fa9f72b127814e82df4bc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24d41b7e29d01d124da208457b31dd9b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a24d41b7e29d01d124da208457b31dd9b">nvme_attach_cb</a>) (void *cb_ctx, void *pci_dev, struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
-<tr class="separator:a24d41b7e29d01d124da208457b31dd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4d5f362778c51ef7623f001143add8"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7c4d5f362778c51ef7623f001143add8">nvme_probe_cb</a>) (void *cb_ctx, struct spdk_pci_device *pci_dev)</td></tr>
+<tr class="separator:a7c4d5f362778c51ef7623f001143add8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e128d082c6ffd89bfce4d7e8120d0e6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a1e128d082c6ffd89bfce4d7e8120d0e6">nvme_attach_cb</a>) (void *cb_ctx, struct spdk_pci_device *pci_dev, struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
+<tr class="separator:a1e128d082c6ffd89bfce4d7e8120d0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a366d9c540a80d70e43c41ecfa28e6795"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a366d9c540a80d70e43c41ecfa28e6795">nvme_cb_fn_t</a>) (void *, const struct <a class="el" href="structnvme__completion.html">nvme_completion</a> *)</td></tr>
 <tr class="separator:a366d9c540a80d70e43c41ecfa28e6795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a372f243fd063dbf5b6ece0d3c7dfda8c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a372f243fd063dbf5b6ece0d3c7dfda8c">nvme_aer_cb_fn_t</a>) (void *aer_cb_arg, const struct <a class="el" href="structnvme__completion.html">nvme_completion</a> *)</td></tr>
@@ -121,7 +121,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a95fbaedb524deefed73f9fbbb72880a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a95fbaedb524deefed73f9fbbb72880a5">nvme_probe</a> (void *cb_ctx, <a class="el" href="nvme_8h.html#a31aa6bed9fa9f72b127814e82df4bc4d">nvme_probe_cb</a> probe_cb, <a class="el" href="nvme_8h.html#a24d41b7e29d01d124da208457b31dd9b">nvme_attach_cb</a> attach_cb)</td></tr>
+<tr class="memitem:a95fbaedb524deefed73f9fbbb72880a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a95fbaedb524deefed73f9fbbb72880a5">nvme_probe</a> (void *cb_ctx, <a class="el" href="nvme_8h.html#a7c4d5f362778c51ef7623f001143add8">nvme_probe_cb</a> probe_cb, <a class="el" href="nvme_8h.html#a1e128d082c6ffd89bfce4d7e8120d0e6">nvme_attach_cb</a> attach_cb)</td></tr>
 <tr class="memdesc:a95fbaedb524deefed73f9fbbb72880a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the NVMe devices attached to the system and attach the userspace NVMe driver to them if desired.  <a href="#a95fbaedb524deefed73f9fbbb72880a5">More...</a><br /></td></tr>
 <tr class="separator:a95fbaedb524deefed73f9fbbb72880a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e60c4fe9fb61c311faf4d402511c9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a52e60c4fe9fb61c311faf4d402511c9c">nvme_detach</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
@@ -239,12 +239,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a24d41b7e29d01d124da208457b31dd9b"></a>
+<a class="anchor" id="a1e128d082c6ffd89bfce4d7e8120d0e6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* nvme_attach_cb) (void *cb_ctx, void *pci_dev, struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td>
+          <td class="memname">typedef void(* nvme_attach_cb) (void *cb_ctx, struct spdk_pci_device *pci_dev, struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -266,12 +266,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a31aa6bed9fa9f72b127814e82df4bc4d"></a>
+<a class="anchor" id="a7c4d5f362778c51ef7623f001143add8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool(* nvme_probe_cb) (void *cb_ctx, void *pci_dev)</td>
+          <td class="memname">typedef bool(* nvme_probe_cb) (void *cb_ctx, struct spdk_pci_device *pci_dev)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1793,13 +1793,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#a31aa6bed9fa9f72b127814e82df4bc4d">nvme_probe_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a7c4d5f362778c51ef7623f001143add8">nvme_probe_cb</a>&#160;</td>
           <td class="paramname"><em>probe_cb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#a24d41b7e29d01d124da208457b31dd9b">nvme_attach_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1e128d082c6ffd89bfce4d7e8120d0e6">nvme_attach_cb</a>&#160;</td>
           <td class="paramname"><em>attach_cb</em>&#160;</td>
         </tr>
         <tr>

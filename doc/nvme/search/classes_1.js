@@ -32,6 +32,7 @@ var searchData=
   ['nvme_5fnamespace',['nvme_namespace',['../structnvme__namespace.html',1,'']]],
   ['nvme_5fnamespace_5fdata',['nvme_namespace_data',['../structnvme__namespace__data.html',1,'']]],
   ['nvme_5fpayload',['nvme_payload',['../structnvme__payload.html',1,'']]],
+  ['nvme_5fpci_5fenum_5fctx',['nvme_pci_enum_ctx',['../structnvme__pci__enum__ctx.html',1,'']]],
   ['nvme_5fpower_5fstate',['nvme_power_state',['../structnvme__power__state.html',1,'']]],
   ['nvme_5fqpair',['nvme_qpair',['../structnvme__qpair.html',1,'']]],
   ['nvme_5frequest',['nvme_request',['../structnvme__request.html',1,'']]],
