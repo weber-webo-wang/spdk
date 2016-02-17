@@ -1,8 +1,14 @@
 var searchData=
 [
-  ['thin_5fprov',['thin_prov',['../structspdk__nvme__ns__data.html#a66c12446fe238c223433a307b4a55856',1,'spdk_nvme_ns_data']]],
-  ['tnvmcap',['tnvmcap',['../structspdk__nvme__ctrlr__data.html#a98e9469a8c01c25805c423ef8366b2df',1,'spdk_nvme_ctrlr_data']]],
-  ['to',['to',['../unionspdk__nvme__cap__lo__register.html#a4242581c855291f84af88b90afe447b0',1,'spdk_nvme_cap_lo_register']]],
-  ['type',['type',['../structnvme__payload.html#a2e13b6794e3c8b4d5a980c3c96cd2b0d',1,'nvme_payload::type()'],['../structspdk__nvme__sgl__descriptor.html#a4c95708745878215a7349524ef5d561a',1,'spdk_nvme_sgl_descriptor::type()'],['../structspdk__nvme__reservation__status__data.html#a89ad9fbdf5bf52b37eeb6bcfbd0246b5',1,'spdk_nvme_reservation_status_data::type()']]],
-  ['type_5fspecific',['type_specific',['../structspdk__nvme__sgl__descriptor.html#a7f6a333680c78d645cbc0cce4a716efd',1,'spdk_nvme_sgl_descriptor']]]
+  ['sgl',['sgl',['../structnvme__payload.html#ae5f449d47027f980b57a47d88af1ae66',1,'nvme_payload']]],
+  ['sgls',['sgls',['../structspdk__nvme__ctrlr__data.html#a4e9f6af549ab08bc97baa483669c41f8',1,'spdk_nvme_ctrlr_data']]],
+  ['shn',['shn',['../unionspdk__nvme__cc__register.html#a897917db042a1c27dfcd9a1d29753602',1,'spdk_nvme_cc_register']]],
+  ['shst',['shst',['../unionspdk__nvme__csts__register.html#ac749de13f98d84bbe72c11176c1d6393',1,'spdk_nvme_csts_register']]],
+  ['sn',['sn',['../structspdk__nvme__ctrlr__data.html#a3e4af8d2827bf96c0dda567a9181f962',1,'spdk_nvme_ctrlr_data']]],
+  ['sqes',['sqes',['../structspdk__nvme__ctrlr__data.html#adb9987e2a03d07f53ac8ad3d69441548',1,'spdk_nvme_ctrlr_data']]],
+  ['sqs',['sqs',['../unionspdk__nvme__cmbsz__register.html#a3481600cf80fa69860ba5dbb445afc5f',1,'spdk_nvme_cmbsz_register']]],
+  ['ssvid',['ssvid',['../structspdk__nvme__ctrlr__data.html#a98bca935ffa3fbc83fd504055b8a228f',1,'spdk_nvme_ctrlr_data']]],
+  ['supported',['supported',['../structspdk__nvme__ctrlr__data.html#a67327a265027227d37f9b7e947c06cfc',1,'spdk_nvme_ctrlr_data']]],
+  ['sz',['sz',['../unionspdk__nvme__cmbsz__register.html#a03af53ff83c581ce0f02f72195f1c6f2',1,'spdk_nvme_cmbsz_register']]],
+  ['szu',['szu',['../unionspdk__nvme__cmbsz__register.html#a5259febaf27ced21d1358b97bd1cb831',1,'spdk_nvme_cmbsz_register']]]
 ];
