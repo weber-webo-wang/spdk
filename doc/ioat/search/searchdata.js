@@ -2,10 +2,10 @@ var indexSectionsWithContent =
 {
   0: "is",
   1: "i",
-  2: "i",
-  3: "i",
-  4: "i",
-  5: "i",
+  2: "s",
+  3: "s",
+  4: "s",
+  5: "s",
   6: "s"
 };
 

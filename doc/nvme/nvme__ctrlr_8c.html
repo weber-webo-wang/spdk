@@ -94,40 +94,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a309c138b59516f6037e6e4c8a743edac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a309c138b59516f6037e6e4c8a743edac">nvme_ctrlr_reset</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
-<tr class="memdesc:a309c138b59516f6037e6e4c8a743edac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a full hardware reset of the NVMe controller.  <a href="#a309c138b59516f6037e6e4c8a743edac">More...</a><br /></td></tr>
-<tr class="separator:a309c138b59516f6037e6e4c8a743edac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4260b4b642f14f6fb62ba487b06b86"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a4d4260b4b642f14f6fb62ba487b06b86">nvme_ctrlr_process_io_completions</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr, uint32_t max_completions)</td></tr>
-<tr class="memdesc:a4d4260b4b642f14f6fb62ba487b06b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for I/O submitted on the current thread.  <a href="#a4d4260b4b642f14f6fb62ba487b06b86">More...</a><br /></td></tr>
-<tr class="separator:a4d4260b4b642f14f6fb62ba487b06b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a961c74513db555e0bdc6a69a53005500"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a961c74513db555e0bdc6a69a53005500">nvme_ctrlr_process_admin_completions</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
-<tr class="memdesc:a961c74513db555e0bdc6a69a53005500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for admin commands.  <a href="#a961c74513db555e0bdc6a69a53005500">More...</a><br /></td></tr>
-<tr class="separator:a961c74513db555e0bdc6a69a53005500"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acad42017dc59ad363a9223a2723a416f"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structnvme__controller__data.html">nvme_controller_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#acad42017dc59ad363a9223a2723a416f">nvme_ctrlr_get_data</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
-<tr class="memdesc:acad42017dc59ad363a9223a2723a416f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify controller data as defined by the NVMe specification.  <a href="#acad42017dc59ad363a9223a2723a416f">More...</a><br /></td></tr>
-<tr class="separator:acad42017dc59ad363a9223a2723a416f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a172b32383099b2c0138246bb45f550b7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a172b32383099b2c0138246bb45f550b7">nvme_ctrlr_get_num_ns</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
-<tr class="memdesc:a172b32383099b2c0138246bb45f550b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of namespaces for the given NVMe controller.  <a href="#a172b32383099b2c0138246bb45f550b7">More...</a><br /></td></tr>
-<tr class="separator:a172b32383099b2c0138246bb45f550b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c232ba6e5094b94d217476fb39771e1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a2c232ba6e5094b94d217476fb39771e1">nvme_ctrlr_get_ns</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr, uint32_t ns_id)</td></tr>
-<tr class="memdesc:a2c232ba6e5094b94d217476fb39771e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a handle to a namespace for the given controller.  <a href="#a2c232ba6e5094b94d217476fb39771e1">More...</a><br /></td></tr>
-<tr class="separator:a2c232ba6e5094b94d217476fb39771e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a820ecf0dafc568286a375bc94803d07a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a820ecf0dafc568286a375bc94803d07a">nvme_ctrlr_is_log_page_supported</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr, uint8_t log_page)</td></tr>
-<tr class="memdesc:a820ecf0dafc568286a375bc94803d07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a particular log page is supported by the given NVMe controller.  <a href="#a820ecf0dafc568286a375bc94803d07a">More...</a><br /></td></tr>
-<tr class="separator:a820ecf0dafc568286a375bc94803d07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5435d8c4d8dea3cfe08635a14938d3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#af5435d8c4d8dea3cfe08635a14938d3e">nvme_ctrlr_is_feature_supported</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr, uint8_t feature_code)</td></tr>
-<tr class="memdesc:af5435d8c4d8dea3cfe08635a14938d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a particular feature is supported by the given NVMe controller.  <a href="#af5435d8c4d8dea3cfe08635a14938d3e">More...</a><br /></td></tr>
-<tr class="separator:af5435d8c4d8dea3cfe08635a14938d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13ccd2ea831842a5008eb95a32545c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#ae13ccd2ea831842a5008eb95a32545c3">spdk_nvme_ctrlr_reset</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr)</td></tr>
+<tr class="memdesc:ae13ccd2ea831842a5008eb95a32545c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a full hardware reset of the NVMe controller.  <a href="#ae13ccd2ea831842a5008eb95a32545c3">More...</a><br /></td></tr>
+<tr class="separator:ae13ccd2ea831842a5008eb95a32545c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec8bf313a3d5b92ad15f9d150de23b3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#adec8bf313a3d5b92ad15f9d150de23b3">spdk_nvme_ctrlr_process_io_completions</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint32_t max_completions)</td></tr>
+<tr class="memdesc:adec8bf313a3d5b92ad15f9d150de23b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for I/O submitted on the current thread.  <a href="#adec8bf313a3d5b92ad15f9d150de23b3">More...</a><br /></td></tr>
+<tr class="separator:adec8bf313a3d5b92ad15f9d150de23b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10282695461985f58f54de022911745e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr)</td></tr>
+<tr class="memdesc:a10282695461985f58f54de022911745e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for admin commands.  <a href="#a10282695461985f58f54de022911745e">More...</a><br /></td></tr>
+<tr class="separator:a10282695461985f58f54de022911745e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9daf15b5008ac36c12e7b8db7bdec9"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ctrlr__data.html">spdk_nvme_ctrlr_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a5a9daf15b5008ac36c12e7b8db7bdec9">spdk_nvme_ctrlr_get_data</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr)</td></tr>
+<tr class="memdesc:a5a9daf15b5008ac36c12e7b8db7bdec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify controller data as defined by the NVMe specification.  <a href="#a5a9daf15b5008ac36c12e7b8db7bdec9">More...</a><br /></td></tr>
+<tr class="separator:a5a9daf15b5008ac36c12e7b8db7bdec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b18deae44682a51177e8a4193af602"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a02b18deae44682a51177e8a4193af602">spdk_nvme_ctrlr_get_num_ns</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr)</td></tr>
+<tr class="memdesc:a02b18deae44682a51177e8a4193af602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of namespaces for the given NVMe controller.  <a href="#a02b18deae44682a51177e8a4193af602">More...</a><br /></td></tr>
+<tr class="separator:a02b18deae44682a51177e8a4193af602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f01fb8a5f404e41e6fa224a7942be08"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvme__ns.html">spdk_nvme_ns</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a6f01fb8a5f404e41e6fa224a7942be08">spdk_nvme_ctrlr_get_ns</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint32_t ns_id)</td></tr>
+<tr class="memdesc:a6f01fb8a5f404e41e6fa224a7942be08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a handle to a namespace for the given controller.  <a href="#a6f01fb8a5f404e41e6fa224a7942be08">More...</a><br /></td></tr>
+<tr class="separator:a6f01fb8a5f404e41e6fa224a7942be08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc6bb842e168a68972ec46cc35591ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a7dc6bb842e168a68972ec46cc35591ae">spdk_nvme_ctrlr_is_log_page_supported</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint8_t log_page)</td></tr>
+<tr class="memdesc:a7dc6bb842e168a68972ec46cc35591ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a particular log page is supported by the given NVMe controller.  <a href="#a7dc6bb842e168a68972ec46cc35591ae">More...</a><br /></td></tr>
+<tr class="separator:a7dc6bb842e168a68972ec46cc35591ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909b61e141b56eaa5895482aa1f18a3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a909b61e141b56eaa5895482aa1f18a3b">spdk_nvme_ctrlr_is_feature_supported</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint8_t feature_code)</td></tr>
+<tr class="memdesc:a909b61e141b56eaa5895482aa1f18a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a particular feature is supported by the given NVMe controller.  <a href="#a909b61e141b56eaa5895482aa1f18a3b">More...</a><br /></td></tr>
+<tr class="separator:a909b61e141b56eaa5895482aa1f18a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="acad42017dc59ad363a9223a2723a416f"></a>
+<a class="anchor" id="a5a9daf15b5008ac36c12e7b8db7bdec9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const struct <a class="el" href="structnvme__controller__data.html">nvme_controller_data</a>* nvme_ctrlr_get_data </td>
+          <td class="memname">const struct <a class="el" href="structspdk__nvme__ctrlr__data.html">spdk_nvme_ctrlr_data</a>* spdk_nvme_ctrlr_get_data </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -139,14 +139,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2c232ba6e5094b94d217476fb39771e1"></a>
+<a class="anchor" id="a6f01fb8a5f404e41e6fa224a7942be08"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structnvme__namespace.html">nvme_namespace</a>* nvme_ctrlr_get_ns </td>
+          <td class="memname">struct <a class="el" href="structspdk__nvme__ns.html">spdk_nvme_ns</a>* spdk_nvme_ctrlr_get_ns </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em>, </td>
         </tr>
         <tr>
@@ -164,19 +164,19 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a handle to a namespace for the given controller. </p>
-<p>Namespaces are numbered from 1 to the total number of namespaces. There will never be any gaps in the numbering. The number of namespaces is obtained by calling <a class="el" href="nvme_8h.html#a172b32383099b2c0138246bb45f550b7" title="Get the number of namespaces for the given NVMe controller. ">nvme_ctrlr_get_num_ns()</a>.</p>
+<p>Namespaces are numbered from 1 to the total number of namespaces. There will never be any gaps in the numbering. The number of namespaces is obtained by calling <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the number of namespaces for the given NVMe controller. ">spdk_nvme_ctrlr_get_num_ns()</a>.</p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
-<a class="anchor" id="a172b32383099b2c0138246bb45f550b7"></a>
+<a class="anchor" id="a02b18deae44682a51177e8a4193af602"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t nvme_ctrlr_get_num_ns </td>
+          <td class="memname">uint32_t spdk_nvme_ctrlr_get_num_ns </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -185,18 +185,18 @@ Functions</h2></td></tr>
 
 <p>Get the number of namespaces for the given NVMe controller. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
-<p>This is equivalent to calling <a class="el" href="nvme_8h.html#acad42017dc59ad363a9223a2723a416f" title="Get the identify controller data as defined by the NVMe specification. ">nvme_ctrlr_get_data()</a> to get the <a class="el" href="structnvme__controller__data.html">nvme_controller_data</a> and then reading the nn field. </p>
+<p>This is equivalent to calling <a class="el" href="nvme_8h.html#a5a9daf15b5008ac36c12e7b8db7bdec9" title="Get the identify controller data as defined by the NVMe specification. ">spdk_nvme_ctrlr_get_data()</a> to get the <a class="el" href="structspdk__nvme__ctrlr__data.html">spdk_nvme_ctrlr_data</a> and then reading the nn field. </p>
 
 </div>
 </div>
-<a class="anchor" id="af5435d8c4d8dea3cfe08635a14938d3e"></a>
+<a class="anchor" id="a909b61e141b56eaa5895482aa1f18a3b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool nvme_ctrlr_is_feature_supported </td>
+          <td class="memname">bool spdk_nvme_ctrlr_is_feature_supported </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em>, </td>
         </tr>
         <tr>
@@ -215,18 +215,18 @@ Functions</h2></td></tr>
 
 <p>Determine if a particular feature is supported by the given NVMe controller. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a8d503aca2d46e5716f43a1e568fe6386" title="Get specific feature from given NVMe controller. ">nvme_ctrlr_cmd_get_feature()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a6b4ebba22f1585b98e4ca20932d75434" title="Get specific feature from given NVMe controller. ">spdk_nvme_ctrlr_cmd_get_feature()</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a820ecf0dafc568286a375bc94803d07a"></a>
+<a class="anchor" id="a7dc6bb842e168a68972ec46cc35591ae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool nvme_ctrlr_is_log_page_supported </td>
+          <td class="memname">bool spdk_nvme_ctrlr_is_log_page_supported </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em>, </td>
         </tr>
         <tr>
@@ -245,18 +245,18 @@ Functions</h2></td></tr>
 
 <p>Determine if a particular log page is supported by the given NVMe controller. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#ad24a4db2deb18586da7a78fc0bda75a8" title="Get a specific log page from the NVMe controller. ">nvme_ctrlr_cmd_get_log_page()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a02dd5dad43a425f0b8985cd7cf78ac6e" title="Get a specific log page from the NVMe controller. ">spdk_nvme_ctrlr_cmd_get_log_page()</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a961c74513db555e0bdc6a69a53005500"></a>
+<a class="anchor" id="a10282695461985f58f54de022911745e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t nvme_ctrlr_process_admin_completions </td>
+          <td class="memname">int32_t spdk_nvme_ctrlr_process_admin_completions </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -271,14 +271,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4d4260b4b642f14f6fb62ba487b06b86"></a>
+<a class="anchor" id="adec8bf313a3d5b92ad15f9d150de23b3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t nvme_ctrlr_process_io_completions </td>
+          <td class="memname">int32_t spdk_nvme_ctrlr_process_io_completions </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em>, </td>
         </tr>
         <tr>
@@ -308,14 +308,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a309c138b59516f6037e6e4c8a743edac"></a>
+<a class="anchor" id="ae13ccd2ea831842a5008eb95a32545c3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int nvme_ctrlr_reset </td>
+          <td class="memname">int spdk_nvme_ctrlr_reset </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -324,7 +324,7 @@ Functions</h2></td></tr>
 
 <p>Perform a full hardware reset of the NVMe controller. </p>
 <p>This function should be called from a single thread while no other threads are actively using the NVMe device.</p>
-<p>Any pointers returned from <a class="el" href="nvme_8h.html#a2c232ba6e5094b94d217476fb39771e1" title="Get a handle to a namespace for the given controller. ">nvme_ctrlr_get_ns()</a> and <a class="el" href="nvme_8h.html#a0582b23ba2e0e92ff54830a53a235b5a" title="Get the identify namespace data as defined by the NVMe specification. ">nvme_ns_get_data()</a> may be invalidated by calling this function. The number of namespaces as returned by <a class="el" href="nvme_8h.html#a172b32383099b2c0138246bb45f550b7" title="Get the number of namespaces for the given NVMe controller. ">nvme_ctrlr_get_num_ns()</a> may also change. </p>
+<p>Any pointers returned from <a class="el" href="nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08" title="Get a handle to a namespace for the given controller. ">spdk_nvme_ctrlr_get_ns()</a> and <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a" title="Get the identify namespace data as defined by the NVMe specification. ">spdk_nvme_ns_get_data()</a> may be invalidated by calling this function. The number of namespaces as returned by <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the number of namespaces for the given NVMe controller. ">spdk_nvme_ctrlr_get_num_ns()</a> may also change. </p>
 
 </div>
 </div>

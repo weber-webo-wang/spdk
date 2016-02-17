@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['rab',['rab',['../structnvme__controller__data.html#a9713f05110283df646eafec510825961',1,'nvme_controller_data']]],
-  ['rcsts',['rcsts',['../structnvme__reservation__controller__data.html#a95bfad445b3b18349432c09d3a145d54',1,'nvme_reservation_controller_data']]],
-  ['rdy',['rdy',['../unionnvme__csts__register.html#a64f41300802425ffc0f16abe715897fa',1,'nvme_csts_register']]],
-  ['regs',['regs',['../structnvme__controller.html#adf77d047aee510031dfc14df3fefd33f',1,'nvme_controller']]],
-  ['reserved3',['reserved3',['../structnvme__namespace__data.html#af24c9bb5bbc6f261f667ce616eb6f0e5',1,'nvme_namespace_data']]],
-  ['reset',['reset',['../unionnvme__intel__reset__timed__workload__counters__feature.html#abe109a3e4160f32074f49369e9fbd9b7',1,'nvme_intel_reset_timed_workload_counters_feature']]],
-  ['rp',['rp',['../structnvme__namespace__data.html#a856834c1f511da009f5379e225c97952',1,'nvme_namespace_data']]],
-  ['rpmbs',['rpmbs',['../structnvme__controller__data.html#a279c4082782bcfa651db55673cc17987',1,'nvme_controller_data']]],
-  ['rtd3e',['rtd3e',['../structnvme__controller__data.html#a9ed217b0901490cf268987d8b0ac49bd',1,'nvme_controller_data']]],
-  ['rtd3r',['rtd3r',['../structnvme__controller__data.html#a8344355c1c6eca8a9c9b84723f5ed934',1,'nvme_controller_data']]]
+  ['rab',['rab',['../structspdk__nvme__ctrlr__data.html#aafb1c02f48a1407a4700432fe9f9d1a3',1,'spdk_nvme_ctrlr_data']]],
+  ['rcsts',['rcsts',['../structspdk__nvme__reservation__ctrlr__data.html#a5f86835fd06dc2a940911a0cae0d660d',1,'spdk_nvme_reservation_ctrlr_data']]],
+  ['rdy',['rdy',['../unionspdk__nvme__csts__register.html#a86fc572fdd7a9850c188671e682b6ffa',1,'spdk_nvme_csts_register']]],
+  ['regs',['regs',['../structspdk__nvme__ctrlr.html#af021c4dc01f631ec36bd44e749638411',1,'spdk_nvme_ctrlr']]],
+  ['reserved3',['reserved3',['../structspdk__nvme__ns__data.html#a2c4901dac069f03def8eba3cde6625e0',1,'spdk_nvme_ns_data']]],
+  ['reset',['reset',['../unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a74b5ac6a6ea150d582cc269f6987757b',1,'spdk_nvme_intel_feat_reset_timed_workload_counters']]],
+  ['rp',['rp',['../structspdk__nvme__ns__data.html#a4133aa654a2f1e5af881d5293ba965cf',1,'spdk_nvme_ns_data']]],
+  ['rpmbs',['rpmbs',['../structspdk__nvme__ctrlr__data.html#a7ada07d25caa2e472ce91f167b3467dd',1,'spdk_nvme_ctrlr_data']]],
+  ['rtd3e',['rtd3e',['../structspdk__nvme__ctrlr__data.html#a4a9eba40118c1c94141534c7938a0f3a',1,'spdk_nvme_ctrlr_data']]],
+  ['rtd3r',['rtd3r',['../structspdk__nvme__ctrlr__data.html#ada8eb3b02e984f1ba4572378d1b1623f',1,'spdk_nvme_ctrlr_data']]]
 ];

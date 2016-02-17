@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['doorbell_5fstride_5fu32',['doorbell_stride_u32',['../structnvme__controller.html#a353865ed735169231b585d6a05cfc5c0',1,'nvme_controller']]],
-  ['dpc',['dpc',['../structnvme__namespace__data.html#a4413f9b27ec2e66d471957b219d65dc9',1,'nvme_namespace_data']]],
-  ['dps',['dps',['../structnvme__namespace__data.html#a9a6e543761550ba0a1139c832aa3274f',1,'nvme_namespace_data']]],
-  ['dstrd',['dstrd',['../unionnvme__cap__hi__register.html#aa265e051580714cba42368d736362495',1,'nvme_cap_hi_register']]]
+  ['doorbell_5fstride_5fu32',['doorbell_stride_u32',['../structspdk__nvme__ctrlr.html#ad85a2bfd78d23eea6110e8681eb156f6',1,'spdk_nvme_ctrlr']]],
+  ['dpc',['dpc',['../structspdk__nvme__ns__data.html#a51d37c23dd6ba6e9ffb13645024e4dd7',1,'spdk_nvme_ns_data']]],
+  ['dps',['dps',['../structspdk__nvme__ns__data.html#ae2436a45402446320f15f0a6f27566d9',1,'spdk_nvme_ns_data']]],
+  ['dstrd',['dstrd',['../unionspdk__nvme__cap__hi__register.html#aad25a76e883a34272b4e959d73fa5fb7',1,'spdk_nvme_cap_hi_register']]]
 ];

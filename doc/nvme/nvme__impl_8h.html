@@ -107,13 +107,13 @@ Macros</h2></td></tr>
 <tr class="separator:a134486689372a4cf5da51b000e4be9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae8097496a5de1cbe302845645c9faf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a8ae8097496a5de1cbe302845645c9faf">nvme_assert</a>(check,  str)&#160;&#160;&#160;assert(check)</td></tr>
 <tr class="separator:a8ae8097496a5de1cbe302845645c9faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a113be6337ce6831ae8bfc95d8dcd9901"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a113be6337ce6831ae8bfc95d8dcd9901">nvme_vtophys</a>(buf)&#160;&#160;&#160;vtophys(buf)</td></tr>
+<tr class="memitem:a113be6337ce6831ae8bfc95d8dcd9901"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a113be6337ce6831ae8bfc95d8dcd9901">nvme_vtophys</a>(buf)&#160;&#160;&#160;spdk_vtophys(buf)</td></tr>
 <tr class="separator:a113be6337ce6831ae8bfc95d8dcd9901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a475a59bf7670eac1bc0ed8f317b81610"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a475a59bf7670eac1bc0ed8f317b81610">nvme_alloc_request</a>(bufp)&#160;&#160;&#160;rte_mempool_get(request_mempool, (void **)(bufp));</td></tr>
 <tr class="separator:a475a59bf7670eac1bc0ed8f317b81610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a964075ffde5231b255d681c975f716b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a964075ffde5231b255d681c975f716b7">nvme_dealloc_request</a>(buf)&#160;&#160;&#160;rte_mempool_put(request_mempool, buf)</td></tr>
 <tr class="separator:a964075ffde5231b255d681c975f716b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca028b40dcafa114ae530e6f8c18e892"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#aca028b40dcafa114ae530e6f8c18e892">nvme_copy_command</a>(dst,  src)&#160;&#160;&#160;rte_memcpy((dst), (src), sizeof(struct <a class="el" href="structnvme__command.html">nvme_command</a>))</td></tr>
+<tr class="memitem:aca028b40dcafa114ae530e6f8c18e892"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#aca028b40dcafa114ae530e6f8c18e892">nvme_copy_command</a>(dst,  src)&#160;&#160;&#160;rte_memcpy((dst), (src), sizeof(struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a>))</td></tr>
 <tr class="separator:aca028b40dcafa114ae530e6f8c18e892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -187,11 +187,11 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;rte_memcpy((dst), (src), sizeof(struct <a class="el" href="structnvme__command.html">nvme_command</a>))</td>
+          <td></td><td>&#160;&#160;&#160;rte_memcpy((dst), (src), sizeof(struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Copy a struct <a class="el" href="structnvme__command.html">nvme_command</a> from one memory location to another. </p>
+<p>Copy a struct nvme_command from one memory location to another. </p>
 
 </div>
 </div>
@@ -271,7 +271,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">buf</td><td>)</td>
-          <td>&#160;&#160;&#160;vtophys(buf)</td>
+          <td>&#160;&#160;&#160;spdk_vtophys(buf)</td>
         </tr>
       </table>
 </div><div class="memdoc">

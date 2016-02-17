@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unvmcap',['unvmcap',['../structnvme__controller__data.html#a6c33da75f375da2e3edee3118073f62e',1,'nvme_controller_data']]]
+  ['unvmcap',['unvmcap',['../structspdk__nvme__ctrlr__data.html#aef21c15160a4556da6b2c2dbfee5749f',1,'spdk_nvme_ctrlr_data']]]
 ];

@@ -100,43 +100,43 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a52e60c4fe9fb61c311faf4d402511c9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8c.html#a52e60c4fe9fb61c311faf4d402511c9c">nvme_detach</a> (struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *ctrlr)</td></tr>
-<tr class="memdesc:a52e60c4fe9fb61c311faf4d402511c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches specified device returned by <a class="el" href="nvme_8c.html#a95fbaedb524deefed73f9fbbb72880a5">nvme_probe()</a>'s attach_cb from the NVMe driver.  <a href="#a52e60c4fe9fb61c311faf4d402511c9c">More...</a><br /></td></tr>
-<tr class="separator:a52e60c4fe9fb61c311faf4d402511c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addaed5ffa0655110def0835899ca81a1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8c.html#addaed5ffa0655110def0835899ca81a1">nvme_request_size</a> (void)</td></tr>
-<tr class="memdesc:addaed5ffa0655110def0835899ca81a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size, in bytes, of an <a class="el" href="structnvme__request.html">nvme_request</a>.  <a href="#addaed5ffa0655110def0835899ca81a1">More...</a><br /></td></tr>
-<tr class="separator:addaed5ffa0655110def0835899ca81a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95fbaedb524deefed73f9fbbb72880a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8c.html#a95fbaedb524deefed73f9fbbb72880a5">nvme_probe</a> (void *cb_ctx, <a class="el" href="nvme_8h.html#a7c4d5f362778c51ef7623f001143add8">nvme_probe_cb</a> probe_cb, <a class="el" href="nvme_8h.html#a1e128d082c6ffd89bfce4d7e8120d0e6">nvme_attach_cb</a> attach_cb)</td></tr>
-<tr class="memdesc:a95fbaedb524deefed73f9fbbb72880a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the NVMe devices attached to the system and attach the userspace NVMe driver to them if desired.  <a href="#a95fbaedb524deefed73f9fbbb72880a5">More...</a><br /></td></tr>
-<tr class="separator:a95fbaedb524deefed73f9fbbb72880a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8c.html#a4b63c225c3cce6da60fdbfb6f54b11e2">spdk_nvme_detach</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr)</td></tr>
+<tr class="memdesc:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches specified device returned by nvme_probe()'s attach_cb from the NVMe driver.  <a href="#a4b63c225c3cce6da60fdbfb6f54b11e2">More...</a><br /></td></tr>
+<tr class="separator:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffcf40d9f92873de4ea39ac0c78c3d2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8c.html#abffcf40d9f92873de4ea39ac0c78c3d2">spdk_nvme_request_size</a> (void)</td></tr>
+<tr class="memdesc:abffcf40d9f92873de4ea39ac0c78c3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size, in bytes, of an <a class="el" href="structnvme__request.html">nvme_request</a>.  <a href="#abffcf40d9f92873de4ea39ac0c78c3d2">More...</a><br /></td></tr>
+<tr class="separator:abffcf40d9f92873de4ea39ac0c78c3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01c66471ea8db5f9bc64cca4a9ef56f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8c.html#af01c66471ea8db5f9bc64cca4a9ef56f">spdk_nvme_probe</a> (void *cb_ctx, <a class="el" href="nvme_8h.html#a929b6ff9064e93b8f60af29a06efab60">spdk_nvme_probe_cb</a> probe_cb, <a class="el" href="nvme_8h.html#afa1ba75b7c4db98702303894ed269b9c">spdk_nvme_attach_cb</a> attach_cb)</td></tr>
+<tr class="memdesc:af01c66471ea8db5f9bc64cca4a9ef56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the NVMe devices attached to the system and attach the userspace NVMe driver to them if desired.  <a href="#af01c66471ea8db5f9bc64cca4a9ef56f">More...</a><br /></td></tr>
+<tr class="separator:af01c66471ea8db5f9bc64cca4a9ef56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a52e60c4fe9fb61c311faf4d402511c9c"></a>
+<a class="anchor" id="a4b63c225c3cce6da60fdbfb6f54b11e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int nvme_detach </td>
+          <td class="memname">int spdk_nvme_detach </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structnvme__controller.html">nvme_controller</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
           <td class="paramname"><em>ctrlr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Detaches specified device returned by <a class="el" href="nvme_8c.html#a95fbaedb524deefed73f9fbbb72880a5">nvme_probe()</a>'s attach_cb from the NVMe driver. </p>
-<p>On success, the <a class="el" href="structnvme__controller.html">nvme_controller</a> handle is no longer valid.</p>
+<p>Detaches specified device returned by nvme_probe()'s attach_cb from the NVMe driver. </p>
+<p>On success, the <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> handle is no longer valid.</p>
 <p>This function should be called from a single thread while no other threads are actively using the NVMe device. </p>
 
 </div>
 </div>
-<a class="anchor" id="a95fbaedb524deefed73f9fbbb72880a5"></a>
+<a class="anchor" id="af01c66471ea8db5f9bc64cca4a9ef56f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int nvme_probe </td>
+          <td class="memname">int spdk_nvme_probe </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>cb_ctx</em>, </td>
@@ -144,13 +144,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#a7c4d5f362778c51ef7623f001143add8">nvme_probe_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a929b6ff9064e93b8f60af29a06efab60">spdk_nvme_probe_cb</a>&#160;</td>
           <td class="paramname"><em>probe_cb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#a1e128d082c6ffd89bfce4d7e8120d0e6">nvme_attach_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#afa1ba75b7c4db98702303894ed269b9c">spdk_nvme_attach_cb</a>&#160;</td>
           <td class="paramname"><em>attach_cb</em>&#160;</td>
         </tr>
         <tr>
@@ -170,16 +170,16 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>If called more than once, only devices that are not already attached to the SPDK NVMe driver will be reported.</p>
-<p>To stop using the the controller and release its associated resources, call <a class="el" href="nvme_8h.html#a52e60c4fe9fb61c311faf4d402511c9c">nvme_detach</a> with the <a class="el" href="structnvme__controller.html">nvme_controller</a> instance returned by this function. </p>
+<p>To stop using the the controller and release its associated resources, call nvme_detach with the <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> instance returned by this function. </p>
 
 </div>
 </div>
-<a class="anchor" id="addaed5ffa0655110def0835899ca81a1"></a>
+<a class="anchor" id="abffcf40d9f92873de4ea39ac0c78c3d2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t nvme_request_size </td>
+          <td class="memname">size_t spdk_nvme_request_size </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>

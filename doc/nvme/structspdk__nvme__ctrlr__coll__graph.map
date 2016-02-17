@@ -1,0 +1,18 @@
+<map id="spdk_nvme_ctrlr" name="spdk_nvme_ctrlr">
+<area shape="rect" id="node4" href="$structspdk__nvme__ns.html" title="spdk_nvme_ns" alt="" coords="792,389,903,416"/>
+<area shape="rect" id="node13" href="$structnvme__qpair.html" title="nvme_qpair" alt="" coords="1025,147,1115,173"/>
+<area shape="rect" id="node17" href="$structnvme__async__event__request.html" title="nvme_async_event_request" alt="" coords="755,216,940,243"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cpl.html" title="spdk_nvme_cpl" alt="" coords="299,160,412,187"/>
+<area shape="rect" id="node15" href="$structnvme__request.html" title="nvme_request" alt="" coords="566,96,670,123"/>
+<area shape="rect" id="node3" href="$structspdk__nvme__status.html" title="spdk_nvme_status" alt="" coords="31,160,163,187"/>
+<area shape="rect" id="node5" href="$structspdk__nvme__ctrlr__data.html" title="spdk_nvme_ctrlr_data" alt="" coords="280,248,431,275"/>
+<area shape="rect" id="node6" href="$structspdk__nvme__power__state.html" title="spdk_nvme_power_state" alt="" coords="14,223,181,249"/>
+<area shape="rect" id="node7" href="$structspdk__nvme__registers.html" title="spdk_nvme_registers" alt="" coords="282,324,429,351"/>
+<area shape="rect" id="node8" href="$unionspdk__nvme__cc__register.html" title="spdk_nvme_cc_register" alt="" coords="17,324,177,351"/>
+<area shape="rect" id="node9" href="$unionspdk__nvme__cap__lo__register.html" title="spdk_nvme_cap_lo_register" alt="" coords="5,375,189,401"/>
+<area shape="rect" id="node10" href="$unionspdk__nvme__aqa__register.html" title="spdk_nvme_aqa_register" alt="" coords="14,425,181,452"/>
+<area shape="rect" id="node11" href="$unionspdk__nvme__cap__hi__register.html" title="spdk_nvme_cap_hi_register" alt="" coords="5,273,189,300"/>
+<area shape="rect" id="node12" href="$structspdk__nvme__ns__data.html" title="spdk_nvme_ns_data" alt="" coords="284,375,427,401"/>
+<area shape="rect" id="node14" href="$structnvme__tracker.html" title="nvme_tracker" alt="" coords="797,76,898,103"/>
+<area shape="rect" id="node16" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="295,25,416,52"/>
+</map>

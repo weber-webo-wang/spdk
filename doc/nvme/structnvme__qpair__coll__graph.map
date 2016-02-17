@@ -1,11 +1,12 @@
 <map id="nvme_qpair" name="nvme_qpair">
-<area shape="rect" id="node6" href="$structnvme__controller.html" title="nvme_controller" alt="" coords="880,143,995,169"/>
-<area shape="rect" id="node2" href="$structnvme__tracker.html" title="nvme_tracker" alt="" coords="439,208,540,235"/>
-<area shape="rect" id="node3" href="$structnvme__request.html" title="nvme_request" alt="" coords="257,252,361,279"/>
-<area shape="rect" id="node10" href="$structnvme__async__event__request.html" title="nvme_async_event_request" alt="" coords="1069,237,1255,264"/>
-<area shape="rect" id="node4" href="$structnvme__completion.html" title="nvme_completion" alt="" coords="5,292,129,319"/>
-<area shape="rect" id="node5" href="$structnvme__command.html" title="nvme_command" alt="" coords="8,96,127,123"/>
-<area shape="rect" id="node11" href="$structnvme__namespace.html" title="nvme_namespace" alt="" coords="1098,101,1226,128"/>
-<area shape="rect" id="node8" href="$structnvme__controller__data.html" title="nvme_controller_data" alt="" coords="632,56,779,83"/>
-<area shape="rect" id="node9" href="$structnvme__namespace__data.html" title="nvme_namespace_data" alt="" coords="625,207,785,233"/>
+<area shape="rect" id="node6" href="$structspdk__nvme__ctrlr.html" title="spdk_nvme_ctrlr" alt="" coords="868,120,987,147"/>
+<area shape="rect" id="node2" href="$structnvme__tracker.html" title="nvme_tracker" alt="" coords="436,176,537,203"/>
+<area shape="rect" id="node3" href="$structnvme__request.html" title="nvme_request" alt="" coords="255,224,359,251"/>
+<area shape="rect" id="node11" href="$structnvme__async__event__request.html" title="nvme_async_event_request" alt="" coords="1061,217,1247,244"/>
+<area shape="rect" id="node4" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="5,56,127,83"/>
+<area shape="rect" id="node5" href="$structspdk__nvme__cpl.html" title="spdk_nvme_cpl" alt="" coords="9,271,123,297"/>
+<area shape="rect" id="node7" href="$structspdk__nvme__ns.html" title="spdk_nvme_ns" alt="" coords="1099,81,1209,108"/>
+<area shape="rect" id="node8" href="$structspdk__nvme__ctrlr__data.html" title="spdk_nvme_ctrlr_data" alt="" coords="623,136,773,163"/>
+<area shape="rect" id="node9" href="$structspdk__nvme__registers.html" title="spdk_nvme_registers" alt="" coords="625,187,771,213"/>
+<area shape="rect" id="node10" href="$structspdk__nvme__ns__data.html" title="spdk_nvme_ns_data" alt="" coords="627,85,769,112"/>
 </map>
