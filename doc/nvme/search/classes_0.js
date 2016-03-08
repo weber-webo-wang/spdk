@@ -7,7 +7,6 @@ var searchData=
   ['nvme_5fintel_5fquirk',['nvme_intel_quirk',['../structnvme__intel__quirk.html',1,'']]],
   ['nvme_5fpayload',['nvme_payload',['../structnvme__payload.html',1,'']]],
   ['nvme_5fpci_5fenum_5fctx',['nvme_pci_enum_ctx',['../structnvme__pci__enum__ctx.html',1,'']]],
-  ['nvme_5fqpair',['nvme_qpair',['../structnvme__qpair.html',1,'']]],
   ['nvme_5frequest',['nvme_request',['../structnvme__request.html',1,'']]],
   ['nvme_5fstring',['nvme_string',['../structnvme__string.html',1,'']]],
   ['nvme_5ftracker',['nvme_tracker',['../structnvme__tracker.html',1,'']]]

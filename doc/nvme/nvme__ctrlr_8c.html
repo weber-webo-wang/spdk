@@ -97,6 +97,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ae13ccd2ea831842a5008eb95a32545c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#ae13ccd2ea831842a5008eb95a32545c3">spdk_nvme_ctrlr_reset</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr)</td></tr>
 <tr class="memdesc:ae13ccd2ea831842a5008eb95a32545c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a full hardware reset of the NVMe controller.  <a href="#ae13ccd2ea831842a5008eb95a32545c3">More...</a><br /></td></tr>
 <tr class="separator:ae13ccd2ea831842a5008eb95a32545c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad892fc6987f9ecf8e91269f6b8ae3d20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#ad892fc6987f9ecf8e91269f6b8ae3d20">nvme_ctrlr_process_init</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr)</td></tr>
+<tr class="separator:ad892fc6987f9ecf8e91269f6b8ae3d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adec8bf313a3d5b92ad15f9d150de23b3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#adec8bf313a3d5b92ad15f9d150de23b3">spdk_nvme_ctrlr_process_io_completions</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint32_t max_completions)</td></tr>
 <tr class="memdesc:adec8bf313a3d5b92ad15f9d150de23b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for I/O submitted on the current thread.  <a href="#adec8bf313a3d5b92ad15f9d150de23b3">More...</a><br /></td></tr>
 <tr class="separator:adec8bf313a3d5b92ad15f9d150de23b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,8 +120,197 @@ Functions</h2></td></tr>
 <tr class="memitem:a909b61e141b56eaa5895482aa1f18a3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a909b61e141b56eaa5895482aa1f18a3b">spdk_nvme_ctrlr_is_feature_supported</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint8_t feature_code)</td></tr>
 <tr class="memdesc:a909b61e141b56eaa5895482aa1f18a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a particular feature is supported by the given NVMe controller.  <a href="#a909b61e141b56eaa5895482aa1f18a3b">More...</a><br /></td></tr>
 <tr class="separator:a909b61e141b56eaa5895482aa1f18a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae935583b7f95b13fbd2dd41255490da0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#ae935583b7f95b13fbd2dd41255490da0">spdk_nvme_ctrlr_attach_ns</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint32_t nsid, struct <a class="el" href="structspdk__nvme__ctrlr__list.html">spdk_nvme_ctrlr_list</a> *payload)</td></tr>
+<tr class="memdesc:ae935583b7f95b13fbd2dd41255490da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">attach the specified namespace to controllers.  <a href="#ae935583b7f95b13fbd2dd41255490da0">More...</a><br /></td></tr>
+<tr class="separator:ae935583b7f95b13fbd2dd41255490da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab562f58b5903071929d6a559fe984d0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#ab562f58b5903071929d6a559fe984d0a">spdk_nvme_ctrlr_detach_ns</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint32_t nsid, struct <a class="el" href="structspdk__nvme__ctrlr__list.html">spdk_nvme_ctrlr_list</a> *payload)</td></tr>
+<tr class="memdesc:ab562f58b5903071929d6a559fe984d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">detach the specified namespace from controllers.  <a href="#ab562f58b5903071929d6a559fe984d0a">More...</a><br /></td></tr>
+<tr class="separator:ab562f58b5903071929d6a559fe984d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9190408616963b239c00cfd7001547cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a9190408616963b239c00cfd7001547cc">spdk_nvme_ctrlr_create_ns</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *payload)</td></tr>
+<tr class="memdesc:a9190408616963b239c00cfd7001547cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a namespace.  <a href="#a9190408616963b239c00cfd7001547cc">More...</a><br /></td></tr>
+<tr class="separator:a9190408616963b239c00cfd7001547cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c62e2d4555a5ebc3a3b6f9632c51e1a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a7c62e2d4555a5ebc3a3b6f9632c51e1a">spdk_nvme_ctrlr_delete_ns</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint32_t nsid)</td></tr>
+<tr class="memdesc:a7c62e2d4555a5ebc3a3b6f9632c51e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete a namespace.  <a href="#a7c62e2d4555a5ebc3a3b6f9632c51e1a">More...</a><br /></td></tr>
+<tr class="separator:a7c62e2d4555a5ebc3a3b6f9632c51e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ad892fc6987f9ecf8e91269f6b8ae3d20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvme_ctrlr_process_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function will be called repeatedly during initialization until the controller is ready. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae935583b7f95b13fbd2dd41255490da0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_attach_ns </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr__list.html">spdk_nvme_ctrlr_list</a> *&#160;</td>
+          <td class="paramname"><em>payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>attach the specified namespace to controllers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payload</td><td>The pointer to the controller list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
+<p>This function is thread safe and can be called at any point after spdk_nvme_attach().</p>
+<p>Call <a class="el" href="nvme__ctrlr_8c.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9190408616963b239c00cfd7001547cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_create_ns </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *&#160;</td>
+          <td class="paramname"><em>payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payload</td><td>The pointer to the nvme namespace data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
+<p>This function is thread safe and can be called at any point after spdk_nvme_attach().</p>
+<p>Call <a class="el" href="nvme__ctrlr_8c.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7c62e2d4555a5ebc3a3b6f9632c51e1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_delete_ns </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delete a namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nsid</td><td>the name space identifier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
+<p>This function is thread safe and can be called at any point after spdk_nvme_attach().</p>
+<p>Call <a class="el" href="nvme__ctrlr_8c.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab562f58b5903071929d6a559fe984d0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_detach_ns </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr__list.html">spdk_nvme_ctrlr_list</a> *&#160;</td>
+          <td class="paramname"><em>payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>detach the specified namespace from controllers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payload</td><td>The pointer to the controller list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
+<p>This function is thread safe and can be called at any point after spdk_nvme_attach().</p>
+<p>Call <a class="el" href="nvme__ctrlr_8c.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function. </p>
+
+</div>
+</div>
 <a class="anchor" id="a5a9daf15b5008ac36c12e7b8db7bdec9"></a>
 <div class="memitem">
 <div class="memproto">

@@ -1,6 +1,7 @@
 <map id="nvme_tracker" name="nvme_tracker">
-<area shape="rect" id="node2" href="$structnvme__request.html" title="nvme_request" alt="" coords="155,109,259,136"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="5,5,127,32"/>
-<area shape="rect" id="node4" href="$structspdk__nvme__cpl.html" title="spdk_nvme_cpl" alt="" coords="151,5,264,32"/>
-<area shape="rect" id="node5" href="$structnvme__payload.html" title="nvme_payload" alt="" coords="289,5,395,32"/>
+<area shape="rect" id="node2" href="$structnvme__request.html" title="nvme_request" alt="" coords="211,199,315,225"/>
+<area shape="rect" id="node3" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="97,95,219,121"/>
+<area shape="rect" id="node4" href="$structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="5,5,183,32"/>
+<area shape="rect" id="node5" href="$structspdk__nvme__cpl.html" title="spdk_nvme_cpl" alt="" coords="243,95,356,121"/>
+<area shape="rect" id="node6" href="$structnvme__payload.html" title="nvme_payload" alt="" coords="381,95,487,121"/>
 </map>

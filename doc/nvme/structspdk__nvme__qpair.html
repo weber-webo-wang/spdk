@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>SPDK Userspace NVMe Driver: nvme_qpair Struct Reference</title>
+<title>SPDK Userspace NVMe Driver: spdk_nvme_qpair Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,41 +85,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">nvme_qpair Struct Reference</div>  </div>
+<div class="title">spdk_nvme_qpair Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for nvme_qpair:</div>
+Collaboration diagram for spdk_nvme_qpair:</div>
 <div class="dyncontent">
-<div class="center"><img src="structnvme__qpair__coll__graph.png" border="0" usemap="#nvme__qpair_coll__map" alt="Collaboration graph"/></div>
-<map name="nvme__qpair_coll__map" id="nvme__qpair_coll__map">
-<area shape="rect" id="node6" href="structspdk__nvme__ctrlr.html" title="spdk_nvme_ctrlr" alt="" coords="868,120,987,147"/>
-<area shape="rect" id="node2" href="structnvme__tracker.html" title="nvme_tracker" alt="" coords="436,176,537,203"/>
-<area shape="rect" id="node3" href="structnvme__request.html" title="nvme_request" alt="" coords="255,224,359,251"/>
-<area shape="rect" id="node11" href="structnvme__async__event__request.html" title="nvme_async_event_request" alt="" coords="1061,217,1247,244"/>
-<area shape="rect" id="node4" href="structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="5,56,127,83"/>
-<area shape="rect" id="node5" href="structspdk__nvme__cpl.html" title="spdk_nvme_cpl" alt="" coords="9,271,123,297"/>
-<area shape="rect" id="node7" href="structspdk__nvme__ns.html" title="spdk_nvme_ns" alt="" coords="1099,81,1209,108"/>
-<area shape="rect" id="node8" href="structspdk__nvme__ctrlr__data.html" title="spdk_nvme_ctrlr_data" alt="" coords="623,136,773,163"/>
-<area shape="rect" id="node9" href="structspdk__nvme__registers.html" title="spdk_nvme_registers" alt="" coords="625,187,771,213"/>
-<area shape="rect" id="node10" href="structspdk__nvme__ns__data.html" title="spdk_nvme_ns_data" alt="" coords="627,85,769,112"/>
+<div class="center"><img src="structspdk__nvme__qpair__coll__graph.png" border="0" usemap="#spdk__nvme__qpair_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__nvme__qpair_coll__map" id="spdk__nvme__qpair_coll__map">
+<area shape="rect" id="node7" href="structspdk__nvme__ctrlr.html" title="spdk_nvme_ctrlr" alt="" coords="1123,221,1241,248"/>
+<area shape="rect" id="node2" href="structnvme__tracker.html" title="nvme_tracker" alt="" coords="691,92,792,119"/>
+<area shape="rect" id="node3" href="structnvme__request.html" title="nvme_request" alt="" coords="509,92,613,119"/>
+<area shape="rect" id="node12" href="structnvme__async__event__request.html" title="nvme_async_event_request" alt="" coords="1316,267,1501,293"/>
+<area shape="rect" id="node4" href="structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="260,92,381,119"/>
+<area shape="rect" id="node5" href="structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="5,33,183,60"/>
+<area shape="rect" id="node6" href="structspdk__nvme__cpl.html" title="spdk_nvme_cpl" alt="" coords="264,263,377,289"/>
+<area shape="rect" id="node8" href="structspdk__nvme__ns.html" title="spdk_nvme_ns" alt="" coords="1353,176,1464,203"/>
+<area shape="rect" id="node9" href="structspdk__nvme__ctrlr__data.html" title="spdk_nvme_ctrlr_data" alt="" coords="877,339,1028,365"/>
+<area shape="rect" id="node10" href="structspdk__nvme__registers.html" title="spdk_nvme_registers" alt="" coords="879,100,1026,127"/>
+<area shape="rect" id="node11" href="structspdk__nvme__ns__data.html" title="spdk_nvme_ns_data" alt="" coords="881,237,1024,264"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a1e95c1f9e0fcbeab0bb55a2e27d7880c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__qpair.html#a1e95c1f9e0fcbeab0bb55a2e27d7880c">cmd</a></td></tr>
-<tr class="separator:a1e95c1f9e0fcbeab0bb55a2e27d7880c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22531f2038ec722abc6db93bbe0ce70e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnvme__qpair.html#a22531f2038ec722abc6db93bbe0ce70e">cpl</a></td></tr>
-<tr class="separator:a22531f2038ec722abc6db93bbe0ce70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419237afe7c36015b610276e79d8eea7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__qpair.html#a419237afe7c36015b610276e79d8eea7">cmd</a></td></tr>
+<tr class="separator:a419237afe7c36015b610276e79d8eea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a8b839043a943b5e97622529547465"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__qpair.html#a17a8b839043a943b5e97622529547465">cpl</a></td></tr>
+<tr class="separator:a17a8b839043a943b5e97622529547465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a1e95c1f9e0fcbeab0bb55a2e27d7880c"></a>
+<a class="anchor" id="a419237afe7c36015b610276e79d8eea7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a>* nvme_qpair::cmd</td>
+          <td class="memname">struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a>* spdk_nvme_qpair::cmd</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -127,12 +128,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a22531f2038ec722abc6db93bbe0ce70e"></a>
+<a class="anchor" id="a17a8b839043a943b5e97622529547465"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a>* nvme_qpair::cpl</td>
+          <td class="memname">struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a>* spdk_nvme_qpair::cpl</td>
         </tr>
       </table>
 </div><div class="memdoc">
