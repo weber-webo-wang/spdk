@@ -115,18 +115,14 @@ Functions</h2></td></tr>
 <tr class="separator:a784c1a69962e0964cf6988badd945b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6d4f2be5a4facdd9e59decf720e0328"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#ae6d4f2be5a4facdd9e59decf720e0328">spdk_ioat_detach</a> (struct spdk_ioat_chan *ioat)</td></tr>
 <tr class="separator:ae6d4f2be5a4facdd9e59decf720e0328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad14d328774901def72ec30bb62859b98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#ad14d328774901def72ec30bb62859b98">spdk_ioat_register_thread</a> (void)</td></tr>
-<tr class="separator:ad14d328774901def72ec30bb62859b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9801128333676575fea35af727b24dfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a9801128333676575fea35af727b24dfc">spdk_ioat_unregister_thread</a> (void)</td></tr>
-<tr class="separator:a9801128333676575fea35af727b24dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1da5bf08b976c6e3111dca87735d0c2e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a1da5bf08b976c6e3111dca87735d0c2e">spdk_ioat_submit_copy</a> (void *cb_arg, <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">spdk_ioat_req_cb</a> cb_fn, void *dst, const void *src, uint64_t nbytes)</td></tr>
-<tr class="separator:a1da5bf08b976c6e3111dca87735d0c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88ed3877f087a51e2fc75c9e5634b650"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a88ed3877f087a51e2fc75c9e5634b650">spdk_ioat_submit_fill</a> (void *cb_arg, <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">spdk_ioat_req_cb</a> cb_fn, void *dst, uint64_t fill_pattern, uint64_t nbytes)</td></tr>
-<tr class="separator:a88ed3877f087a51e2fc75c9e5634b650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f45a6bb6d5eb3e630d5e0b25264a577"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a9f45a6bb6d5eb3e630d5e0b25264a577">spdk_ioat_process_events</a> (void)</td></tr>
-<tr class="separator:a9f45a6bb6d5eb3e630d5e0b25264a577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abea0390fcac413388e5a3c5b4a651892"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#abea0390fcac413388e5a3c5b4a651892">spdk_ioat_get_dma_capabilities</a> (void)</td></tr>
-<tr class="separator:abea0390fcac413388e5a3c5b4a651892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb96b0ffd9399b70fb0d847fe61a8053"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#aeb96b0ffd9399b70fb0d847fe61a8053">spdk_ioat_submit_copy</a> (struct spdk_ioat_chan *chan, void *cb_arg, <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">spdk_ioat_req_cb</a> cb_fn, void *dst, const void *src, uint64_t nbytes)</td></tr>
+<tr class="separator:aeb96b0ffd9399b70fb0d847fe61a8053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6f662feac31775bb03511766c5f1a5"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#aed6f662feac31775bb03511766c5f1a5">spdk_ioat_submit_fill</a> (struct spdk_ioat_chan *chan, void *cb_arg, <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">spdk_ioat_req_cb</a> cb_fn, void *dst, uint64_t fill_pattern, uint64_t nbytes)</td></tr>
+<tr class="separator:aed6f662feac31775bb03511766c5f1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90034d709755853f316cf47b541d48a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a90034d709755853f316cf47b541d48a9">spdk_ioat_process_events</a> (struct spdk_ioat_chan *chan)</td></tr>
+<tr class="separator:a90034d709755853f316cf47b541d48a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ce4a1c8bdd3fb69079ac51e00f92e5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a87ce4a1c8bdd3fb69079ac51e00f92e5">spdk_ioat_get_dma_capabilities</a> (struct spdk_ioat_chan *chan)</td></tr>
+<tr class="separator:a87ce4a1c8bdd3fb69079ac51e00f92e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file defines the public interface to the I/OAT DMA engine driver. </p>
@@ -211,21 +207,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abea0390fcac413388e5a3c5b4a651892"></a>
+<a class="anchor" id="a87ce4a1c8bdd3fb69079ac51e00f92e5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t spdk_ioat_get_dma_capabilities </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">struct spdk_ioat_chan *&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the DMA engine capabilities.</p>
-<p>Before submitting any requests on a thread, the thread must be registered using the <a class="el" href="ioat_8h.html#ad14d328774901def72ec30bb62859b98">spdk_ioat_register_thread()</a> function. </p>
+<p>Get the DMA engine capabilities. </p>
 
 </div>
 </div>
@@ -272,51 +267,37 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9f45a6bb6d5eb3e630d5e0b25264a577"></a>
+<a class="anchor" id="a90034d709755853f316cf47b541d48a9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int spdk_ioat_process_events </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">struct spdk_ioat_chan *&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check for completed requests on the current thread.</p>
-<p>Before submitting any requests on a thread, the thread must be registered using the <a class="el" href="ioat_8h.html#ad14d328774901def72ec30bb62859b98">spdk_ioat_register_thread()</a> function.</p>
+<p>Check for completed requests on an I/OAT channel.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success or negative if something went wrong. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ad14d328774901def72ec30bb62859b98"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_ioat_register_thread </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Request a DMA engine channel for the calling thread.</p>
-<p>Must be called before submitting any requests from a thread.</p>
-<p>The <a class="el" href="ioat_8h.html#a9801128333676575fea35af727b24dfc">spdk_ioat_unregister_thread()</a> function can be called to release the channel. </p>
-
-</div>
-</div>
-<a class="anchor" id="a1da5bf08b976c6e3111dca87735d0c2e"></a>
+<a class="anchor" id="aeb96b0ffd9399b70fb0d847fe61a8053"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int64_t spdk_ioat_submit_copy </td>
           <td>(</td>
+          <td class="paramtype">struct spdk_ioat_chan *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>cb_arg</em>, </td>
         </tr>
@@ -351,18 +332,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Submit a DMA engine memory copy request.</p>
-<p>Before submitting any requests on a thread, the thread must be registered using the <a class="el" href="ioat_8h.html#ad14d328774901def72ec30bb62859b98">spdk_ioat_register_thread()</a> function. </p>
+<p>Submit a DMA engine memory copy request. </p>
 
 </div>
 </div>
-<a class="anchor" id="a88ed3877f087a51e2fc75c9e5634b650"></a>
+<a class="anchor" id="aed6f662feac31775bb03511766c5f1a5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int64_t spdk_ioat_submit_fill </td>
           <td>(</td>
+          <td class="paramtype">struct spdk_ioat_chan *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>cb_arg</em>, </td>
         </tr>
@@ -397,26 +383,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Submit a DMA engine memory fill request.</p>
-<p>Before submitting any requests on a thread, the thread must be registered using the <a class="el" href="ioat_8h.html#ad14d328774901def72ec30bb62859b98">spdk_ioat_register_thread()</a> function. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9801128333676575fea35af727b24dfc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_ioat_unregister_thread </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Unregister the current thread's I/OAT channel.</p>
-<p>This function can be called after <a class="el" href="ioat_8h.html#ad14d328774901def72ec30bb62859b98">spdk_ioat_register_thread()</a> to release the thread's DMA engine channel for use by other threads. </p>
+<p>Submit a DMA engine memory fill request. </p>
 
 </div>
 </div>

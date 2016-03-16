@@ -94,14 +94,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6a1feac35f9a3d7dc50b1870e820ab65"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvme__qpair.html">spdk_nvme_qpair</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a6a1feac35f9a3d7dc50b1870e820ab65">spdk_nvme_ctrlr_alloc_io_qpair</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, enum <a class="el" href="nvme__spec_8h.html#ae83a61e254cf9d1fd59376ceedd1b4e6">spdk_nvme_qprio</a> qprio)</td></tr>
+<tr class="memdesc:a6a1feac35f9a3d7dc50b1870e820ab65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an I/O queue pair (submission and completion queue).  <a href="#a6a1feac35f9a3d7dc50b1870e820ab65">More...</a><br /></td></tr>
+<tr class="separator:a6a1feac35f9a3d7dc50b1870e820ab65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ec189f50d0f78d73a54413370401f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85ec189f50d0f78d73a54413370401f5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a85ec189f50d0f78d73a54413370401f5">spdk_nvme_ctrlr_free_io_qpair</a> (struct <a class="el" href="structspdk__nvme__qpair.html">spdk_nvme_qpair</a> *qpair)</td></tr>
+<tr class="memdesc:a85ec189f50d0f78d73a54413370401f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an I/O queue pair that was allocated by <a class="el" href="nvme_8h.html#a6a1feac35f9a3d7dc50b1870e820ab65" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. <br /></td></tr>
+<tr class="separator:a85ec189f50d0f78d73a54413370401f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae13ccd2ea831842a5008eb95a32545c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#ae13ccd2ea831842a5008eb95a32545c3">spdk_nvme_ctrlr_reset</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr)</td></tr>
 <tr class="memdesc:ae13ccd2ea831842a5008eb95a32545c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a full hardware reset of the NVMe controller.  <a href="#ae13ccd2ea831842a5008eb95a32545c3">More...</a><br /></td></tr>
 <tr class="separator:ae13ccd2ea831842a5008eb95a32545c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad892fc6987f9ecf8e91269f6b8ae3d20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#ad892fc6987f9ecf8e91269f6b8ae3d20">nvme_ctrlr_process_init</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr)</td></tr>
 <tr class="separator:ad892fc6987f9ecf8e91269f6b8ae3d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adec8bf313a3d5b92ad15f9d150de23b3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#adec8bf313a3d5b92ad15f9d150de23b3">spdk_nvme_ctrlr_process_io_completions</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint32_t max_completions)</td></tr>
-<tr class="memdesc:adec8bf313a3d5b92ad15f9d150de23b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for I/O submitted on the current thread.  <a href="#adec8bf313a3d5b92ad15f9d150de23b3">More...</a><br /></td></tr>
-<tr class="separator:adec8bf313a3d5b92ad15f9d150de23b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10282695461985f58f54de022911745e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr)</td></tr>
 <tr class="memdesc:a10282695461985f58f54de022911745e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for admin commands.  <a href="#a10282695461985f58f54de022911745e">More...</a><br /></td></tr>
 <tr class="separator:a10282695461985f58f54de022911745e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +152,42 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This function will be called repeatedly during initialization until the controller is ready. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6a1feac35f9a3d7dc50b1870e820ab65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__nvme__qpair.html">spdk_nvme_qpair</a>* spdk_nvme_ctrlr_alloc_io_qpair </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvme__spec_8h.html#ae83a61e254cf9d1fd59376ceedd1b4e6">spdk_nvme_qprio</a>&#160;</td>
+          <td class="paramname"><em>qprio</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate an I/O queue pair (submission and completion queue). </p>
+<p>Each queue pair should only be used from a single thread at a time (mutual exclusion must be enforced by the user).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>NVMe controller for which to allocate the I/O queue pair. </td></tr>
+    <tr><td class="paramname">qprio</td><td>Queue priority for weighted round robin arbitration. If a different arbitration method is in use, pass 0. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -457,43 +497,6 @@ Functions</h2></td></tr>
 <p>Process any outstanding completions for admin commands. </p>
 <p>This will process completions for admin commands submitted on any thread.</p>
 <p>This call is non-blocking, i.e. it only processes completions that are ready at the time of this function call. It does not wait for outstanding commands to finish.</p>
-<dl class="section return"><dt>Returns</dt><dd>Number of completions processed (may be 0) or negative on error.</dd></dl>
-<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
-
-</div>
-</div>
-<a class="anchor" id="adec8bf313a3d5b92ad15f9d150de23b3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t spdk_nvme_ctrlr_process_io_completions </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
-          <td class="paramname"><em>ctrlr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>max_completions</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Process any outstanding completions for I/O submitted on the current thread. </p>
-<p>This will only process completions for I/O that were submitted on the same thread that this function is called from. This call is also non-blocking, i.e. it only processes completions that are ready at the time of this function call. It does not wait for outstanding commands to finish.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">max_completions</td><td>Limit the number of completions to be processed in one call, or 0 for unlimited.</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of completions processed (may be 0) or negative on error.</dd></dl>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
