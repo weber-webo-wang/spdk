@@ -192,6 +192,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:a7c62e2d4555a5ebc3a3b6f9632c51e1a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7c62e2d4555a5ebc3a3b6f9632c51e1a">spdk_nvme_ctrlr_delete_ns</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint32_t nsid)</td></tr>
 <tr class="memdesc:a7c62e2d4555a5ebc3a3b6f9632c51e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete a namespace.  <a href="#a7c62e2d4555a5ebc3a3b6f9632c51e1a">More...</a><br /></td></tr>
 <tr class="separator:a7c62e2d4555a5ebc3a3b6f9632c51e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb6973133e1fd5e7a1522ab104ac92b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a9bb6973133e1fd5e7a1522ab104ac92b">spdk_nvme_ctrlr_format</a> (struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *ctrlr, uint32_t nsid, struct <a class="el" href="structspdk__nvme__format.html">spdk_nvme_format</a> *format)</td></tr>
+<tr class="memdesc:a9bb6973133e1fd5e7a1522ab104ac92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">format NVMe.  <a href="#a9bb6973133e1fd5e7a1522ab104ac92b">More...</a><br /></td></tr>
+<tr class="separator:a9bb6973133e1fd5e7a1522ab104ac92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a">spdk_nvme_ns_get_data</a> (struct <a class="el" href="structspdk__nvme__ns.html">spdk_nvme_ns</a> *ns)</td></tr>
 <tr class="memdesc:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify namespace data as defined by the NVMe specification.  <a href="#ab1863b5dccf2bcc49fe92275bc1e5a2a">More...</a><br /></td></tr>
 <tr class="separator:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -915,6 +918,49 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
 <p>This function is thread safe and can be called at any point after spdk_nvme_attach().</p>
 <p>Call <a class="el" href="nvme__ctrlr_8c.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9bb6973133e1fd5e7a1522ab104ac92b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_format </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr.html">spdk_nvme_ctrlr</a> *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__format.html">spdk_nvme_format</a> *&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>format NVMe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nsid</td><td>the name space identifier. </td></tr>
+    <tr><td class="paramname">format</td><td>the format information for the command.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
+<p>This function is thread safe and can be called at any point after spdk_nvme_attach(). </p>
 
 </div>
 </div>

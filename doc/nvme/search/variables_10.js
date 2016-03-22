@@ -1,7 +1,7 @@
 var searchData=
 [
   ['sgl',['sgl',['../structnvme__payload.html#ae5f449d47027f980b57a47d88af1ae66',1,'nvme_payload']]],
-  ['sgls',['sgls',['../structspdk__nvme__ctrlr__data.html#a8fd9489faea0ddba081b96aa2ac64fe1',1,'spdk_nvme_ctrlr_data']]],
+  ['sgls',['sgls',['../structspdk__nvme__ctrlr__data.html#a9a3c95ba8cb5736127d6da24dcb47c44',1,'spdk_nvme_ctrlr_data']]],
   ['shn',['shn',['../unionspdk__nvme__cc__register.html#a897917db042a1c27dfcd9a1d29753602',1,'spdk_nvme_cc_register']]],
   ['shst',['shst',['../unionspdk__nvme__csts__register.html#ac749de13f98d84bbe72c11176c1d6393',1,'spdk_nvme_csts_register']]],
   ['sn',['sn',['../structspdk__nvme__ctrlr__data.html#a3e4af8d2827bf96c0dda567a9181f962',1,'spdk_nvme_ctrlr_data']]],
