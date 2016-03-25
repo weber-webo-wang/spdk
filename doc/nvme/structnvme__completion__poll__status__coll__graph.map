@@ -1,4 +1,0 @@
-<map id="nvme_completion_poll_status" name="nvme_completion_poll_status">
-<area shape="rect" id="node2" href="$structspdk__nvme__cpl.html" title="spdk_nvme_cpl" alt="" coords="24,95,137,121"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__status.html" title="spdk_nvme_status" alt="" coords="15,5,147,32"/>
-</map>

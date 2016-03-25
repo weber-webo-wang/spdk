@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>SPDK: SPDK Documentation</title>
+<title>SPDK: I/OAT Driver</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -42,8 +42,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -64,7 +64,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,23 +78,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">SPDK Documentation </div>  </div>
+<div class="title">I/OAT Driver </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-Storage Performance Development Kit</h1>
+<div class="textblock"><h1><a class="anchor" id="interface"></a>
+Public Interface</h1>
 <ul>
-<li><a href="https://github.com/spdk/spdk">SPDK on GitHub</a></li>
-<li><a href="http://www.spdk.io/">SPDK.io</a></li>
+<li><a class="el" href="ioat_8h.html" title="This file defines the public interface to the I/OAT DMA engine driver. ">spdk/ioat.h</a></li>
 </ul>
-<p>The Storage Performance Development Kit (SPDK) provides a set of tools and libraries for writing high performance, scalable, user-mode storage applications. It achieves high performance by moving all of the necessary drivers into userspace and operating in a polled mode instead of relying on interrupts, which avoids kernel context switches and eliminates interrupt handling overhead.</p>
-<h1><a class="anchor" id="modules"></a>
-Modules</h1>
+<h1><a class="anchor" id="key_functions"></a>
+Key Functions</h1>
 <ul>
-<li><a class="el" href="nvme.html">NVMe Driver</a></li>
-<li><a class="el" href="ioat.html">I/OAT Driver</a> </li>
+<li><a class="el" href="ioat_8h.html#a784c1a69962e0964cf6988badd945b6f" title="Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if d...">spdk_ioat_probe()</a> Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if desired.</li>
+<li><a class="el" href="ioat_8h.html#a87ce4a1c8bdd3fb69079ac51e00f92e5" title="Get the DMA engine capabilities. ">spdk_ioat_get_dma_capabilities()</a> Get the DMA engine capabilities.</li>
+<li><a class="el" href="ioat_8h.html#aeb96b0ffd9399b70fb0d847fe61a8053" title="Submit a DMA engine memory copy request. ">spdk_ioat_submit_copy()</a> Submit a DMA engine memory copy request.</li>
+<li><a class="el" href="ioat_8h.html#aed6f662feac31775bb03511766c5f1a5" title="Submit a DMA engine memory fill request. ">spdk_ioat_submit_fill()</a> Submit a DMA engine memory fill request. </li>
 </ul>
 </div></div><!-- contents -->
 <!-- start footer part -->

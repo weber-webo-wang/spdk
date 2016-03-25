@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>SPDK: SPDK Documentation</title>
+<title>SPDK: nvme Directory Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -42,7 +42,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -64,7 +64,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,25 +78,52 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_a2d62a8e784c61036347523257d68417.html">nvme</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">SPDK Documentation </div>  </div>
+<div class="title">nvme Directory Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-Storage Performance Development Kit</h1>
-<ul>
-<li><a href="https://github.com/spdk/spdk">SPDK on GitHub</a></li>
-<li><a href="http://www.spdk.io/">SPDK.io</a></li>
-</ul>
-<p>The Storage Performance Development Kit (SPDK) provides a set of tools and libraries for writing high performance, scalable, user-mode storage applications. It achieves high performance by moving all of the necessary drivers into userspace and operating in a polled mode instead of relying on interrupts, which avoids kernel context switches and eliminates interrupt handling overhead.</p>
-<h1><a class="anchor" id="modules"></a>
-Modules</h1>
-<ul>
-<li><a class="el" href="nvme.html">NVMe Driver</a></li>
-<li><a class="el" href="ioat.html">I/OAT Driver</a> </li>
-</ul>
-</div></div><!-- contents -->
+<div class="dynheader">
+Directory dependency graph for nvme:</div>
+<div class="dyncontent">
+<div class="center"><img src="dir_a2d62a8e784c61036347523257d68417_dep.png" border="0" usemap="#dir__a2d62a8e784c61036347523257d68417__dep" alt="nvme"/></div>
+<map name="dir__a2d62a8e784c61036347523257d68417__dep" id="dir__a2d62a8e784c61036347523257d68417__dep">
+<area shape="rect" id="node1" href="dir_a2d62a8e784c61036347523257d68417.html" title="nvme" alt="" coords="27,52,99,100"/>
+<area shape="rect" id="node2" href="dir_d44c64559bbebec7f509842c48db8b23.html" title="include" alt="" coords="27,148,99,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000003_000000.html" title="3" alt="" coords="67,122,75,137"/>
+<area shape="rect" id="clust1" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html" title="lib" alt="" coords="16,16,109,111"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
+Files</h2></td></tr>
+<tr class="memitem:nvme_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8c.html">nvme.c</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:nvme__ctrlr_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ctrlr_8c.html">nvme_ctrlr.c</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:nvme__ctrlr__cmd_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>nvme_ctrlr_cmd.c</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:nvme__impl_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html">nvme_impl.h</a></td></tr>
+<tr class="memdesc:nvme__impl_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">This file describes the callback functions required to integrate the userspace NVMe driver for a specific implementation. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:nvme__intel_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__intel_8c.html">nvme_intel.c</a></td></tr>
+<tr class="memdesc:nvme__intel_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intel specific data structures and functions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:nvme__internal_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>nvme_internal.h</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:nvme__ns_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>nvme_ns.c</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:nvme__ns__cmd_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ns__cmd_8c.html">nvme_ns_cmd.c</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:nvme__qpair_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__qpair_8c.html">nvme_qpair.c</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 <!-- start footer part -->
 <section id="community">
   <div class="community">

@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>SPDK: SPDK Documentation</title>
+<title>SPDK: spdk_nvme_ns Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -42,9 +42,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -64,7 +64,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-</div><!-- top -->
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,25 +85,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">SPDK Documentation </div>  </div>
+<div class="title">spdk_nvme_ns Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-Storage Performance Development Kit</h1>
-<ul>
-<li><a href="https://github.com/spdk/spdk">SPDK on GitHub</a></li>
-<li><a href="http://www.spdk.io/">SPDK.io</a></li>
+<div class="dynheader">
+Collaboration diagram for spdk_nvme_ns:</div>
+<div class="dyncontent">
+<div class="center"><img src="structspdk__nvme__ns__coll__graph.png" border="0" usemap="#spdk__nvme__ns_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__nvme__ns_coll__map" id="spdk__nvme__ns_coll__map">
+<area shape="rect" id="node2" href="structspdk__nvme__ctrlr.html" title="spdk_nvme_ctrlr" alt="" coords="265,195,384,221"/>
+<area shape="rect" id="node4" href="structspdk__nvme__qpair.html" title="spdk_nvme_qpair" alt="" coords="509,379,633,405"/>
+<area shape="rect" id="node9" href="structnvme__async__event__request.html" title="nvme_async_event_request" alt="" coords="479,240,664,267"/>
+<area shape="rect" id="node3" href="structspdk__nvme__cpl.html" title="Completion queue entry. " alt="" coords="24,329,137,356"/>
+<area shape="rect" id="node5" href="structspdk__nvme__ctrlr__data.html" title="spdk_nvme_ctrlr_data" alt="" coords="5,240,156,267"/>
+<area shape="rect" id="node6" href="structspdk__nvme__registers.html" title="spdk_nvme_registers" alt="" coords="7,5,154,32"/>
+<area shape="rect" id="node7" href="structspdk__nvme__ns__data.html" title="spdk_nvme_ns_data" alt="" coords="9,56,152,83"/>
+<area shape="rect" id="node8" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options. " alt="" coords="5,107,156,133"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>nvme_internal.h</li>
 </ul>
-<p>The Storage Performance Development Kit (SPDK) provides a set of tools and libraries for writing high performance, scalable, user-mode storage applications. It achieves high performance by moving all of the necessary drivers into userspace and operating in a polled mode instead of relying on interrupts, which avoids kernel context switches and eliminates interrupt handling overhead.</p>
-<h1><a class="anchor" id="modules"></a>
-Modules</h1>
-<ul>
-<li><a class="el" href="nvme.html">NVMe Driver</a></li>
-<li><a class="el" href="ioat.html">I/OAT Driver</a> </li>
-</ul>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- start footer part -->
 <section id="community">
   <div class="community">

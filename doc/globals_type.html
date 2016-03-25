@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>SPDK: SPDK Documentation</title>
+<title>SPDK: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -42,10 +42,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -64,6 +64,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li><a href="globals.html"><span>All</span></a></li>
+      <li><a href="globals_func.html"><span>Functions</span></a></li>
+      <li class="current"><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="globals_defs.html"><span>Macros</span></a></li>
+    </ul>
+  </div>
 </div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -79,25 +95,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div class="header">
-  <div class="headertitle">
-<div class="title">SPDK Documentation </div>  </div>
-</div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-Storage Performance Development Kit</h1>
-<ul>
-<li><a href="https://github.com/spdk/spdk">SPDK on GitHub</a></li>
-<li><a href="http://www.spdk.io/">SPDK.io</a></li>
+&#160;<ul>
+<li>spdk_ioat_attach_cb
+: <a class="el" href="ioat_8h.html#a8826bf4e7c57228794f486368217a494">ioat.h</a>
+</li>
+<li>spdk_ioat_probe_cb
+: <a class="el" href="ioat_8h.html#a41d999ded01b3bc2b1a1bce0c48083a7">ioat.h</a>
+</li>
+<li>spdk_ioat_req_cb
+: <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">ioat.h</a>
+</li>
+<li>spdk_nvme_aer_cb
+: <a class="el" href="nvme_8h.html#ae564dc7dced1dd7b474c1a6923734a6d">nvme.h</a>
+</li>
+<li>spdk_nvme_attach_cb
+: <a class="el" href="nvme_8h.html#ad44a8058acb7b6aecabb70d012042a09">nvme.h</a>
+</li>
+<li>spdk_nvme_cmd_cb
+: <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">nvme.h</a>
+</li>
+<li>spdk_nvme_probe_cb
+: <a class="el" href="nvme_8h.html#a9a0c85e6f09c7e4bac1e1f3681aa3dc3">nvme.h</a>
+</li>
+<li>spdk_nvme_req_next_sge_cb
+: <a class="el" href="nvme_8h.html#aa00211de8f54e25a4f9a5a93fb17d8a1">nvme.h</a>
+</li>
+<li>spdk_nvme_req_reset_sgl_cb
+: <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">nvme.h</a>
+</li>
 </ul>
-<p>The Storage Performance Development Kit (SPDK) provides a set of tools and libraries for writing high performance, scalable, user-mode storage applications. It achieves high performance by moving all of the necessary drivers into userspace and operating in a polled mode instead of relying on interrupts, which avoids kernel context switches and eliminates interrupt handling overhead.</p>
-<h1><a class="anchor" id="modules"></a>
-Modules</h1>
-<ul>
-<li><a class="el" href="nvme.html">NVMe Driver</a></li>
-<li><a class="el" href="ioat.html">I/OAT Driver</a> </li>
-</ul>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- start footer part -->
 <section id="community">
   <div class="community">

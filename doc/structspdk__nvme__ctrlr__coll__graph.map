@@ -1,0 +1,23 @@
+<map id="spdk_nvme_ctrlr" name="spdk_nvme_ctrlr">
+<area shape="rect" id="node4" href="$structspdk__nvme__ns.html" title="spdk_nvme_ns" alt="" coords="800,436,911,463"/>
+<area shape="rect" id="node5" href="$structspdk__nvme__qpair.html" title="spdk_nvme_qpair" alt="" coords="1009,119,1133,145"/>
+<area shape="rect" id="node22" href="$structnvme__async__event__request.html" title="nvme_async_event_request" alt="" coords="763,221,948,248"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cpl.html" title="Completion queue entry. " alt="" coords="307,156,420,183"/>
+<area shape="rect" id="node7" href="$structnvme__request.html" title="nvme_request" alt="" coords="574,156,678,183"/>
+<area shape="rect" id="node3" href="$structspdk__nvme__status.html" title="spdk_nvme_status" alt="" coords="33,129,165,156"/>
+<area shape="rect" id="node6" href="$structnvme__tracker.html" title="nvme_tracker" alt="" coords="805,119,906,145"/>
+<area shape="rect" id="node8" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="303,5,424,32"/>
+<area shape="rect" id="node9" href="$structspdk__nvme__ctrlr__data.html" title="spdk_nvme_ctrlr_data" alt="" coords="288,247,439,273"/>
+<area shape="rect" id="node10" href="$structspdk__nvme__power__state.html" title="spdk_nvme_power_state" alt="" coords="16,180,183,207"/>
+<area shape="rect" id="node11" href="$structspdk__nvme__registers.html" title="spdk_nvme_registers" alt="" coords="290,361,437,388"/>
+<area shape="rect" id="node12" href="$unionspdk__nvme__vs__register.html" title="spdk_nvme_vs_register" alt="" coords="19,535,179,561"/>
+<area shape="rect" id="node13" href="$unionspdk__nvme__cmbsz__register.html" title="spdk_nvme_cmbsz_register" alt="" coords="7,585,192,612"/>
+<area shape="rect" id="node14" href="$unionspdk__nvme__csts__register.html" title="spdk_nvme_csts_register" alt="" coords="14,231,185,257"/>
+<area shape="rect" id="node15" href="$unionspdk__nvme__cc__register.html" title="spdk_nvme_cc_register" alt="" coords="19,281,179,308"/>
+<area shape="rect" id="node16" href="$unionspdk__nvme__cap__lo__register.html" title="spdk_nvme_cap_lo_register" alt="" coords="7,332,191,359"/>
+<area shape="rect" id="node17" href="$unionspdk__nvme__aqa__register.html" title="spdk_nvme_aqa_register" alt="" coords="16,383,183,409"/>
+<area shape="rect" id="node18" href="$unionspdk__nvme__cap__hi__register.html" title="spdk_nvme_cap_hi_register" alt="" coords="7,433,191,460"/>
+<area shape="rect" id="node19" href="$unionspdk__nvme__cmbloc__register.html" title="spdk_nvme_cmbloc_register" alt="" coords="5,484,193,511"/>
+<area shape="rect" id="node20" href="$structspdk__nvme__ns__data.html" title="spdk_nvme_ns_data" alt="" coords="292,412,435,439"/>
+<area shape="rect" id="node21" href="$structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options. " alt="" coords="288,463,439,489"/>
+</map>
