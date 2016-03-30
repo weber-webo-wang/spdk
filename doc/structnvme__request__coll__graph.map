@@ -1,7 +1,0 @@
-<map id="nvme_request" name="nvme_request">
-<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="52,95,173,121"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="5,5,183,32"/>
-<area shape="rect" id="node4" href="$structspdk__nvme__cpl.html" title="Completion queue entry. " alt="" coords="207,95,320,121"/>
-<area shape="rect" id="node5" href="$structspdk__nvme__status.html" title="spdk_nvme_status" alt="" coords="207,5,339,32"/>
-<area shape="rect" id="node6" href="$structnvme__payload.html" title="Descriptor for a request data payload. " alt="" coords="345,95,451,121"/>
-</map>

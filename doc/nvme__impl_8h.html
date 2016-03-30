@@ -125,7 +125,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a113be6337ce6831ae8bfc95d8dcd9901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the physical address for the specified virtual address. <br /></td></tr>
 <tr class="separator:a113be6337ce6831ae8bfc95d8dcd9901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a475a59bf7670eac1bc0ed8f317b81610"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a475a59bf7670eac1bc0ed8f317b81610">nvme_alloc_request</a>(bufp)&#160;&#160;&#160;rte_mempool_get(request_mempool, (void **)(bufp));</td></tr>
-<tr class="memdesc:a475a59bf7670eac1bc0ed8f317b81610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a buffer for an <a class="el" href="structnvme__request.html">nvme_request</a> object.  <a href="#a475a59bf7670eac1bc0ed8f317b81610">More...</a><br /></td></tr>
+<tr class="memdesc:a475a59bf7670eac1bc0ed8f317b81610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a buffer for an nvme_request object.  <a href="#a475a59bf7670eac1bc0ed8f317b81610">More...</a><br /></td></tr>
 <tr class="separator:a475a59bf7670eac1bc0ed8f317b81610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a964075ffde5231b255d681c975f716b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a964075ffde5231b255d681c975f716b7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__impl_8h.html#a964075ffde5231b255d681c975f716b7">nvme_dealloc_request</a>(buf)&#160;&#160;&#160;rte_mempool_put(request_mempool, buf)</td></tr>
@@ -168,7 +168,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return a buffer for an <a class="el" href="structnvme__request.html">nvme_request</a> object. </p>
+<p>Return a buffer for an nvme_request object. </p>
 <p>These objects are allocated for each I/O. They do not need to be pinned nor physically contiguous. </p>
 
 </div>

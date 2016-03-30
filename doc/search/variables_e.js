@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['parent',['parent',['../structnvme__request.html#a98f4a3a3237b35bf27e69b98773dca3a',1,'nvme_request']]],
-  ['parent_5fstatus',['parent_status',['../structnvme__request.html#ae7a7b79806c9d353766e2f840df13fc0',1,'nvme_request']]],
-  ['payload',['payload',['../structnvme__request.html#abf74f9813416b0c3c95bfbce85c141c8',1,'nvme_request']]],
-  ['payload_5foffset',['payload_offset',['../structnvme__request.html#a2101c54bfd951cfaaca2592db61e3f41',1,'nvme_request']]],
   ['persist',['persist',['../structspdk__nvme__ns__data.html#ada850d5cd15ecc2d5f216b845bd5c3e8',1,'spdk_nvme_ns_data']]],
   ['pit',['pit',['../structspdk__nvme__ns__data.html#ac13a2b9435ad685be10f79affa76b821',1,'spdk_nvme_ns_data']]],
   ['pit1',['pit1',['../structspdk__nvme__ns__data.html#ad904cb4c17ff2b844198314bb7aeabbc',1,'spdk_nvme_ns_data']]],

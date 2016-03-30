@@ -84,9 +84,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">NVMe I/O Submission </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>I/O is submitted to an NVMe namespace using nvme_ns_cmd_xxx functions defined in <a class="el" href="nvme__ns__cmd_8c.html">nvme_ns_cmd.c</a>.</p>
-<p>The NVMe driver submits the I/O request as an NVMe submission queue entry on the nvme_qpair associated with the logical core that submits the I/O.</p>
-<dl class="section see"><dt>See also</dt><dd>nvme_ns_cmd_read, nvme_ns_cmd_write, nvme_ns_cmd_deallocate, nvme_ns_cmd_flush, nvme_get_ioq_idx </dd></dl>
+<div class="textblock"><p>I/O is submitted to an NVMe namespace using nvme_ns_cmd_xxx functions defined in nvme_ns_cmd.c.</p>
+<p>The NVMe driver submits the I/O request as an NVMe submission queue entry on the queue pair specified in the command. The application must poll for I/O completion on each queue pair with outstanding I/O to receive completion callbacks.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_read</a>, <a class="el" href="nvme_8h.html#a3065f669d8b605efdcadffbf94a50538" title="Submits a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write</a>, <a class="el" href="nvme_8h.html#ae275923b7e982b115483e425c2972ec5" title="Submits a deallocation request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_deallocate</a>, <a class="el" href="nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6" title="Submits a flush request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_flush</a>, <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions</a> </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <section id="community">
