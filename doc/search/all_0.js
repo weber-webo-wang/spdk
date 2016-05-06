@@ -8,6 +8,7 @@ var searchData=
   ['apsta',['apsta',['../structspdk__nvme__ctrlr__data.html#abddc39011dc72f70c2a7efcf046fe06c',1,'spdk_nvme_ctrlr_data']]],
   ['aqa',['aqa',['../structspdk__nvme__registers.html#a5bf760e2a616ecb3f8d8fd0a64d24e61',1,'spdk_nvme_registers']]],
   ['asqs',['asqs',['../unionspdk__nvme__aqa__register.html#ac8e473c82656d9f2a536618f9e2f55cb',1,'spdk_nvme_aqa_register']]],
+  ['assert_2eh',['assert.h',['../assert_8h.html',1,'']]],
   ['avscc',['avscc',['../structspdk__nvme__ctrlr__data.html#ab64618e8b4d15a7f3e4da7e0373f354e',1,'spdk_nvme_ctrlr_data']]],
   ['awun',['awun',['../structspdk__nvme__ctrlr__data.html#aa5a66788efbe912b16019c7b62b00a16',1,'spdk_nvme_ctrlr_data']]],
   ['awupf',['awupf',['../structspdk__nvme__ctrlr__data.html#a77160c6bcaa3ab4a312b42991603860e',1,'spdk_nvme_ctrlr_data']]]

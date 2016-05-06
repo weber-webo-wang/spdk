@@ -35,6 +35,7 @@ var searchData=
   ['spdk_5fnvme_5fintel_5ffeat_5freset_5ftimed_5fworkload_5fcounters',['spdk_nvme_intel_feat_reset_timed_workload_counters',['../unionspdk__nvme__intel__feat__reset__timed__workload__counters.html',1,'']]],
   ['spdk_5fnvme_5fintel_5ffeat_5fsmbus_5faddress',['spdk_nvme_intel_feat_smbus_address',['../unionspdk__nvme__intel__feat__smbus__address.html',1,'']]],
   ['spdk_5fnvme_5fintel_5flog_5fpage_5fdirectory',['spdk_nvme_intel_log_page_directory',['../structspdk__nvme__intel__log__page__directory.html',1,'']]],
+  ['spdk_5fnvme_5fintel_5fmarketing_5fdescription_5fpage',['spdk_nvme_intel_marketing_description_page',['../structspdk__nvme__intel__marketing__description__page.html',1,'']]],
   ['spdk_5fnvme_5fintel_5frw_5flatency_5fpage',['spdk_nvme_intel_rw_latency_page',['../structspdk__nvme__intel__rw__latency__page.html',1,'']]],
   ['spdk_5fnvme_5fintel_5fsmart_5fattribute',['spdk_nvme_intel_smart_attribute',['../structspdk__nvme__intel__smart__attribute.html',1,'']]],
   ['spdk_5fnvme_5fintel_5fsmart_5finformation_5fpage',['spdk_nvme_intel_smart_information_page',['../structspdk__nvme__intel__smart__information__page.html',1,'']]],

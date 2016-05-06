@@ -99,6 +99,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">nvme.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>NVMe driver public API.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -287,7 +290,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memdesc:abffcf40d9f92873de4ea39ac0c78c3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size, in bytes, of an nvme_request.  <a href="#abffcf40d9f92873de4ea39ac0c78c3d2">More...</a><br /></td></tr>
 <tr class="separator:abffcf40d9f92873de4ea39ac0c78c3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>NVMe driver public API. </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="ae564dc7dced1dd7b474c1a6923734a6d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1395,7 +1400,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
     <tr><td class="paramname">lba_count</td><td>length (in sectors) for the read operation </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
-    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html">nvme_spec.h</a>, for this I/O</td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">nvme_spec.h</a>, for this I/O</td></tr>
   </table>
   </dd>
 </dl>
@@ -1493,7 +1498,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
     <tr><td class="paramname">lba_count</td><td>length (in sectors) for the read operation </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
-    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html">nvme_spec.h</a>, for this I/O </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">nvme_spec.h</a>, for this I/O </td></tr>
     <tr><td class="paramname">apptag_mask</td><td>application tag mask. </td></tr>
     <tr><td class="paramname">apptag</td><td>application tag to use end-to-end protection information.</td></tr>
   </table>
@@ -1579,7 +1584,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
     <tr><td class="paramname">lba_count</td><td>length (in sectors) for the read operation </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
-    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html">nvme_spec.h</a>, for this I/O </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">nvme_spec.h</a>, for this I/O </td></tr>
     <tr><td class="paramname">reset_sgl_fn</td><td>callback function to reset scattered payload </td></tr>
     <tr><td class="paramname">next_sge_fn</td><td>callback function to iterate each scattered payload memory segment</td></tr>
   </table>
@@ -1962,7 +1967,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
     <tr><td class="paramname">lba_count</td><td>length (in sectors) for the write operation </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
-    <tr><td class="paramname">io_flags</td><td>set flags, defined by the SPDK_NVME_IO_FLAGS_* entries in <a class="el" href="nvme__spec_8h.html">spdk/nvme_spec.h</a>, for this I/O.</td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined by the SPDK_NVME_IO_FLAGS_* entries in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">spdk/nvme_spec.h</a>, for this I/O.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2060,7 +2065,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
     <tr><td class="paramname">lba_count</td><td>length (in sectors) for the write operation </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
-    <tr><td class="paramname">io_flags</td><td>set flags, defined by the SPDK_NVME_IO_FLAGS_* entries in <a class="el" href="nvme__spec_8h.html">spdk/nvme_spec.h</a>, for this I/O. </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined by the SPDK_NVME_IO_FLAGS_* entries in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">spdk/nvme_spec.h</a>, for this I/O. </td></tr>
     <tr><td class="paramname">apptag_mask</td><td>application tag mask. </td></tr>
     <tr><td class="paramname">apptag</td><td>application tag to use end-to-end protection information.</td></tr>
   </table>
@@ -2134,7 +2139,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
     <tr><td class="paramname">lba_count</td><td>length (in sectors) for the write zero operation </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
-    <tr><td class="paramname">io_flags</td><td>set flags, defined by the SPDK_NVME_IO_FLAGS_* entries in <a class="el" href="nvme__spec_8h.html">spdk/nvme_spec.h</a>, for this I/O.</td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined by the SPDK_NVME_IO_FLAGS_* entries in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">spdk/nvme_spec.h</a>, for this I/O.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2218,7 +2223,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
     <tr><td class="paramname">lba_count</td><td>length (in sectors) for the write operation </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
-    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html">nvme_spec.h</a>, for this I/O </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">nvme_spec.h</a>, for this I/O </td></tr>
     <tr><td class="paramname">reset_sgl_fn</td><td>callback function to reset scattered payload </td></tr>
     <tr><td class="paramname">next_sge_fn</td><td>callback function to iterate each scattered payload memory segment</td></tr>
   </table>
@@ -2539,7 +2544,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 </div><div class="memdoc">
 
 <p>Get the size, in bytes, of an nvme_request. </p>
-<p>This is the size of the request objects that need to be allocated by the nvme_alloc_request macro in <a class="el" href="nvme__impl_8h.html" title="This file describes the callback functions required to integrate the userspace NVMe driver for a spec...">nvme_impl.h</a></p>
+<p>This is the size of the request objects that need to be allocated by the nvme_alloc_request macro in <a class="el" href="nvme__impl_8h.html" title="NVMe driver integration callbacks. ">nvme_impl.h</a></p>
 <p>This function is thread safe and can be called at any time. </p>
 
 </div>
