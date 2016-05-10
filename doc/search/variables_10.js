@@ -7,6 +7,7 @@ var searchData=
   ['sqes',['sqes',['../structspdk__nvme__ctrlr__data.html#a092db74a07ca3ccc56ffadc7e2689854',1,'spdk_nvme_ctrlr_data']]],
   ['sqs',['sqs',['../unionspdk__nvme__cmbsz__register.html#a3481600cf80fa69860ba5dbb445afc5f',1,'spdk_nvme_cmbsz_register']]],
   ['ssvid',['ssvid',['../structspdk__nvme__ctrlr__data.html#a98bca935ffa3fbc83fd504055b8a228f',1,'spdk_nvme_ctrlr_data']]],
+  ['start',['start',['../structspdk__json__val.html#acd221be089fb848898b736d31add7053',1,'spdk_json_val']]],
   ['supported',['supported',['../structspdk__nvme__ctrlr__data.html#a67327a265027227d37f9b7e947c06cfc',1,'spdk_nvme_ctrlr_data']]],
   ['sz',['sz',['../unionspdk__nvme__cmbsz__register.html#a03af53ff83c581ce0f02f72195f1c6f2',1,'spdk_nvme_cmbsz_register']]],
   ['szu',['szu',['../unionspdk__nvme__cmbsz__register.html#a5259febaf27ced21d1358b97bd1cb831',1,'spdk_nvme_cmbsz_register']]]

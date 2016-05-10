@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['spdk_5fconf',['spdk_conf',['../structspdk__conf.html',1,'']]],
+  ['spdk_5fconf_5fitem',['spdk_conf_item',['../structspdk__conf__item.html',1,'']]],
+  ['spdk_5fconf_5fsection',['spdk_conf_section',['../structspdk__conf__section.html',1,'']]],
+  ['spdk_5fconf_5fvalue',['spdk_conf_value',['../structspdk__conf__value.html',1,'']]],
   ['spdk_5fioat_5fdma_5fhw_5fdesc',['spdk_ioat_dma_hw_desc',['../structspdk__ioat__dma__hw__desc.html',1,'']]],
   ['spdk_5fioat_5ffill_5fhw_5fdesc',['spdk_ioat_fill_hw_desc',['../structspdk__ioat__fill__hw__desc.html',1,'']]],
   ['spdk_5fioat_5fgeneric_5fhw_5fdesc',['spdk_ioat_generic_hw_desc',['../structspdk__ioat__generic__hw__desc.html',1,'']]],
@@ -11,6 +15,8 @@ var searchData=
   ['spdk_5fioat_5fregisters',['spdk_ioat_registers',['../structspdk__ioat__registers.html',1,'']]],
   ['spdk_5fioat_5fxor_5fext_5fhw_5fdesc',['spdk_ioat_xor_ext_hw_desc',['../structspdk__ioat__xor__ext__hw__desc.html',1,'']]],
   ['spdk_5fioat_5fxor_5fhw_5fdesc',['spdk_ioat_xor_hw_desc',['../structspdk__ioat__xor__hw__desc.html',1,'']]],
+  ['spdk_5fjson_5fobject_5fdecoder',['spdk_json_object_decoder',['../structspdk__json__object__decoder.html',1,'']]],
+  ['spdk_5fjson_5fval',['spdk_json_val',['../structspdk__json__val.html',1,'']]],
   ['spdk_5fnvme_5faqa_5fregister',['spdk_nvme_aqa_register',['../unionspdk__nvme__aqa__register.html',1,'']]],
   ['spdk_5fnvme_5fcap_5fhi_5fregister',['spdk_nvme_cap_hi_register',['../unionspdk__nvme__cap__hi__register.html',1,'']]],
   ['spdk_5fnvme_5fcap_5flo_5fregister',['spdk_nvme_cap_lo_register',['../unionspdk__nvme__cap__lo__register.html',1,'']]],
