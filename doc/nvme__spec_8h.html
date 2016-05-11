@@ -178,6 +178,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__protection__info.html">spdk_nvme_protection_info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__fw__commit.html">spdk_nvme_fw_commit</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters for SPDK_NVME_OPC_FIRMWARE_COMMIT cdw10.  <a href="structspdk__nvme__fw__commit.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -262,10 +265,47 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ae4e10443176e941bea118b389679c345"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4e10443176e941bea118b389679c345"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#ae4e10443176e941bea118b389679c345">spdk_nvme_ns_management_type</a> <tr class="memdesc:ae4e10443176e941bea118b389679c345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace management Type Encoding. <br /></td></tr>
 <tr class="separator:ae4e10443176e941bea118b389679c345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:ae4da1c1bec22eb22d1af72bbf37af36e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">spdk_nvme_fw_commit_action</a> { <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eaf8349fa33534c363595859493747e93f">SPDK_NVME_FW_COMMIT_REPLACE_IMG</a> = 0x0, 
+<a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea85655a09e0cae5f157d3b005ba1f4b6f">SPDK_NVME_FW_COMMIT_REPLACE_AND_ENABLE_IMG</a> = 0x1, 
+<a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab533ab92baec629b3cbeed4b81885c13">SPDK_NVME_FW_COMMIT_ENABLE_IMG</a> = 0x2, 
+<a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab62fbc9f58fcf496f7207e7fa6233a0d">SPDK_NVME_FW_COMMIT_RUN_IMG</a> = 0x3
+ }<tr class="memdesc:ae4da1c1bec22eb22d1af72bbf37af36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters for SPDK_NVME_OPC_FIRMWARE_COMMIT cdw10: commit action.  <a href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">More...</a><br /></td></tr>
+<tr class="separator:ae4da1c1bec22eb22d1af72bbf37af36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe specification definitions. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ae4da1c1bec22eb22d1af72bbf37af36e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">spdk_nvme_fw_commit_action</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parameters for SPDK_NVME_OPC_FIRMWARE_COMMIT cdw10: commit action. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ae4da1c1bec22eb22d1af72bbf37af36eaf8349fa33534c363595859493747e93f"></a>SPDK_NVME_FW_COMMIT_REPLACE_IMG&#160;</td><td class="fielddoc">
+<p>Downloaded image replaces the image specified by the Firmware Slot field. </p>
+<p>This image is not activated. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae4da1c1bec22eb22d1af72bbf37af36ea85655a09e0cae5f157d3b005ba1f4b6f"></a>SPDK_NVME_FW_COMMIT_REPLACE_AND_ENABLE_IMG&#160;</td><td class="fielddoc">
+<p>Downloaded image replaces the image specified by the Firmware Slot field. </p>
+<p>This image is activated at the next reset. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae4da1c1bec22eb22d1af72bbf37af36eab533ab92baec629b3cbeed4b81885c13"></a>SPDK_NVME_FW_COMMIT_ENABLE_IMG&#160;</td><td class="fielddoc">
+<p>The image specified by the Firmware Slot field is activated at the next reset. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae4da1c1bec22eb22d1af72bbf37af36eab62fbc9f58fcf496f7207e7fa6233a0d"></a>SPDK_NVME_FW_COMMIT_RUN_IMG&#160;</td><td class="fielddoc">
+<p>The image specified by the Firmware Slot field is requested to be activated immediately without reset. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a class="anchor" id="a3d5e453e4d95b0f5b9bb4de04ace78c4"></a>
 <div class="memitem">
 <div class="memproto">

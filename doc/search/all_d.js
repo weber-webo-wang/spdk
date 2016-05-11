@@ -7,6 +7,7 @@ var searchData=
   ['nawun',['nawun',['../structspdk__nvme__ns__data.html#ad28697ee63156180d84ef76496ca030f',1,'spdk_nvme_ns_data']]],
   ['nawupf',['nawupf',['../structspdk__nvme__ns__data.html#af01be31aa34caf36761d63da4d46c31a',1,'spdk_nvme_ns_data']]],
   ['ncap',['ncap',['../structspdk__nvme__ns__data.html#a641a3b350f2320c9065fed1b4b969636',1,'spdk_nvme_ns_data']]],
+  ['next_5fentry',['next_entry',['../structspdk__trace__history.html#a19c2844fdf265b00faf766372de1d577',1,'spdk_trace_history']]],
   ['nguid',['nguid',['../structspdk__nvme__ns__data.html#a3f0a3e19a15e892d1e842e1c83028bf0',1,'spdk_nvme_ns_data']]],
   ['nlbaf',['nlbaf',['../structspdk__nvme__ns__data.html#a2a4ebf525c7d166d31f52530999ddcdf',1,'spdk_nvme_ns_data']]],
   ['nmic',['nmic',['../structspdk__nvme__ns__data.html#aa8185a66932e83d2682f2ca502f9a0ae',1,'spdk_nvme_ns_data']]],

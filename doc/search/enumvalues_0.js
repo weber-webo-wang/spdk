@@ -2,6 +2,10 @@ var searchData=
 [
   ['spdk_5fioat_5fengine_5fcopy_5fsupported',['SPDK_IOAT_ENGINE_COPY_SUPPORTED',['../ioat_8h.html#a9e773693f3aadb3dc526810a2e387402a46fdc856e01e8551a6f59b20c2189bc0',1,'ioat.h']]],
   ['spdk_5fioat_5fengine_5ffill_5fsupported',['SPDK_IOAT_ENGINE_FILL_SUPPORTED',['../ioat_8h.html#a9e773693f3aadb3dc526810a2e387402abb0266507ff9bbdfe64074015c7f6583',1,'ioat.h']]],
+  ['spdk_5fnvme_5ffw_5fcommit_5fenable_5fimg',['SPDK_NVME_FW_COMMIT_ENABLE_IMG',['../nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab533ab92baec629b3cbeed4b81885c13',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5ffw_5fcommit_5freplace_5fand_5fenable_5fimg',['SPDK_NVME_FW_COMMIT_REPLACE_AND_ENABLE_IMG',['../nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea85655a09e0cae5f157d3b005ba1f4b6f',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5ffw_5fcommit_5freplace_5fimg',['SPDK_NVME_FW_COMMIT_REPLACE_IMG',['../nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eaf8349fa33534c363595859493747e93f',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5ffw_5fcommit_5frun_5fimg',['SPDK_NVME_FW_COMMIT_RUN_IMG',['../nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab62fbc9f58fcf496f7207e7fa6233a0d',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5fchanged_5fns_5flist',['SPDK_NVME_LOG_CHANGED_NS_LIST',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aaa4a483997b6fa41a9e73755441d2186',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5fcommand_5feffects_5flog',['SPDK_NVME_LOG_COMMAND_EFFECTS_LOG',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aab219389150398bc1b23da1df91e634c',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5ferror',['SPDK_NVME_LOG_ERROR',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ad05013a36512c9cd6ad0249263a3f583',1,'nvme_spec.h']]],

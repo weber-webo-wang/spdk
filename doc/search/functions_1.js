@@ -28,6 +28,7 @@ var searchData=
   ['spdk_5fnvme_5fctrlr_5fis_5flog_5fpage_5fsupported',['spdk_nvme_ctrlr_is_log_page_supported',['../nvme_8h.html#a7dc6bb842e168a68972ec46cc35591ae',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fprocess_5fadmin_5fcompletions',['spdk_nvme_ctrlr_process_admin_completions',['../nvme_8h.html#a10282695461985f58f54de022911745e',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5freset',['spdk_nvme_ctrlr_reset',['../nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3',1,'nvme.h']]],
+  ['spdk_5fnvme_5fctrlr_5fupdate_5ffirmware',['spdk_nvme_ctrlr_update_firmware',['../nvme_8h.html#aa5bf2047c92b9bb1a20cf9493fa9ebf6',1,'nvme.h']]],
   ['spdk_5fnvme_5fdetach',['spdk_nvme_detach',['../nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fcmd_5fdeallocate',['spdk_nvme_ns_cmd_deallocate',['../nvme_8h.html#ae275923b7e982b115483e425c2972ec5',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fcmd_5fflush',['spdk_nvme_ns_cmd_flush',['../nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6',1,'nvme.h']]],
@@ -59,5 +60,10 @@ var searchData=
   ['spdk_5fsprintf_5falloc',['spdk_sprintf_alloc',['../string_8h.html#ac80f349c77c57bc28690f46e5de7fe03',1,'string.h']]],
   ['spdk_5fstr_5ftrim',['spdk_str_trim',['../string_8h.html#a93efecd5ee3d49df20a51b65718efbd1',1,'string.h']]],
   ['spdk_5fstrlwr',['spdk_strlwr',['../string_8h.html#aafc67eadec132156b4f7bd873d1cbc62',1,'string.h']]],
-  ['spdk_5fstrsepq',['spdk_strsepq',['../string_8h.html#ad39472adf37d067c2fbcf2b1454188c2',1,'string.h']]]
+  ['spdk_5fstrsepq',['spdk_strsepq',['../string_8h.html#ad39472adf37d067c2fbcf2b1454188c2',1,'string.h']]],
+  ['spdk_5ftrace_5fclear_5ftpoints',['spdk_trace_clear_tpoints',['../trace_8h.html#a7ecb50e2b95e9c75eeddd9884ec0aafe',1,'trace.h']]],
+  ['spdk_5ftrace_5fget_5ftpoint_5fgroup_5fmask',['spdk_trace_get_tpoint_group_mask',['../trace_8h.html#aa7331d8e039fadc27049efd27c1d49a8',1,'trace.h']]],
+  ['spdk_5ftrace_5fget_5ftpoint_5fmask',['spdk_trace_get_tpoint_mask',['../trace_8h.html#a346327ec1addd7eeb87963b40cec1821',1,'trace.h']]],
+  ['spdk_5ftrace_5fset_5ftpoint_5fgroup_5fmask',['spdk_trace_set_tpoint_group_mask',['../trace_8h.html#aa0ade5c1286d121c2eafeae8918169db',1,'trace.h']]],
+  ['spdk_5ftrace_5fset_5ftpoints',['spdk_trace_set_tpoints',['../trace_8h.html#a6f2131f1fc35d495f51552eb2838630b',1,'trace.h']]]
 ];

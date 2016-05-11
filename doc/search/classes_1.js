@@ -34,6 +34,7 @@ var searchData=
   ['spdk_5fnvme_5ferror_5finformation_5fentry',['spdk_nvme_error_information_entry',['../structspdk__nvme__error__information__entry.html',1,'']]],
   ['spdk_5fnvme_5ffirmware_5fpage',['spdk_nvme_firmware_page',['../structspdk__nvme__firmware__page.html',1,'']]],
   ['spdk_5fnvme_5fformat',['spdk_nvme_format',['../structspdk__nvme__format.html',1,'']]],
+  ['spdk_5fnvme_5ffw_5fcommit',['spdk_nvme_fw_commit',['../structspdk__nvme__fw__commit.html',1,'']]],
   ['spdk_5fnvme_5fhealth_5finformation_5fpage',['spdk_nvme_health_information_page',['../structspdk__nvme__health__information__page.html',1,'']]],
   ['spdk_5fnvme_5fintel_5ffeat_5flatency_5ftracking',['spdk_nvme_intel_feat_latency_tracking',['../unionspdk__nvme__intel__feat__latency__tracking.html',1,'']]],
   ['spdk_5fnvme_5fintel_5ffeat_5fled_5fpattern',['spdk_nvme_intel_feat_led_pattern',['../unionspdk__nvme__intel__feat__led__pattern.html',1,'']]],
@@ -58,5 +59,12 @@ var searchData=
   ['spdk_5fnvme_5freservation_5fstatus_5fdata',['spdk_nvme_reservation_status_data',['../structspdk__nvme__reservation__status__data.html',1,'']]],
   ['spdk_5fnvme_5fsgl_5fdescriptor',['spdk_nvme_sgl_descriptor',['../structspdk__nvme__sgl__descriptor.html',1,'']]],
   ['spdk_5fnvme_5fstatus',['spdk_nvme_status',['../structspdk__nvme__status.html',1,'']]],
-  ['spdk_5fnvme_5fvs_5fregister',['spdk_nvme_vs_register',['../unionspdk__nvme__vs__register.html',1,'']]]
+  ['spdk_5fnvme_5fvs_5fregister',['spdk_nvme_vs_register',['../unionspdk__nvme__vs__register.html',1,'']]],
+  ['spdk_5ftrace_5fentry',['spdk_trace_entry',['../structspdk__trace__entry.html',1,'']]],
+  ['spdk_5ftrace_5fhistories',['spdk_trace_histories',['../structspdk__trace__histories.html',1,'']]],
+  ['spdk_5ftrace_5fhistory',['spdk_trace_history',['../structspdk__trace__history.html',1,'']]],
+  ['spdk_5ftrace_5fobject',['spdk_trace_object',['../structspdk__trace__object.html',1,'']]],
+  ['spdk_5ftrace_5fowner',['spdk_trace_owner',['../structspdk__trace__owner.html',1,'']]],
+  ['spdk_5ftrace_5fregister_5ffn',['spdk_trace_register_fn',['../structspdk__trace__register__fn.html',1,'']]],
+  ['spdk_5ftrace_5ftpoint',['spdk_trace_tpoint',['../structspdk__trace__tpoint.html',1,'']]]
 ];

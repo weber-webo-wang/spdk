@@ -214,6 +214,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:a9bb6973133e1fd5e7a1522ab104ac92b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a9bb6973133e1fd5e7a1522ab104ac92b">spdk_nvme_ctrlr_format</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid, struct <a class="el" href="structspdk__nvme__format.html">spdk_nvme_format</a> *format)</td></tr>
 <tr class="memdesc:a9bb6973133e1fd5e7a1522ab104ac92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format NVM.  <a href="#a9bb6973133e1fd5e7a1522ab104ac92b">More...</a><br /></td></tr>
 <tr class="separator:a9bb6973133e1fd5e7a1522ab104ac92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5bf2047c92b9bb1a20cf9493fa9ebf6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa5bf2047c92b9bb1a20cf9493fa9ebf6">spdk_nvme_ctrlr_update_firmware</a> (struct spdk_nvme_ctrlr *ctrlr, void *payload, uint32_t size, int slot)</td></tr>
+<tr class="memdesc:aa5bf2047c92b9bb1a20cf9493fa9ebf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download a new firmware image.  <a href="#aa5bf2047c92b9bb1a20cf9493fa9ebf6">More...</a><br /></td></tr>
+<tr class="separator:aa5bf2047c92b9bb1a20cf9493fa9ebf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a">spdk_nvme_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify namespace data as defined by the NVMe specification.  <a href="#ab1863b5dccf2bcc49fe92275bc1e5a2a">More...</a><br /></td></tr>
 <tr class="separator:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1191,6 +1194,56 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <p>Perform a full hardware reset of the NVMe controller. </p>
 <p>This function should be called from a single thread while no other threads are actively using the NVMe device.</p>
 <p>Any pointers returned from <a class="el" href="nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08" title="Get a handle to a namespace for the given controller. ">spdk_nvme_ctrlr_get_ns()</a> and <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a" title="Get the identify namespace data as defined by the NVMe specification. ">spdk_nvme_ns_get_data()</a> may be invalidated by calling this function. The number of namespaces as returned by <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the number of namespaces for the given NVMe controller. ">spdk_nvme_ctrlr_get_num_ns()</a> may also change. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa5bf2047c92b9bb1a20cf9493fa9ebf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_update_firmware </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>slot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Download a new firmware image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payload</td><td>The data buffer for the firmware image. </td></tr>
+    <tr><td class="paramname">size</td><td>The data size will be downloaded. </td></tr>
+    <tr><td class="paramname">slot</td><td>The slot that the firmware image will be committed to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request, -1 if the size is not multiple of 4.</dd></dl>
+<p>This function is thread safe and can be called at any point after spdk_nvme_attach(). </p>
 
 </div>
 </div>
