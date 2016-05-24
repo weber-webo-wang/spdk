@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>SPDK: Globals</title>
+<title>SPDK: jsonrpc.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -67,20 +67,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li><a href="globals.html"><span>All</span></a></li>
-      <li><a href="globals_func.html"><span>Functions</span></a></li>
-      <li class="current"><a href="globals_type.html"><span>Typedefs</span></a></li>
-      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
-      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
-      <li><a href="globals_defs.html"><span>Macros</span></a></li>
-    </ul>
-  </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -95,39 +84,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_67fbcc0b4317645100def1406b508c33.html">spdk</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">Typedefs</a>  </div>
+  <div class="headertitle">
+<div class="title">jsonrpc.h File Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>spdk_ioat_attach_cb
-: <a class="el" href="ioat_8h.html#a8826bf4e7c57228794f486368217a494">ioat.h</a>
-</li>
-<li>spdk_ioat_probe_cb
-: <a class="el" href="ioat_8h.html#a41d999ded01b3bc2b1a1bce0c48083a7">ioat.h</a>
-</li>
-<li>spdk_ioat_req_cb
-: <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">ioat.h</a>
-</li>
-<li>spdk_jsonrpc_handle_request_fn
-: <a class="el" href="jsonrpc_8h.html#a347b2b94044109e5dd61bfd672dd0a20">jsonrpc.h</a>
-</li>
-<li>spdk_nvme_aer_cb
-: <a class="el" href="nvme_8h.html#ae564dc7dced1dd7b474c1a6923734a6d">nvme.h</a>
-</li>
-<li>spdk_nvme_attach_cb
-: <a class="el" href="nvme_8h.html#ad44a8058acb7b6aecabb70d012042a09">nvme.h</a>
-</li>
-<li>spdk_nvme_cmd_cb
-: <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">nvme.h</a>
-</li>
-<li>spdk_nvme_probe_cb
-: <a class="el" href="nvme_8h.html#a9a0c85e6f09c7e4bac1e1f3681aa3dc3">nvme.h</a>
-</li>
-<li>spdk_nvme_req_next_sge_cb
-: <a class="el" href="nvme_8h.html#aa00211de8f54e25a4f9a5a93fb17d8a1">nvme.h</a>
-</li>
-<li>spdk_nvme_req_reset_sgl_cb
-: <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">nvme.h</a>
-</li>
-</ul>
+
+<p>JSON-RPC 2.0 server implementation.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a347b2b94044109e5dd61bfd672dd0a20"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a347b2b94044109e5dd61bfd672dd0a20">spdk_jsonrpc_handle_request_fn</a>) (struct spdk_jsonrpc_server_conn *conn, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *method, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *params, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *id)</td></tr>
+<tr class="memdesc:a347b2b94044109e5dd61bfd672dd0a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">User callback to handle a single JSON-RPC request.  <a href="#a347b2b94044109e5dd61bfd672dd0a20">More...</a><br /></td></tr>
+<tr class="separator:a347b2b94044109e5dd61bfd672dd0a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>JSON-RPC 2.0 server implementation. </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a347b2b94044109e5dd61bfd672dd0a20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_jsonrpc_handle_request_fn) (struct spdk_jsonrpc_server_conn *conn, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *method, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *params, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>User callback to handle a single JSON-RPC request. </p>
+<p>The user should respond by calling one of spdk_jsonrpc_begin_result() or spdk_jsonrpc_send_error_response(). </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <section id="community">

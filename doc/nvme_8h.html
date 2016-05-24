@@ -205,9 +205,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:ab562f58b5903071929d6a559fe984d0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab562f58b5903071929d6a559fe984d0a">spdk_nvme_ctrlr_detach_ns</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid, struct <a class="el" href="structspdk__nvme__ctrlr__list.html">spdk_nvme_ctrlr_list</a> *payload)</td></tr>
 <tr class="memdesc:ab562f58b5903071929d6a559fe984d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach the specified namespace from controllers.  <a href="#ab562f58b5903071929d6a559fe984d0a">More...</a><br /></td></tr>
 <tr class="separator:ab562f58b5903071929d6a559fe984d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9190408616963b239c00cfd7001547cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a9190408616963b239c00cfd7001547cc">spdk_nvme_ctrlr_create_ns</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *payload)</td></tr>
-<tr class="memdesc:a9190408616963b239c00cfd7001547cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a namespace.  <a href="#a9190408616963b239c00cfd7001547cc">More...</a><br /></td></tr>
-<tr class="separator:a9190408616963b239c00cfd7001547cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace23485fea91d126a13fe706ce6d8843"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ace23485fea91d126a13fe706ce6d8843">spdk_nvme_ctrlr_create_ns</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *payload)</td></tr>
+<tr class="memdesc:ace23485fea91d126a13fe706ce6d8843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a namespace.  <a href="#ace23485fea91d126a13fe706ce6d8843">More...</a><br /></td></tr>
+<tr class="separator:ace23485fea91d126a13fe706ce6d8843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c62e2d4555a5ebc3a3b6f9632c51e1a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7c62e2d4555a5ebc3a3b6f9632c51e1a">spdk_nvme_ctrlr_delete_ns</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid)</td></tr>
 <tr class="memdesc:a7c62e2d4555a5ebc3a3b6f9632c51e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a namespace.  <a href="#a7c62e2d4555a5ebc3a3b6f9632c51e1a">More...</a><br /></td></tr>
 <tr class="separator:a7c62e2d4555a5ebc3a3b6f9632c51e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -860,12 +860,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 
 </div>
 </div>
-<a class="anchor" id="a9190408616963b239c00cfd7001547cc"></a>
+<a class="anchor" id="ace23485fea91d126a13fe706ce6d8843"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int spdk_nvme_ctrlr_create_ns </td>
+          <td class="memname">uint32_t spdk_nvme_ctrlr_create_ns </td>
           <td>(</td>
           <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
           <td class="paramname"><em>ctrlr</em>, </td>
@@ -892,9 +892,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
-<p>This function is thread safe and can be called at any point after spdk_nvme_attach().</p>
-<p>Call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function. </p>
+<dl class="section return"><dt>Returns</dt><dd>Namespace ID (&gt;= 1) if successfully created, or 0 if the request failed.</dd></dl>
+<p>This function is thread safe and can be called at any point after spdk_nvme_attach(). </p>
 
 </div>
 </div>
