@@ -1,7 +1,8 @@
 <map id="assert.h" name="assert.h">
 <area shape="rect" id="node2" href="$nvme__impl_8h.html" title="NVMe driver integration callbacks. " alt="" coords="5,155,101,182"/>
-<area shape="rect" id="node3" href="$ioat__spec_8h.html" title="I/OAT specification definitions. " alt="" coords="43,81,133,107"/>
-<area shape="rect" id="node4" href="$nvme__spec_8h.html" title="NVMe specification definitions. " alt="" coords="157,81,257,107"/>
-<area shape="rect" id="node6" href="$nvme__intel_8h.html" title="Intel NVMe vendor&#45;specific definitions. " alt="" coords="281,81,377,107"/>
-<area shape="rect" id="node5" href="$nvme_8h.html" title="NVMe driver public API. " alt="" coords="174,155,239,182"/>
+<area shape="rect" id="node3" href="$ioat__spec_8h.html" title="I/OAT specification definitions. " alt="" coords="53,81,142,107"/>
+<area shape="rect" id="node4" href="$nvme__spec_8h.html" title="NVMe specification definitions. " alt="" coords="166,81,266,107"/>
+<area shape="rect" id="node6" href="$nvmf__spec_8h.html" title="nvmf_spec.h" alt="" coords="255,155,353,182"/>
+<area shape="rect" id="node7" href="$nvme__intel_8h.html" title="Intel NVMe vendor&#45;specific definitions. " alt="" coords="341,81,437,107"/>
+<area shape="rect" id="node5" href="$nvme_8h.html" title="NVMe driver public API. " alt="" coords="166,155,231,182"/>
 </map>

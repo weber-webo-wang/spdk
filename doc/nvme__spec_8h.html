@@ -93,7 +93,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">nvme_spec.h File Reference</div>  </div>
 </div><!--header-->
@@ -108,6 +109,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <map name="nvme__spec_8hdep" id="nvme__spec_8hdep">
 <area shape="rect" id="node2" href="nvme__impl_8h.html" title="NVMe driver integration callbacks. " alt="" coords="5,80,101,107"/>
 <area shape="rect" id="node3" href="nvme_8h.html" title="NVMe driver public API. " alt="" coords="126,80,191,107"/>
+<area shape="rect" id="node4" href="nvmf__spec_8h.html" title="nvmf_spec.h" alt="" coords="215,80,313,107"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -232,6 +234,13 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ac3953ec001514cffe849d9c1e3a913e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3953ec001514cffe849d9c1e3a913e3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3">spdk_nvme_nvm_opcode</a> <tr class="memdesc:ac3953ec001514cffe849d9c1e3a913e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVM command set opcodes. <br /></td></tr>
 <tr class="separator:ac3953ec001514cffe849d9c1e3a913e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:adbe38e042bb939183ed8fd5c1685b2fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc">spdk_nvme_data_transfer</a> { <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca4d074786dad4f37c0211563ec0376974">SPDK_NVME_DATA_NONE</a> = 0, 
+<a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca7f08188b3c5f57f2f694f6ef13ad0110">SPDK_NVME_DATA_HOST_TO_CONTROLLER</a> = 1, 
+<a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca0de3a8ad0600034555094591e706fb50">SPDK_NVME_DATA_CONTROLLER_TO_HOST</a> = 2, 
+<a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fcaa550f0ebf32623c8161ca7d5d8cbb0c2">SPDK_NVME_DATA_BIDIRECTIONAL</a> = 3
+ }<tr class="memdesc:adbe38e042bb939183ed8fd5c1685b2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data transfer (bits 1:0) of an NVMe opcode.  <a href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc">More...</a><br /></td></tr>
+<tr class="separator:adbe38e042bb939183ed8fd5c1685b2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:aa7e108757c0eebbac7e13b598a378210"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7e108757c0eebbac7e13b598a378210"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#aa7e108757c0eebbac7e13b598a378210">spdk_nvme_reservation_type</a> <tr class="memdesc:aa7e108757c0eebbac7e13b598a378210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reservation Type Encoding. <br /></td></tr>
 <tr class="separator:aa7e108757c0eebbac7e13b598a378210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -272,10 +281,47 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:ae4da1c1bec22eb22d1af72bbf37af36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters for SPDK_NVME_OPC_FIRMWARE_COMMIT cdw10: commit action.  <a href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">More...</a><br /></td></tr>
 <tr class="separator:ae4da1c1bec22eb22d1af72bbf37af36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a3f96e024feb9e0cb23b941b847058102"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc">spdk_nvme_data_transfer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a3f96e024feb9e0cb23b941b847058102">spdk_nvme_opc_get_data_transfer</a> (uint8_t opc)</td></tr>
+<tr class="memdesc:a3f96e024feb9e0cb23b941b847058102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the Data Transfer bits from an NVMe opcode.  <a href="#a3f96e024feb9e0cb23b941b847058102">More...</a><br /></td></tr>
+<tr class="separator:a3f96e024feb9e0cb23b941b847058102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe specification definitions. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="adbe38e042bb939183ed8fd5c1685b2fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc">spdk_nvme_data_transfer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data transfer (bits 1:0) of an NVMe opcode. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme__spec_8h.html#a3f96e024feb9e0cb23b941b847058102" title="Extract the Data Transfer bits from an NVMe opcode. ">spdk_nvme_opc_get_data_transfer</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="adbe38e042bb939183ed8fd5c1685b2fca4d074786dad4f37c0211563ec0376974"></a>SPDK_NVME_DATA_NONE&#160;</td><td class="fielddoc">
+<p>Opcode does not transfer data. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbe38e042bb939183ed8fd5c1685b2fca7f08188b3c5f57f2f694f6ef13ad0110"></a>SPDK_NVME_DATA_HOST_TO_CONTROLLER&#160;</td><td class="fielddoc">
+<p>Opcode transfers data from host to controller (e.g. </p>
+<p>Write) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbe38e042bb939183ed8fd5c1685b2fca0de3a8ad0600034555094591e706fb50"></a>SPDK_NVME_DATA_CONTROLLER_TO_HOST&#160;</td><td class="fielddoc">
+<p>Opcode transfers data from controller to host (e.g. </p>
+<p>Read) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbe38e042bb939183ed8fd5c1685b2fcaa550f0ebf32623c8161ca7d5d8cbb0c2"></a>SPDK_NVME_DATA_BIDIRECTIONAL&#160;</td><td class="fielddoc">
+<p>Opcode transfers data both directions. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a class="anchor" id="ae4da1c1bec22eb22d1af72bbf37af36e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -352,6 +398,34 @@ Enumerations</h2></td></tr>
 
 <p>Submission queue priority values for Create I/O Submission Queue Command. </p>
 <p>Only valid for weighted round robin arbitration method. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a3f96e024feb9e0cb23b941b847058102"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc">spdk_nvme_data_transfer</a> spdk_nvme_opc_get_data_transfer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>opc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Extract the Data Transfer bits from an NVMe opcode. </p>
+<p>This determines whether a command requires a data buffer and which direction (host to controller or controller to host) it is transferred. </p>
 
 </div>
 </div>

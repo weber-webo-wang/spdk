@@ -9,5 +9,7 @@ var searchData=
   ['spdk_5fnvme_5fio_5fflags_5fprchk_5fapptag',['SPDK_NVME_IO_FLAGS_PRCHK_APPTAG',['../nvme__spec_8h.html#ae3c69904e0cbefa87f348e7c076707a7',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fio_5fflags_5fprchk_5fguard',['SPDK_NVME_IO_FLAGS_PRCHK_GUARD',['../nvme__spec_8h.html#aa4b184c96a7354bee528ca16bd5f9e97',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fio_5fflags_5fprchk_5freftag',['SPDK_NVME_IO_FLAGS_PRCHK_REFTAG',['../nvme__spec_8h.html#a093f4f54c893a46cc3a776fa667d09a2',1,'nvme_spec.h']]],
-  ['spdk_5fpci_5fclass_5fnvme',['SPDK_PCI_CLASS_NVME',['../pci__ids_8h.html#a787047f67cc4dc5cdfb478bcd9066db2',1,'pci_ids.h']]]
+  ['spdk_5fpci_5fclass_5fnvme',['SPDK_PCI_CLASS_NVME',['../pci__ids_8h.html#a787047f67cc4dc5cdfb478bcd9066db2',1,'pci_ids.h']]],
+  ['spdk_5fsubsystem_5fdepend',['SPDK_SUBSYSTEM_DEPEND',['../event_8h.html#acb32a61a13fd5e035c23e8023fb26295',1,'event.h']]],
+  ['spdk_5fsubsystem_5fregister',['SPDK_SUBSYSTEM_REGISTER',['../event_8h.html#a778e36fef3b2df4aa83dcae1b876c763',1,'event.h']]]
 ];

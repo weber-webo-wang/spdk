@@ -3,6 +3,7 @@ var searchData=
   ['spdk_5fioat_5fdma_5fcapability_5fflags',['spdk_ioat_dma_capability_flags',['../ioat_8h.html#a9e773693f3aadb3dc526810a2e387402',1,'ioat.h']]],
   ['spdk_5fnvme_5fadmin_5fopcode',['spdk_nvme_admin_opcode',['../nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fcommand_5fspecific_5fstatus_5fcode',['spdk_nvme_command_specific_status_code',['../nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852e',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5fdata_5ftransfer',['spdk_nvme_data_transfer',['../nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5ffw_5fcommit_5faction',['spdk_nvme_fw_commit_action',['../nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fgeneric_5fcommand_5fstatus_5fcode',['spdk_nvme_generic_command_status_code',['../nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1d',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5fpage',['spdk_nvme_log_page',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4',1,'nvme_spec.h']]],
