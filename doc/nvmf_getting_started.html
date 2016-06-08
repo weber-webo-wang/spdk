@@ -89,6 +89,8 @@ Prerequisites</h1>
 <p>To build nvmf there are some package dependencies.</p>
 <p>Fedora: </p><pre class="fragment">dnf install libibverbs-devel librdmacm-devel
 </pre><p>Ubuntu: </p><pre class="fragment">apt-get install libibverbs-dev librdmacm-dev
+</pre><p>Then build SPDK with the NVMf target enabled, either by editing CONFIG to enable CONFIG_NVMF or enabling it on the <code>make</code> command line:</p>
+<pre class="fragment">make CONFIG_NVMF=y &lt;other config parameters&gt;
 </pre><h1><a class="anchor" id="nvmf_config"></a>
 Configuring NVMf</h1>
 <p>An NVMf specific configuration file is used to configure, or 'provision', the NVMf target. This file defines the following:</p>
@@ -102,7 +104,7 @@ Configuring NVMf</h1>
 </ul>
 <p>An example nvmf configuration file included with this package at <code>etc/spdk/nvmf.conf.in</code>.</p>
 <p>You must edit a version of this file for use in your environment and copy it to /usr/local/etc/spdk/nvmf.conf. Alternatively, you may also specify the configuration file explicitly using <code>-c /path/to/nvmf.conf</code> when starting <code>nvmf_tgt</code>.</p>
-<p>The <code>Port</code> and <code>InitiatorGroup</code> sections must be updated in all cases to match the IP addresses in your network environment.</p>
+<p>The <code>Port</code> and <code>Host</code> sections must be updated in all cases to match the IP addresses in your network environment.</p>
 <p>The <code>Nvme</code> section must also be updated with a the list of NVMe devices that will be exported. Each device is identified by a PCI bus, device, and function. The NVMf target will display a list of NVMe devices discovered in the system. This information can then be used to select the list of devices to populate this configuration file section. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
