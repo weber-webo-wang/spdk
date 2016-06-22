@@ -1,3 +1,4 @@
 <map id="spdk_nvmf_discovery_log_page" name="spdk_nvmf_discovery_log_page">
-<area shape="rect" id="node2" href="$structspdk__nvmf__discovery__log__page__entry.html" title="spdk_nvmf_discovery\l_log_page_entry" alt="" coords="5,5,155,47"/>
+<area shape="rect" id="node2" href="$structspdk__nvmf__discovery__log__page__entry.html" title="spdk_nvmf_discovery\l_log_page_entry" alt="" coords="21,109,170,151"/>
+<area shape="rect" id="node3" href="$structspdk__nvmf__rdma__transport__specific__address.html" title="spdk_nvmf_rdma_transport\l_specific_address" alt="" coords="5,5,185,47"/>
 </map>

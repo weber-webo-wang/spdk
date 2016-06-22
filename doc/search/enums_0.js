@@ -2,6 +2,8 @@ var searchData=
 [
   ['spdk_5fioat_5fdma_5fcapability_5fflags',['spdk_ioat_dma_capability_flags',['../ioat_8h.html#a9e773693f3aadb3dc526810a2e387402',1,'ioat.h']]],
   ['spdk_5fnvme_5fadmin_5fopcode',['spdk_nvme_admin_opcode',['../nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5fcap_5fams',['spdk_nvme_cap_ams',['../nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5fcc_5fams',['spdk_nvme_cc_ams',['../nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fcommand_5fspecific_5fstatus_5fcode',['spdk_nvme_command_specific_status_code',['../nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852e',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fdata_5ftransfer',['spdk_nvme_data_transfer',['../nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5ffw_5fcommit_5faction',['spdk_nvme_fw_commit_action',['../nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e',1,'nvme_spec.h']]],
@@ -18,5 +20,12 @@ var searchData=
   ['spdk_5fnvme_5freservation_5fregister_5fcptpl',['spdk_nvme_reservation_register_cptpl',['../nvme__spec_8h.html#a05b2db4a398c119c029c234a68760c73',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5freservation_5frelease_5faction',['spdk_nvme_reservation_release_action',['../nvme__spec_8h.html#a6fa8ea66c4927d8bb4d81d76867e851a',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5freservation_5ftype',['spdk_nvme_reservation_type',['../nvme__spec_8h.html#aa7e108757c0eebbac7e13b598a378210',1,'nvme_spec.h']]],
-  ['spdk_5fnvme_5fstatus_5fcode_5ftype',['spdk_nvme_status_code_type',['../nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52',1,'nvme_spec.h']]]
+  ['spdk_5fnvme_5fstatus_5fcode_5ftype',['spdk_nvme_status_code_type',['../nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52',1,'nvme_spec.h']]],
+  ['spdk_5fnvmf_5faddress_5ffamily_5ftypes',['spdk_nvmf_address_family_types',['../nvmf__spec_8h.html#a581e2ea1d7b54a82ef23a9b05d2520e2',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5frdma_5fconnection_5fmgmt_5fservice',['spdk_nvmf_rdma_connection_mgmt_service',['../nvmf__spec_8h.html#a7c04ab60cfdd89ba0c461f62312ca764',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5frdma_5fprovider_5ftypes',['spdk_nvmf_rdma_provider_types',['../nvmf__spec_8h.html#a2a7a86c6704b1bcaefcc76133f4b24a0',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5frdma_5fqp_5fservice_5ftypes',['spdk_nvmf_rdma_qp_service_types',['../nvmf__spec_8h.html#a5bdad52f74594971c3b094066afa820d',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5fsubsystem_5ftypes',['spdk_nvmf_subsystem_types',['../nvmf__spec_8h.html#acdfed4c7cd8d4598d9ee0c60fe6179f2',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5ftansport_5frequirements',['spdk_nvmf_tansport_requirements',['../nvmf__spec_8h.html#abae0c5678a87061fb72141eb647c999a',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5ftransport_5ftypes',['spdk_nvmf_transport_types',['../nvmf__spec_8h.html#a008d88e2e7d4812b42f12d94870e4098',1,'nvmf_spec.h']]]
 ];

@@ -7,6 +7,7 @@ var searchData=
   ['ams',['ams',['../unionspdk__nvme__cap__lo__register.html#a90c1d2adf2bebb06a8d1d8fd2635cea1',1,'spdk_nvme_cap_lo_register::ams()'],['../unionspdk__nvme__cc__register.html#a777a7cb16e88d976eca2f8073fde6c4b',1,'spdk_nvme_cc_register::ams()']]],
   ['apsta',['apsta',['../structspdk__nvme__ctrlr__data.html#abddc39011dc72f70c2a7efcf046fe06c',1,'spdk_nvme_ctrlr_data']]],
   ['aqa',['aqa',['../structspdk__nvme__registers.html#a5bf760e2a616ecb3f8d8fd0a64d24e61',1,'spdk_nvme_registers']]],
+  ['arb_5fmechanism',['arb_mechanism',['../structspdk__nvme__ctrlr__opts.html#a183d97c9bda86a9ca47442bcbc69c444',1,'spdk_nvme_ctrlr_opts']]],
   ['asqs',['asqs',['../unionspdk__nvme__aqa__register.html#ac8e473c82656d9f2a536618f9e2f55cb',1,'spdk_nvme_aqa_register']]],
   ['assert_2eh',['assert.h',['../assert_8h.html',1,'']]],
   ['avscc',['avscc',['../structspdk__nvme__ctrlr__data.html#ab64618e8b4d15a7f3e4da7e0373f354e',1,'spdk_nvme_ctrlr_data']]],

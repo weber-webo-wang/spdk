@@ -216,6 +216,17 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ae83a61e254cf9d1fd59376ceedd1b4e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#ae83a61e254cf9d1fd59376ceedd1b4e6">spdk_nvme_qprio</a> <tr class="memdesc:ae83a61e254cf9d1fd59376ceedd1b4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submission queue priority values for Create I/O Submission Queue Command.  <a href="nvme__spec_8h.html#ae83a61e254cf9d1fd59376ceedd1b4e6">More...</a><br /></td></tr>
 <tr class="separator:ae83a61e254cf9d1fd59376ceedd1b4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:adf6ad5ec9f8c1aa4c7efc45ee9d646b6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6">spdk_nvme_cap_ams</a> { <a class="el" href="nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6ac8b3721eb6c714051f08db20938b31af">SPDK_NVME_CAP_AMS_WRR</a> = 0x1, 
+<a class="el" href="nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6a0bae550fd4027110273cc75986809274">SPDK_NVME_CAP_AMS_VS</a> = 0x2
+ }<tr class="memdesc:adf6ad5ec9f8c1aa4c7efc45ee9d646b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional Arbitration Mechanism Supported by the controller.  <a href="nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6">More...</a><br /></td></tr>
+<tr class="separator:adf6ad5ec9f8c1aa4c7efc45ee9d646b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a7e72566466cae734d999e755524f7b20"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20">spdk_nvme_cc_ams</a> { <a class="el" href="nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20a5064340c35b2c9179d85de39edccdf6c">SPDK_NVME_CC_AMS_RR</a> = 0x0, 
+<a class="el" href="nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20a5c1162b2ac15358567bc0da6cfd2c62d">SPDK_NVME_CC_AMS_WRR</a> = 0x1, 
+<a class="el" href="nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20a5690f8273561b4be28e1f7d5ae5d8167">SPDK_NVME_CC_AMS_VS</a> = 0x7
+ }<tr class="memdesc:a7e72566466cae734d999e755524f7b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arbitration Mechanism Selected to the controller.  <a href="nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20">More...</a><br /></td></tr>
+<tr class="separator:a7e72566466cae734d999e755524f7b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:a99fb26e5d5c31f6d3d61397951e44b52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99fb26e5d5c31f6d3d61397951e44b52"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52">spdk_nvme_status_code_type</a> <tr class="memdesc:a99fb26e5d5c31f6d3d61397951e44b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status code types. <br /></td></tr>
 <tr class="separator:a99fb26e5d5c31f6d3d61397951e44b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -263,6 +274,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aaa4a483997b6fa41a9e73755441d2186">SPDK_NVME_LOG_CHANGED_NS_LIST</a> = 0x04, 
 <br />
 &#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aab219389150398bc1b23da1df91e634c">SPDK_NVME_LOG_COMMAND_EFFECTS_LOG</a> = 0x05, 
+<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a373acc5fc6392f4af3cfd5c6123bb600">SPDK_NVME_LOG_DISCOVERY</a> = 0x70, 
 <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a37f2ea0a63737907265ff3ed35088a09">SPDK_NVME_LOG_RESERVATION_NOTIFICATION</a> = 0x80
 <br />
  }<tr class="memdesc:a3d5e453e4d95b0f5b9bb4de04ace78c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log page identifiers for SPDK_NVME_OPC_GET_LOG_PAGE.  <a href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4">More...</a><br /></td></tr>
@@ -291,6 +303,55 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe specification definitions. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="adf6ad5ec9f8c1aa4c7efc45ee9d646b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6">spdk_nvme_cap_ams</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional Arbitration Mechanism Supported by the controller. </p>
+<p>Two bits for CAP.AMS (18:17) field are set to '1' when the controller supports. There is no bit for AMS_RR where all controllers support and set to 0x0 by default. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="adf6ad5ec9f8c1aa4c7efc45ee9d646b6ac8b3721eb6c714051f08db20938b31af"></a>SPDK_NVME_CAP_AMS_WRR&#160;</td><td class="fielddoc">
+<p>weighted round robin </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adf6ad5ec9f8c1aa4c7efc45ee9d646b6a0bae550fd4027110273cc75986809274"></a>SPDK_NVME_CAP_AMS_VS&#160;</td><td class="fielddoc">
+<p>vendor specific </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a7e72566466cae734d999e755524f7b20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20">spdk_nvme_cc_ams</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Arbitration Mechanism Selected to the controller. </p>
+<p>Value 0x2 to 0x6 is reserved. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7e72566466cae734d999e755524f7b20a5064340c35b2c9179d85de39edccdf6c"></a>SPDK_NVME_CC_AMS_RR&#160;</td><td class="fielddoc">
+<p>default round robin </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e72566466cae734d999e755524f7b20a5c1162b2ac15358567bc0da6cfd2c62d"></a>SPDK_NVME_CC_AMS_WRR&#160;</td><td class="fielddoc">
+<p>weighted round robin </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e72566466cae734d999e755524f7b20a5690f8273561b4be28e1f7d5ae5d8167"></a>SPDK_NVME_CC_AMS_VS&#160;</td><td class="fielddoc">
+<p>vendor specific </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a class="anchor" id="adbe38e042bb939183ed8fd5c1685b2fc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -378,6 +439,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a3d5e453e4d95b0f5b9bb4de04ace78c4aab219389150398bc1b23da1df91e634c"></a>SPDK_NVME_LOG_COMMAND_EFFECTS_LOG&#160;</td><td class="fielddoc">
 <p>Command effects log (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3d5e453e4d95b0f5b9bb4de04ace78c4a373acc5fc6392f4af3cfd5c6123bb600"></a>SPDK_NVME_LOG_DISCOVERY&#160;</td><td class="fielddoc">
+<p>Discovery(refer to the NVMe over Fabrics specification) </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a3d5e453e4d95b0f5b9bb4de04ace78c4a37f2ea0a63737907265ff3ed35088a09"></a>SPDK_NVME_LOG_RESERVATION_NOTIFICATION&#160;</td><td class="fielddoc">
 <p>Reservation notification (optional) </p>

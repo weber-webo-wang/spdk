@@ -91,7 +91,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">nvmf_spec.h File Reference</div>  </div>
 </div><!--header-->
@@ -143,13 +144,13 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__discovery__identify__data.html">spdk_nvmf_discovery_identify_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__rdma__transport__specific__address.html">spdk_nvmf_rdma_transport_specific_address</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__discovery__log__page__entry.html">spdk_nvmf_discovery_log_page_entry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__discovery__log__page.html">spdk_nvmf_discovery_log_page</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__keyed__sgl__descriptor.html">spdk_nvmf_keyed_sgl_descriptor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__rdma__transport__specific__address.html">spdk_nvmf_rdma_transport_specific_address</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__rdma__request__private__data.html">spdk_nvmf_rdma_request_private_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +160,100 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvmf__rdma__private__data.html">spdk_nvmf_rdma_private_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a5bdad52f74594971c3b094066afa820d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#a5bdad52f74594971c3b094066afa820d">spdk_nvmf_rdma_qp_service_types</a> { <a class="el" href="nvmf__spec_8h.html#a5bdad52f74594971c3b094066afa820da30f4e60b3df9d62383c25618169e061a">SPDK_NVMF_QP_TYPE_RELIABLE_CONNECTED</a> = 0x1, 
+<a class="el" href="nvmf__spec_8h.html#a5bdad52f74594971c3b094066afa820da8e5287994171e0be6125a1b0a8bf9260">SPDK_NVMF_OQ_TYPE_RELIABLE_DATAGRAM</a> = 0x2
+ }<tr class="memdesc:a5bdad52f74594971c3b094066afa820d"><td class="mdescLeft">&#160;</td><td class="mdescRight">RDMA Queue Pair service types.  <a href="nvmf__spec_8h.html#a5bdad52f74594971c3b094066afa820d">More...</a><br /></td></tr>
+<tr class="separator:a5bdad52f74594971c3b094066afa820d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a2a7a86c6704b1bcaefcc76133f4b24a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a7a86c6704b1bcaefcc76133f4b24a0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#a2a7a86c6704b1bcaefcc76133f4b24a0">spdk_nvmf_rdma_provider_types</a> <tr class="memdesc:a2a7a86c6704b1bcaefcc76133f4b24a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">RDMA provider types. <br /></td></tr>
+<tr class="separator:a2a7a86c6704b1bcaefcc76133f4b24a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a7c04ab60cfdd89ba0c461f62312ca764"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#a7c04ab60cfdd89ba0c461f62312ca764">spdk_nvmf_rdma_connection_mgmt_service</a> { <a class="el" href="nvmf__spec_8h.html#a7c04ab60cfdd89ba0c461f62312ca764aff017322b97fd747535681cab0c6b9e6">SPDK_NVMF_RDMA_CMS_RDMA_CM</a> = 0x1
+ }<tr class="memdesc:a7c04ab60cfdd89ba0c461f62312ca764"><td class="mdescLeft">&#160;</td><td class="mdescRight">RDMA connection management service types.  <a href="nvmf__spec_8h.html#a7c04ab60cfdd89ba0c461f62312ca764">More...</a><br /></td></tr>
+<tr class="separator:a7c04ab60cfdd89ba0c461f62312ca764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a008d88e2e7d4812b42f12d94870e4098"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a008d88e2e7d4812b42f12d94870e4098"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#a008d88e2e7d4812b42f12d94870e4098">spdk_nvmf_transport_types</a> <tr class="memdesc:a008d88e2e7d4812b42f12d94870e4098"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe over Fabrics transport types. <br /></td></tr>
+<tr class="separator:a008d88e2e7d4812b42f12d94870e4098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a581e2ea1d7b54a82ef23a9b05d2520e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a581e2ea1d7b54a82ef23a9b05d2520e2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#a581e2ea1d7b54a82ef23a9b05d2520e2">spdk_nvmf_address_family_types</a> <tr class="memdesc:a581e2ea1d7b54a82ef23a9b05d2520e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address family types. <br /></td></tr>
+<tr class="separator:a581e2ea1d7b54a82ef23a9b05d2520e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:acdfed4c7cd8d4598d9ee0c60fe6179f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#acdfed4c7cd8d4598d9ee0c60fe6179f2">spdk_nvmf_subsystem_types</a> { <a class="el" href="nvmf__spec_8h.html#acdfed4c7cd8d4598d9ee0c60fe6179f2a2fd9a7b9e5766aa9b34b6c19fa8962b5">SPDK_NVMF_SUB_DISCOVERY</a> = 0x1, 
+<a class="el" href="nvmf__spec_8h.html#acdfed4c7cd8d4598d9ee0c60fe6179f2a1bb154ddf71d0f49c9eca45e694b7890">SPDK_NVMF_SUB_NVME</a> = 0x2
+ }<tr class="memdesc:acdfed4c7cd8d4598d9ee0c60fe6179f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVM subsystem types.  <a href="nvmf__spec_8h.html#acdfed4c7cd8d4598d9ee0c60fe6179f2">More...</a><br /></td></tr>
+<tr class="separator:acdfed4c7cd8d4598d9ee0c60fe6179f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:abae0c5678a87061fb72141eb647c999a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abae0c5678a87061fb72141eb647c999a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#abae0c5678a87061fb72141eb647c999a">spdk_nvmf_tansport_requirements</a> <tr class="memdesc:abae0c5678a87061fb72141eb647c999a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connections shall be made over a fabric secure channel. <br /></td></tr>
+<tr class="separator:abae0c5678a87061fb72141eb647c999a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a7c04ab60cfdd89ba0c461f62312ca764"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvmf__spec_8h.html#a7c04ab60cfdd89ba0c461f62312ca764">spdk_nvmf_rdma_connection_mgmt_service</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RDMA connection management service types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7c04ab60cfdd89ba0c461f62312ca764aff017322b97fd747535681cab0c6b9e6"></a>SPDK_NVMF_RDMA_CMS_RDMA_CM&#160;</td><td class="fielddoc">
+<p>Sockets based endpoint addressing. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a5bdad52f74594971c3b094066afa820d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvmf__spec_8h.html#a5bdad52f74594971c3b094066afa820d">spdk_nvmf_rdma_qp_service_types</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RDMA Queue Pair service types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a5bdad52f74594971c3b094066afa820da30f4e60b3df9d62383c25618169e061a"></a>SPDK_NVMF_QP_TYPE_RELIABLE_CONNECTED&#160;</td><td class="fielddoc">
+<p>Reliable connected. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a5bdad52f74594971c3b094066afa820da8e5287994171e0be6125a1b0a8bf9260"></a>SPDK_NVMF_OQ_TYPE_RELIABLE_DATAGRAM&#160;</td><td class="fielddoc">
+<p>Reliable datagram. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="acdfed4c7cd8d4598d9ee0c60fe6179f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvmf__spec_8h.html#acdfed4c7cd8d4598d9ee0c60fe6179f2">spdk_nvmf_subsystem_types</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVM subsystem types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="acdfed4c7cd8d4598d9ee0c60fe6179f2a2fd9a7b9e5766aa9b34b6c19fa8962b5"></a>SPDK_NVMF_SUB_DISCOVERY&#160;</td><td class="fielddoc">
+<p>Discovery type for NVM subsystem. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acdfed4c7cd8d4598d9ee0c60fe6179f2a1bb154ddf71d0f49c9eca45e694b7890"></a>SPDK_NVMF_SUB_NVME&#160;</td><td class="fielddoc">
+<p>NVMe type for NVM subsystem. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <section id="community">
