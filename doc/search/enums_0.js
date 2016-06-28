@@ -26,6 +26,6 @@ var searchData=
   ['spdk_5fnvmf_5frdma_5fprovider_5ftypes',['spdk_nvmf_rdma_provider_types',['../nvmf__spec_8h.html#a2a7a86c6704b1bcaefcc76133f4b24a0',1,'nvmf_spec.h']]],
   ['spdk_5fnvmf_5frdma_5fqp_5fservice_5ftypes',['spdk_nvmf_rdma_qp_service_types',['../nvmf__spec_8h.html#a5bdad52f74594971c3b094066afa820d',1,'nvmf_spec.h']]],
   ['spdk_5fnvmf_5fsubsystem_5ftypes',['spdk_nvmf_subsystem_types',['../nvmf__spec_8h.html#acdfed4c7cd8d4598d9ee0c60fe6179f2',1,'nvmf_spec.h']]],
-  ['spdk_5fnvmf_5ftansport_5frequirements',['spdk_nvmf_tansport_requirements',['../nvmf__spec_8h.html#abae0c5678a87061fb72141eb647c999a',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5ftransport_5frequirements',['spdk_nvmf_transport_requirements',['../nvmf__spec_8h.html#a2f23465563cda758c5f0b89ec2516168',1,'nvmf_spec.h']]],
   ['spdk_5fnvmf_5ftransport_5ftypes',['spdk_nvmf_transport_types',['../nvmf__spec_8h.html#a008d88e2e7d4812b42f12d94870e4098',1,'nvmf_spec.h']]]
 ];

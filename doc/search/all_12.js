@@ -5,6 +5,5 @@ var searchData=
   ['to',['to',['../unionspdk__nvme__cap__lo__register.html#a4242581c855291f84af88b90afe447b0',1,'spdk_nvme_cap_lo_register']]],
   ['tpoint_5fcount',['tpoint_count',['../structspdk__trace__history.html#a5d36fc5a17dddc7e14b32aa1598a7ee8',1,'spdk_trace_history']]],
   ['trace_2eh',['trace.h',['../trace_8h.html',1,'']]],
-  ['type',['type',['../structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364',1,'spdk_json_val::type()'],['../structspdk__nvme__sgl__descriptor.html#a4c95708745878215a7349524ef5d561a',1,'spdk_nvme_sgl_descriptor::type()'],['../structspdk__nvme__reservation__status__data.html#a89ad9fbdf5bf52b37eeb6bcfbd0246b5',1,'spdk_nvme_reservation_status_data::type()']]],
-  ['type_5fspecific',['type_specific',['../structspdk__nvme__sgl__descriptor.html#a7f6a333680c78d645cbc0cce4a716efd',1,'spdk_nvme_sgl_descriptor']]]
+  ['type',['type',['../structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364',1,'spdk_json_val::type()'],['../structspdk__nvme__reservation__status__data.html#a89ad9fbdf5bf52b37eeb6bcfbd0246b5',1,'spdk_nvme_reservation_status_data::type()']]]
 ];
