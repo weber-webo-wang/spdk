@@ -21,11 +21,11 @@ var searchData=
   ['spdk_5fnvme_5freservation_5frelease_5faction',['spdk_nvme_reservation_release_action',['../nvme__spec_8h.html#a6fa8ea66c4927d8bb4d81d76867e851a',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5freservation_5ftype',['spdk_nvme_reservation_type',['../nvme__spec_8h.html#aa7e108757c0eebbac7e13b598a378210',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fstatus_5fcode_5ftype',['spdk_nvme_status_code_type',['../nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52',1,'nvme_spec.h']]],
-  ['spdk_5fnvmf_5faddress_5ffamily_5ftypes',['spdk_nvmf_address_family_types',['../nvmf__spec_8h.html#a581e2ea1d7b54a82ef23a9b05d2520e2',1,'nvmf_spec.h']]],
-  ['spdk_5fnvmf_5frdma_5fconnection_5fmgmt_5fservice',['spdk_nvmf_rdma_connection_mgmt_service',['../nvmf__spec_8h.html#a7c04ab60cfdd89ba0c461f62312ca764',1,'nvmf_spec.h']]],
-  ['spdk_5fnvmf_5frdma_5fprovider_5ftypes',['spdk_nvmf_rdma_provider_types',['../nvmf__spec_8h.html#a2a7a86c6704b1bcaefcc76133f4b24a0',1,'nvmf_spec.h']]],
-  ['spdk_5fnvmf_5frdma_5fqp_5fservice_5ftypes',['spdk_nvmf_rdma_qp_service_types',['../nvmf__spec_8h.html#a5bdad52f74594971c3b094066afa820d',1,'nvmf_spec.h']]],
-  ['spdk_5fnvmf_5fsubsystem_5ftypes',['spdk_nvmf_subsystem_types',['../nvmf__spec_8h.html#acdfed4c7cd8d4598d9ee0c60fe6179f2',1,'nvmf_spec.h']]],
-  ['spdk_5fnvmf_5ftransport_5frequirements',['spdk_nvmf_transport_requirements',['../nvmf__spec_8h.html#a2f23465563cda758c5f0b89ec2516168',1,'nvmf_spec.h']]],
-  ['spdk_5fnvmf_5ftransport_5ftypes',['spdk_nvmf_transport_types',['../nvmf__spec_8h.html#a008d88e2e7d4812b42f12d94870e4098',1,'nvmf_spec.h']]]
+  ['spdk_5fnvmf_5fadrfam',['spdk_nvmf_adrfam',['../nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5frdma_5fcms',['spdk_nvmf_rdma_cms',['../nvmf__spec_8h.html#af113f4f57bccb99a0b89f5c715f1e3c3',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5frdma_5fprtype',['spdk_nvmf_rdma_prtype',['../nvmf__spec_8h.html#a13b10660d96571b325b48583200af544',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5frdma_5fqptype',['spdk_nvmf_rdma_qptype',['../nvmf__spec_8h.html#a9909d207f41934dacbc0917f083f2d43',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5fsubtype',['spdk_nvmf_subtype',['../nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5ftreq_5fsecure_5fchannel',['spdk_nvmf_treq_secure_channel',['../nvmf__spec_8h.html#a0a92190b8c6824182974e20f84ee0a3c',1,'nvmf_spec.h']]],
+  ['spdk_5fnvmf_5ftrtype',['spdk_nvmf_trtype',['../nvmf__spec_8h.html#a239e424a2438a066c30a288c592cba1b',1,'nvmf_spec.h']]]
 ];

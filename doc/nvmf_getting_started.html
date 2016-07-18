@@ -89,8 +89,8 @@ Prerequisites</h1>
 <p>To build nvmf there are some package dependencies.</p>
 <p>Fedora: </p><pre class="fragment">dnf install libibverbs-devel librdmacm-devel
 </pre><p>Ubuntu: </p><pre class="fragment">apt-get install libibverbs-dev librdmacm-dev
-</pre><p>Then build SPDK with the NVMf target enabled, either by editing CONFIG to enable CONFIG_NVMF or enabling it on the <code>make</code> command line:</p>
-<pre class="fragment">make CONFIG_NVMF=y &lt;other config parameters&gt;
+</pre><p>Then build SPDK with the NVMf target enabled, either by editing CONFIG to enable CONFIG_RDMA or enabling it on the <code>make</code> command line:</p>
+<pre class="fragment">make CONFIG_RDMA=y &lt;other config parameters&gt;
 </pre><h1><a class="anchor" id="nvmf_config"></a>
 Configuring NVMf</h1>
 <p>An NVMf specific configuration file is used to configure, or 'provision', the NVMf target. This file defines the following:</p>
