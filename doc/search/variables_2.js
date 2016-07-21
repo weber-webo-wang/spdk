@@ -9,6 +9,7 @@ var searchData=
   ['cmbsz',['cmbsz',['../structspdk__nvme__registers.html#a4d9a1bd35de790accaf112507cd89565',1,'spdk_nvme_registers']]],
   ['cmic',['cmic',['../structspdk__nvme__ctrlr__data.html#a99c8b1541ae4a638caae795d63b57d30',1,'spdk_nvme_ctrlr_data']]],
   ['cntlid',['cntlid',['../structspdk__nvme__ctrlr__data.html#a2cbc55b8da6325356bea1a41b45ea76a',1,'spdk_nvme_ctrlr_data::cntlid()'],['../structspdk__nvmf__discovery__log__page__entry.html#ad5cf412899705f398e046fd3f290067d',1,'spdk_nvmf_discovery_log_page_entry::cntlid()']]],
+  ['config_5ftext',['config_text',['../structspdk__copy__module__if.html#a57ca3f3ef52ca9eaef8343e138341af8',1,'spdk_copy_module_if']]],
   ['cqes',['cqes',['../structspdk__nvme__ctrlr__data.html#a6ba8966ad4ea435e02ed3f20ad88dd8e',1,'spdk_nvme_ctrlr_data']]],
   ['cqr',['cqr',['../unionspdk__nvme__cap__register.html#ad8004bf4870d89a73f8d4d95db5d746d',1,'spdk_nvme_cap_register']]],
   ['cqs',['cqs',['../unionspdk__nvme__cmbsz__register.html#af1ceb7a8fd105d746f14edf48a672d08',1,'spdk_nvme_cmbsz_register']]],

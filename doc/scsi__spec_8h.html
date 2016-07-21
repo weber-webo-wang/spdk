@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>SPDK: Globals</title>
+<title>SPDK: scsi_spec.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
@@ -67,26 +67,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li class="current"><a href="globals.html"><span>All</span></a></li>
-      <li><a href="globals_func.html"><span>Functions</span></a></li>
-      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
-      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
-      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
-      <li><a href="globals_defs.html"><span>Macros</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow4" class="tabs3">
-    <ul class="tablist">
-      <li class="current"><a href="globals.html#index_n"><span>n</span></a></li>
-      <li><a href="globals_s.html#index_s"><span>s</span></a></li>
-    </ul>
-  </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -101,39 +84,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_67fbcc0b4317645100def1406b508c33.html">spdk</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a>  </div>
+  <div class="headertitle">
+<div class="title">scsi_spec.h File Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all documented functions, variables, defines, enums, and typedefs with links to the documentation:</div>
 
-<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
-<li>nvme_alloc_request
-: <a class="el" href="nvme__impl_8h.html#a475a59bf7670eac1bc0ed8f317b81610">nvme_impl.h</a>
-</li>
-<li>nvme_assert
-: <a class="el" href="nvme__impl_8h.html#a8ae8097496a5de1cbe302845645c9faf">nvme_impl.h</a>
-</li>
-<li>nvme_dealloc_request
-: <a class="el" href="nvme__impl_8h.html#a964075ffde5231b255d681c975f716b7">nvme_impl.h</a>
-</li>
-<li>nvme_free
-: <a class="el" href="nvme__impl_8h.html#adf50014ff34581ab6ea90c1aee4422e1">nvme_impl.h</a>
-</li>
-<li>nvme_get_tsc
-: <a class="el" href="nvme__impl_8h.html#a2ae51bd7576c99be04bca032f9ac9e86">nvme_impl.h</a>
-</li>
-<li>nvme_get_tsc_hz
-: <a class="el" href="nvme__impl_8h.html#a54313f4fb90c583f2c22b34bb44cd336">nvme_impl.h</a>
-</li>
-<li>nvme_malloc()
-: <a class="el" href="nvme__impl_8h.html#a6c242cd22416a947cbf420309c3421df">nvme_impl.h</a>
-</li>
-<li>nvme_printf
-: <a class="el" href="nvme__impl_8h.html#a134486689372a4cf5da51b000e4be9ea">nvme_impl.h</a>
-</li>
-<li>nvme_vtophys
-: <a class="el" href="nvme__impl_8h.html#a113be6337ce6831ae8bfc95d8dcd9901">nvme_impl.h</a>
-</li>
-</ul>
-</div><!-- contents -->
+<p>SCSI specification definitions.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__cdb__inquiry.html">spdk_scsi_cdb_inquiry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__cdb__inquiry__data.html">spdk_scsi_cdb_inquiry_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__vpd__page.html">spdk_scsi_vpd_page</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__vpd__ext__inquiry.html">spdk_scsi_vpd_ext_inquiry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__desig__desc.html">spdk_scsi_desig_desc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__mpage__policy__desc.html">spdk_scsi_mpage_policy_desc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__tgt__port__desc.html">spdk_scsi_tgt_port_desc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__port__desc.html">spdk_scsi_port_desc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__unmap__bdesc.html">spdk_scsi_unmap_bdesc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>SCSI specification definitions. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <section id="community">
   <div class="community">

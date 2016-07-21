@@ -8,6 +8,8 @@ var searchData=
   ['mmio_2eh',['mmio.h',['../mmio_8h.html',1,'']]],
   ['mn',['mn',['../structspdk__nvme__ctrlr__data.html#ac4c7efdcb33ea0ea7325adca6d929e6c',1,'spdk_nvme_ctrlr_data']]],
   ['mnr',['mnr',['../unionspdk__nvme__vs__register.html#af3cf51c1c70771d507686f9a5979ab39',1,'spdk_nvme_vs_register']]],
+  ['module_5ffini',['module_fini',['../structspdk__copy__module__if.html#a7f90fa1c151558a60142cc63bb2fef23',1,'spdk_copy_module_if']]],
+  ['module_5finit',['module_init',['../structspdk__copy__module__if.html#ac1507bd764ecd0a1b9f8107b039b6d96',1,'spdk_copy_module_if']]],
   ['mps',['mps',['../unionspdk__nvme__cc__register.html#af8bb5fa3b86ff9cb654ec4da5fa5a31c',1,'spdk_nvme_cc_register']]],
   ['mpsmax',['mpsmax',['../unionspdk__nvme__cap__register.html#ad4b6659be786f840893818e951fc1f3d',1,'spdk_nvme_cap_register']]],
   ['mpsmin',['mpsmin',['../unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a',1,'spdk_nvme_cap_register']]],

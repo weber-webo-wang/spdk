@@ -331,6 +331,43 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1491a0118eccaa91ff5cb9fb5d02c2c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6">spdk_nvme_identify_cns</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identify command CNS value. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a1491a0118eccaa91ff5cb9fb5d02c2c6a0e3f9941eabe22d5b3c7c86043d0de32"></a>SPDK_NVME_IDENTIFY_NS&#160;</td><td class="fielddoc">
+<p>Identify namespace indicated in CDW1.NSID. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1491a0118eccaa91ff5cb9fb5d02c2c6a4a37f16cc815935d6ca7c5fc72446ba1"></a>SPDK_NVME_IDENTIFY_CTRLR&#160;</td><td class="fielddoc">
+<p>Identify controller. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1491a0118eccaa91ff5cb9fb5d02c2c6a8cfbe8373c7c619033d60eede0106f9c"></a>SPDK_NVME_IDENTIFY_ACTIVE_NS_LIST&#160;</td><td class="fielddoc">
+<p>List active NSIDs greater than CDW1.NSID. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1491a0118eccaa91ff5cb9fb5d02c2c6a6d869fc169f9b1a1710ea422c60fe1c1"></a>SPDK_NVME_IDENTIFY_ALLOCATED_NS_LIST&#160;</td><td class="fielddoc">
+<p>List allocated NSIDs greater than CDW1.NSID. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1491a0118eccaa91ff5cb9fb5d02c2c6a2577422800e8e7b6da496ff0e26d72ad"></a>SPDK_NVME_IDENTIFY_NS_ALLOCATED&#160;</td><td class="fielddoc">
+<p>Identify namespace if CDW1.NSID is allocated. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1491a0118eccaa91ff5cb9fb5d02c2c6a406d8a0fd54843bf3a769c709be8c78a"></a>SPDK_NVME_IDENTIFY_NS_ATTACHED_CTRLR_LIST&#160;</td><td class="fielddoc">
+<p>Get list of controllers starting at CDW10.CNTID that are attached to CDW1.NSID. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1491a0118eccaa91ff5cb9fb5d02c2c6aeb2ab6a252ff942ca407e965a43069d8"></a>SPDK_NVME_IDENTIFY_CTRLR_LIST&#160;</td><td class="fielddoc">
+<p>Get list of controllers starting at CDW10.CNTID. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a class="anchor" id="a3d5e453e4d95b0f5b9bb4de04ace78c4"></a>
 <div class="memitem">
 <div class="memproto">
