@@ -58,6 +58,7 @@ struct spdk_fio_request {
 	struct io_u		*io;
 
 	struct spdk_fio_thread	*fio_thread;
+	struct spdk_fio_ns *ns;
 };
 
 struct spdk_fio_ns {
@@ -106,6 +107,8 @@ probe_cb(void *cb_ctx, struct spdk_pci_device *dev, struct spdk_nvme_ctrlr_opts 
 	struct thread_data 	*td = cb_ctx;
 	int rc;
 
+	return true;
+
 	/* Check if we want to claim this device */
 	for_each_file(td, f, i) {
 		int domain, bus, slot, func, nsid;
@@ -135,7 +138,7 @@ attach_cb(void *cb_ctx, struct spdk_pci_device *dev, struct spdk_nvme_ctrlr *ctr
 	struct spdk_fio_thread	*fio_thread = td->io_ops->data;
 	struct spdk_fio_ctrlr	*fio_ctrlr;
 	struct spdk_fio_ns	*fio_ns;
-	struct fio_file *f;
+	// struct fio_file *f;
 	unsigned int i;
 
 	/* Create an fio_ctrlr and add it to the list */
@@ -159,22 +162,28 @@ attach_cb(void *cb_ctx, struct spdk_pci_device *dev, struct spdk_nvme_ctrlr *ctr
 	}
 
 	/* Loop through all of the file names provided and grab the matching namespaces */
+	/*
 	for_each_file(fio_thread->td, f, i) {
-		int domain, bus, slot, func, nsid, rc;
-		rc = sscanf(f->file_name, "%x.%x.%x.%x/%x", &domain, &bus, &slot, &func, &nsid);
-		if (rc == 5 && bus == found_bus && slot == found_slot && func == found_func) {
+	*/
+	do {
+		// int domain, bus, slot, func, nsid, rc;
+		// rc = sscanf(f->file_name, "%x.%x.%x.%x/%x", &domain, &bus, &slot, &func, &nsid);
+		// if (rc == 5 && bus == found_bus && slot == found_slot && func == found_func) {
+		if (1) {
+			printf("*** Probing %d:%d.%d\n", found_bus, found_slot, found_func);
 			fio_ns = calloc(1, sizeof(*fio_ns));
 			if (fio_ns == NULL) {
 				continue;
 			}
-			fio_ns->f = f;
-			fio_ns->ns = spdk_nvme_ctrlr_get_ns(ctrlr, nsid);
+			// fio_ns->f = f;
+			fio_ns->ns = spdk_nvme_ctrlr_get_ns(ctrlr, 1);	// FIXME 
 			fio_ns->ctrlr = fio_ctrlr;
 			if (fio_ns->ns == NULL) {
 				free(fio_ns);
 				continue;
 			}
 
+#if 0
 
 			f->real_file_size = spdk_nvme_ns_get_size(fio_ns->ns);
 			if (f->real_file_size <= 0) {
@@ -184,11 +193,13 @@ attach_cb(void *cb_ctx, struct spdk_pci_device *dev, struct spdk_nvme_ctrlr *ctr
 
 			f->filetype = FIO_TYPE_BD;
 			fio_file_set_size_known(f);
+#endif
 
 			fio_ns->next = fio_ctrlr->ns_list;
 			fio_ctrlr->ns_list = fio_ns;
 		}
-	}
+	// }
+	} while (0);
 }
 
 static char *ealargs[] = {
@@ -242,7 +253,7 @@ static int global_spdk_init(struct thread_data *td)
 	}
 
 	/* Enumerate all of the controllers */
-	if (spdk_nvme_probe(td, probe_cb, attach_cb, NULL) != 0) {
+	if (spdk_nvme_probe(td, probe_cb, attach_cb) != 0) {
 		fprintf(stderr, "spdk_nvme_probe() failed\n");
 		goto out;
 	}
@@ -262,6 +273,8 @@ static void global_spdk_deinit(struct spdk_fio_ctrlr *fio_ctrlr)
 	int i;
 	struct spdk_fio_ns	*fio_ns, *fio_ns_tmp;
 	struct spdk_fio_ctrlr *fio_ctrlr_tmp;
+
+	fprintf(stdout, "%s\n", __FILE__);
 
 	pthread_mutex_lock(&global_spdk_lock);
 
@@ -355,10 +368,13 @@ static int spdk_fio_setup(struct thread_data *td)
 		struct spdk_fio_ns *fio_ns = find_ns_by_file(f);
 
 		if (fio_ns == NULL) {
+			fprintf(stderr, "Unknown file= %s\n", f->file_name);
+			exit(1);
 			continue;
 		}
 
 		f->real_file_size = spdk_nvme_ns_get_size(fio_ns->ns);
+		printf("f->real_size = %ld\n", (long)f->real_file_size);
 		if (f->real_file_size <= 0) {
 			continue;
 		}
@@ -438,10 +454,12 @@ static int spdk_fio_queue(struct thread_data *td, struct io_u *io_u)
 	struct spdk_fio_ctrlr	*fio_ctrlr;
 	struct spdk_fio_ns *fio_ns;
 
-	fio_ns = find_ns_by_file(io_u->file);
-	assert(fio_ns != NULL);
+	fio_req->ns = find_ns_by_file(io_u->file);
+	assert(fio_rq->ns != NULL);
 
+	fio_ns = ((struct spdk_fio_request *)io_u->engine_data)->ns;
 	fio_ctrlr = fio_ns->ctrlr;
+	assert(ns != NULL);
 
 	uint32_t block_size = spdk_nvme_ns_get_sector_size(fio_ns->ns);
 	uint64_t lba = io_u->offset / block_size;
