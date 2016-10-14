@@ -33,6 +33,7 @@
 
 #include "nvme_internal.h"
 #include "spdk/env.h"
+#include <unistd.h>
 
 static int nvme_ctrlr_construct_and_submit_aer(struct spdk_nvme_ctrlr *ctrlr,
 		struct nvme_async_event_request *aer);
@@ -208,26 +209,17 @@ static void
 nvme_ctrlr_construct_intel_support_log_page_list(struct spdk_nvme_ctrlr *ctrlr,
 		struct spdk_nvme_intel_log_page_directory *log_page_directory)
 {
-	struct spdk_pci_device *dev;
-	struct pci_id pci_id;
-
 	if (ctrlr->cdata.vid != SPDK_PCI_VID_INTEL || log_page_directory == NULL)
 		return;
-
-	dev = ctrlr->devhandle;
-	pci_id.vendor_id = spdk_pci_device_get_vendor_id(dev);
-	pci_id.dev_id = spdk_pci_device_get_device_id(dev);
-	pci_id.sub_vendor_id = spdk_pci_device_get_subvendor_id(dev);
-	pci_id.sub_dev_id = spdk_pci_device_get_subdevice_id(dev);
 
 	ctrlr->log_page_supported[SPDK_NVME_INTEL_LOG_PAGE_DIRECTORY] = true;
 
 	if (log_page_directory->read_latency_log_len ||
-	    nvme_intel_has_quirk(&pci_id, NVME_INTEL_QUIRK_READ_LATENCY)) {
+		(ctrlr->quirks & NVME_INTEL_QUIRK_READ_LATENCY)) {
 		ctrlr->log_page_supported[SPDK_NVME_INTEL_LOG_READ_CMD_LATENCY] = true;
 	}
 	if (log_page_directory->write_latency_log_len ||
-	    nvme_intel_has_quirk(&pci_id, NVME_INTEL_QUIRK_WRITE_LATENCY)) {
+		(ctrlr->quirks & NVME_INTEL_QUIRK_WRITE_LATENCY)) {
 		ctrlr->log_page_supported[SPDK_NVME_INTEL_LOG_WRITE_CMD_LATENCY] = true;
 	}
 	if (log_page_directory->temperature_statistics_log_len) {
@@ -849,6 +841,9 @@ nvme_ctrlr_process_init(struct spdk_nvme_ctrlr *ctrlr)
 			cc.bits.en = 0;
 			nvme_mmio_write_4(ctrlr, cc.raw, cc.raw);
 			nvme_ctrlr_set_state(ctrlr, NVME_CTRLR_STATE_DISABLE_WAIT_FOR_READY_0, ready_timeout_in_ms);
+
+			if (ctrlr->quirks & NVME_QUIRK_DELAY_BEFORE_CHK_RDY)
+				sleep(2);
 			return 0;
 		} else {
 			if (csts.bits.rdy == 1) {
@@ -1105,6 +1100,7 @@ nvme_ctrlr_construct(struct spdk_nvme_ctrlr *ctrlr, void *devhandle)
 	uint32_t			cmd_reg;
 	int				status;
 	int				rc;
+	struct pci_id pci_id;
 
 	nvme_ctrlr_set_state(ctrlr, NVME_CTRLR_STATE_INIT, NVME_TIMEOUT_INFINITE);
 	ctrlr->devhandle = devhandle;
@@ -1145,6 +1141,13 @@ nvme_ctrlr_construct(struct spdk_nvme_ctrlr *ctrlr, void *devhandle)
 	ctrlr->pci_addr.bus = spdk_pci_device_get_bus(devhandle);
 	ctrlr->pci_addr.dev = spdk_pci_device_get_dev(devhandle);
 	ctrlr->pci_addr.func = spdk_pci_device_get_func(devhandle);
+
+	pci_id.vendor_id = spdk_pci_device_get_vendor_id(ctrlr->devhandle);
+	pci_id.dev_id = spdk_pci_device_get_device_id(ctrlr->devhandle);
+	pci_id.sub_vendor_id = spdk_pci_device_get_subvendor_id(ctrlr->devhandle);
+	pci_id.sub_dev_id = spdk_pci_device_get_subdevice_id(ctrlr->devhandle);
+
+	ctrlr->quirks = nvme_get_ctrlr_quirk(&pci_id);
 
 	return 0;
 }
