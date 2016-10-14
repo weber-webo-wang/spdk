@@ -93,7 +93,6 @@ struct spdk_fio_thread {
 	unsigned int		getevents_count; // The number of events in the current getevents window
 
 	int		thread_idx;		// which io queue to use
-
 };
 
 static bool
